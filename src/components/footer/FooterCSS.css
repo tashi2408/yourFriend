@@ -1,13 +1,90 @@
 .footer {
   background: #262626;
-  padding: 2rem 0;
+  padding: 20px 0;
 }
 
 .footer-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 5rem;
+  padding: 10px 50px;
+}
+
+.footer-list {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-list .footer-list-item {
+  list-style: none;
+}
+
+.footer-list .footer-list-item .footer-list-link {
+  width: 30px;
+  height: 30px;
+  background-color: #888;
+  text-align: center;
+  line-height: 30px;
+  font-size: 20px;
+  margin-right: 10px;
+  display: block;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  border: 3px solid #888;
+  z-index: 1;
+  transition: 0.5s;
+}
+
+.footer-list .footer-list-item .footer-list-link .footer-icon {
+  position: relative;
+  color: #262626;
+  transition: 0.5s;
+  z-index: 3;
+}
+
+.footer-list .footer-list-item .footer-list-link:hover {
+  border: 3px solid #fff;
+  background-color: #fff;
+}
+
+.footer-list .footer-list-item .footer-list-link:hover .footer-icon {
+  color: #fff;
+  transform: rotateY(360deg);
+}
+
+.footer-list .footer-list-item .footer-list-link:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #f00;
+  transition: 0.5s;
+  z-index: 2;
+}
+
+.footer-list .footer-list-item .footer-list-link:hover:before {
+  top: 0;
+}
+
+.footer-list .footer-list-item:nth-child(1) a:before {
+  background: #3b5999;
+}
+
+.footer-list .footer-list-item:nth-child(2) a:before {
+  background: #55acee;
+}
+
+.footer-list .footer-list-item:nth-child(3) a:before {
+  background: #0077b5;
+}
+
+.footer-list .footer-list-item:nth-child(4) a:before {
+  background: #8a3ab9;
 }
 
 /* ul {
@@ -90,14 +167,14 @@ ul li:nth-child(4) a:before {
 /*******************************************************************************/
 .links-footer {
   color: #888;
-  font-size: 1.1rem;
+  font-size: 11px;
   display: flex;
   justify-content: center;
   padding: 1rem 0;
 }
 
 .link-item {
-  padding-right: 0.6rem;
+  padding-right: 6px;
   transition: all 0.3s;
   text-transform: uppercase;
 }
@@ -108,6 +185,6 @@ ul li:nth-child(4) a:before {
 
 .legal {
   text-align: center;
-  font-size: 1.4rem;
+  font-size: 14px;
   color: #888;
 }

@@ -13,25 +13,25 @@ export default class Footer extends React.Component {
       <div className="footer">
         <div className="footer-content">
           <div className="social-medialinks">
-            <ul>
-              <li>
-                <a href="#">
-                  <FaFacebookF className="fab icon" />{" "}
+            <ul className="footer-list">
+              <li className="footer-list-item">
+                <a className="footer-list-link" href="#">
+                  <FaFacebookF className="fab footer-icon" />{" "}
                 </a>
               </li>
-              <li>
-                <a href="#">
-                  <FaTwitter className="fab icon" />{" "}
+              <li className="footer-list-item">
+                <a className="footer-list-link" href="#">
+                  <FaTwitter className="fab footer-icon" />{" "}
                 </a>
               </li>
-              <li>
-                <a href="#">
-                  <FaLinkedinIn className="fab icon" />{" "}
+              <li className="footer-list-item">
+                <a className="footer-list-link" href="#">
+                  <FaLinkedinIn className="fab footer-icon" />{" "}
                 </a>
               </li>
-              <li>
-                <a href="#">
-                  <FaInstagram className="fab icon" />{" "}
+              <li className="footer-list-item">
+                <a className="footer-list-link" href="#">
+                  <FaInstagram className="fab footer-icon" />{" "}
                 </a>
               </li>
             </ul>
