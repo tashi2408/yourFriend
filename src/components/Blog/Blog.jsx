@@ -8,10 +8,10 @@ import one from './Images/one.jpg'
 
 function Blog(){
     return (
-        <section>
+      <div className="blogmaincss">
         <div class="container">
           <header>
-            <h1>Latest on YourDost Blog</h1>
+            <h1>Latest on YourFriend Blog</h1>
             <p>In this section we are providing the latest update,blog and informative article which may help so do check it out!</p>
           </header>
     
@@ -51,10 +51,7 @@ function Blog(){
           </main>
          <button className="blogbuttoncss">Read More Article</button>
         </div>
-        
-        
-        
-      </section>
+      </div>
     )
 }
 

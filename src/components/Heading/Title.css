@@ -1,19 +1,28 @@
-.imgcss {
-  width: 500px;
-  height: 500px;
-}
-
 .titlecss {
   background-image: linear-gradient(to right, #fc4a1a, #f7b733);
   height: 500px;
 }
 
-.containercss {
-  width: 100%;
-  margin: 0px;
+.titletextcss {
+  margin-left: 65px;
+  margin-top: 20px;
+  padding: 10px;
   color: white;
 }
 
-.titlenamecss {
-  margin: auto;
+.titletextcss h1 {
+  font-size: 3.5rem;
+}
+
+.titletextcss h3 {
+  font-size: 2rem;
+}
+
+.titleimgcss {
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  top: 50px;
+  right: 20px;
+  z-index: 0;
 }

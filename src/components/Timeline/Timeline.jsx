@@ -107,7 +107,7 @@ return(
 
     </VerticalTimeline>
 
-    <h3 className="fontcss">*All updates shall also be given on the Instagram handle for the event.</h3>
+    {/* <h3 className="fontcss">*All updates shall also be given on the Instagram handle for the event.</h3> */}
 
 
     </div>

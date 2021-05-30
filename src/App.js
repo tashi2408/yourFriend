@@ -6,7 +6,6 @@ import Home from './components/Home/Home'
 function App() {
   return (
      <Router>
-      <Nav />
       <Switch>
       <Route path='/' exact component={Home} />
       </Switch>

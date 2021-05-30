@@ -1,20 +1,21 @@
 .navbarcss {
-  background: #393a98;
   height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
   margin: 0px;
+  z-index: 1;
 }
 
 .navbar-logocss {
   color: #fff;
   justify-self: start;
-  margin-left: 20px;
+  margin-left: -80px;
   cursor: pointer;
   text-decoration: none;
   font-size: 2rem;
+  z-index: 1;
 }
 
 .fa-firstdraft {
@@ -31,24 +32,28 @@
   width: 70vw;
   justify-content: end;
   margin-right: 2rem;
+  z-index: 1;
 }
 
 .nav-itemcss {
   display: flex;
   align-items: center;
   height: 80px;
+  z-index: 1;
 }
 
 .nav-linkscss {
   color: white;
   text-decoration: none;
   padding: 0.5rem 1rem;
+  z-index: 1;
 }
 
 .nav-linkscss:hover {
   background-color: #1888ff;
   border-radius: 4px;
   transition: all 0.2s ease-out;
+  z-index: 1;
 }
 
 .fa-bars {
@@ -61,6 +66,11 @@
 
 .menu-iconcss {
   display: none;
+}
+
+.logocss {
+  width: 80px;
+  height: 80px;
 }
 
 @media screen and (max-width: 960px) {

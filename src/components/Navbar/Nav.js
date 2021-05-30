@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import {Link} from 'react-router-dom'
 import Button from './Button';
 import Dropdown from './Dropdown'
+import logo from './Images/logo.png'
 import './Nav.css';
 
 function Nav(){
@@ -37,7 +38,7 @@ function Nav(){
         <nav className="navbarcss">
 
         <Link to='/' className="navbar-logocss">
-            YOUTH INDIA
+            <img src={logo} className="logocss"></img>
         </Link>
 
         <div className="menu-iconcss" onClick={handleClick}>

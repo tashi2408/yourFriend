@@ -4,19 +4,22 @@
   top: 80px;
   list-style: none;
   text-align: start;
+  z-index: 1;
 }
 
 .dropdown-menucss li {
-  background: #393a98;
   cursor: pointer;
+  z-index: 1;
 }
 
 .dropdown-menucss li:hover {
   background: #5cabff;
+  z-index: 1;
 }
 
 .dropdown-menucss.clickedcss {
   display: none;
+  z-index: 1;
 }
 
 .dropdown-linkcss {
@@ -26,6 +29,7 @@
   text-decoration: none;
   color: #fff;
   padding: 16px;
+  z-index: 1;
 }
 
 @media screen and (max-width: 960px) {
