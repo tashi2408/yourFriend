@@ -1,0 +1,54 @@
+.ourwork {
+  padding: 2rem 0;
+  background: linear-gradient(to bottom right, #f05b36, #393b98);
+}
+
+.ourwork-section {
+  display: grid;
+  padding: 4rem 10rem;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 4rem;
+}
+
+.left-container {
+  font-size: 1.5rem;
+}
+
+.right-container {
+}
+
+.work-image {
+  width: 100%;
+  height: 40rem;
+  border-radius: 20px;
+}
+
+.highlight {
+  background-color: #eeeeee;
+}
+
+.work-button {
+  outline: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.work-icon,
+.work-icon-w {
+  height: 4rem;
+  width: 4rem;
+  transition: all 0.3s;
+}
+
+.work-icon {
+  fill: #eeeeee;
+}
+
+.work-icon-w {
+  fill: #262626;
+}
+
+.work-icon:hover,
+.work-icon-w:hover {
+  fill: #393b98;
+}

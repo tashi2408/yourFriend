@@ -1,0 +1,113 @@
+.footer {
+  background: #262626;
+  padding: 2rem 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5rem;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+ul li a {
+  width: 3rem;
+  height: 3rem;
+  background-color: #888;
+  text-align: center;
+  line-height: 3rem;
+  font-size: 2rem;
+  margin-right: 1rem;
+  display: block;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  border: 3px solid #888;
+  z-index: 1;
+  transition: 0.5s;
+}
+
+ul li a .icon {
+  position: relative;
+  color: #262626;
+  transition: 0.5s;
+  z-index: 3;
+}
+
+ul li a:hover {
+  border: 3px solid #fff;
+  background-color: #fff;
+}
+
+ul li a:hover .icon {
+  color: #fff;
+  transform: rotateY(360deg);
+}
+
+ul li a:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #f00;
+  transition: 0.5s;
+  z-index: 2;
+}
+
+ul li a:hover:before {
+  top: 0;
+}
+
+ul li:nth-child(1) a:before {
+  background: #3b5999;
+}
+
+ul li:nth-child(2) a:before {
+  background: #55acee;
+}
+
+ul li:nth-child(3) a:before {
+  background: #0077b5;
+}
+
+ul li:nth-child(4) a:before {
+  background: #8a3ab9;
+}
+
+/*******************************************************************************/
+.links-footer {
+  color: #888;
+  font-size: 1.1rem;
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+.link-item {
+  padding-right: 0.6rem;
+  transition: all 0.3s;
+  text-transform: uppercase;
+}
+
+.link-item:hover {
+  color: #fff;
+}
+
+.legal {
+  text-align: center;
+  font-size: 1.4rem;
+  color: #888;
+}

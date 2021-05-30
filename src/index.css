@@ -1,13 +1,63 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  background-color: #eeeeee;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,300,800);
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-size: 62.5%;
+  color: #262626;
+}
+
+.primary-heading {
+  text-align: center;
+  padding: 0.5rem;
+  margin: 0;
+  font-size: 4.5rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  word-spacing: 0.2rem;
+  text-transform: uppercase;
+}
+
+.secondary-heading {
+  font-weight: 400;
+  font-size: 3.25rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+.primary-para {
+  font-size: 1.8rem;
+  line-height: 3rem;
+}
+
+.color-w {
+  color: #fff;
+}
+
+.color {
+  color: #393a98;
+}
+
+.color-o {
+  color: #f05b36;
+}
+
+/*********************************************************************************************************************/
