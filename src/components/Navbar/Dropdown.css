@@ -1,0 +1,39 @@
+.dropdown-menucss {
+  width: 200px;
+  position: absolute;
+  top: 80px;
+  list-style: none;
+  text-align: start;
+}
+
+.dropdown-menucss li {
+  background: #393a98;
+  cursor: pointer;
+}
+
+.dropdown-menucss li:hover {
+  background: #5cabff;
+}
+
+.dropdown-menucss.clickedcss {
+  display: none;
+}
+
+.dropdown-linkcss {
+  display: block;
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+  color: #fff;
+  padding: 16px;
+}
+
+@media screen and (max-width: 960px) {
+  .dropdown-menucss {
+    width: 100%;
+    position: absolute;
+    top: 170px;
+    list-style: none;
+    text-align: center;
+  }
+}

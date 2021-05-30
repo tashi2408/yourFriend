@@ -1,21 +1,17 @@
 import React from "react";
-import Overview from "./components/overview/Overview";
-import ContactUs from "./components/contactUs/ContactUs.js";
-import Footer from "./components/footer/Footer.js";
-import OurWork from "./components/ourwork/OurWork";
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Nav from './components/Navbar/Nav'
+import Home from './components/Home/Home'
 
-class App extends React.Component {
-  render() {
-    return (
-      <div className="App">
-        <Overview />
-        <OurWork />
-
-        <ContactUs />
-        <Footer />
-      </div>
-    );
-  }
+function App() {
+  return (
+     <Router>
+      <Nav />
+      <Switch>
+      <Route path='/' exact component={Home} />
+      </Switch>
+    </Router>
+  );
 }
 
 export default App;
