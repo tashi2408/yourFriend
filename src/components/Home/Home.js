@@ -13,8 +13,8 @@ function Home() {
     <div>
       <Title />
       <Overview />
-      <Timeline />
       <OurWork />
+      <Timeline />
       <Blog />
       <Segment />
       <ContactUs />
