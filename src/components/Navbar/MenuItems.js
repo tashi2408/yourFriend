@@ -1,17 +1,17 @@
 export const MenuItems = [
     {
-      title: 'Intership',
+      title: 'Interships',
       path: '/interships',
       cName: 'dropdown-linkcss'
     },
     {
-      title: 'Events',
-      path: '/events',
+      title: 'Campaigns',
+      path: '/campaigns',
       cName: 'dropdown-linkcss'
     },
     {
-      title: 'other',
-      path: '/other',
+      title: 'Webinars',
+      path: '/webinars',
       cName: 'dropdown-linkcss'
     }
   ];

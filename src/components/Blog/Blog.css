@@ -2,7 +2,6 @@
   margin-bottom: 20px;
   padding: 10px;
   z-index: 0;
-  background: rgba(116, 185, 255, 0.09);
   text-align: center;
 }
 
@@ -125,7 +124,7 @@ header h1 {
   margin-bottom: 20px;
 }
 .blogbuttoncss:hover {
-  background-color: turquoise;
+  background-color: orangered;
   cursor: pointer;
 }
 

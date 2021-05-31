@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import {Link} from 'react-router-dom'
 import Button from './Button';
 import Dropdown from './Dropdown'
-import logo from './Images/logo.png'
+import logo from './Images/YIF Logo.png'
 import './Nav.css';
 
 function Nav(){
@@ -50,14 +50,16 @@ function Nav(){
         <ul className={click ? "nav-menucss active" : "nav-menucss"}>
 
         <li className="nav-itemcss"><Link to="/about-us" className="nav-linkscss" onClick={closeMobileMenu}>About Us</Link></li>
+        <li className="nav-itemcss"><Link to="/board-of-advisors" className="nav-linkscss" onClick={closeMobileMenu}>Our Team</Link></li>
+        <li className="nav-itemcss"><Link to="/self-test" className="nav-linkscss" onClick={closeMobileMenu}>Self test</Link></li>
         <li className="nav-itemcss" 
         onMouseEnter={onMouseEnter} 
         onMouseLeave={onMouseLeave} 
         onClick={extendElement}>
-        <Link to="/" className="nav-linkscss">Dropdown <i className="fas fa-caret-down" /></Link>
+        <Link to="/" className="nav-linkscss">Events <i className="fas fa-caret-down" /></Link>
         {dropdown && <Dropdown onCloseMobileMenu={closeMobileMenu}/>}
         </li>
-        <li className="nav-itemcss"><Link to="/board-of-advisors" className="nav-linkscss" onClick={closeMobileMenu}>Board of Advisors</Link></li>
+        
         <li className="nav-itemcss"><Link to="/join-us" className="nav-linkscss" onClick={closeMobileMenu}>Join Us</Link></li>
         <li className="nav-itemcss"><Link to="/login" className="nav-links-mobilecss" onClick={closeMobileMenu}>Login</Link></li>
 
