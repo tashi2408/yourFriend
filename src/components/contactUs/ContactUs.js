@@ -4,7 +4,7 @@ import ContactUs from "./ContactUs.css";
 export default class Contact extends React.Component {
   render() {
     return (
-      <div className="contact-section color-w">
+      <div className="contact-section ">
         <h1 className="primary-heading">#Contact Us</h1>
         <form>
           <div className="contact-form">

@@ -7,9 +7,9 @@ export default class OurWork extends React.Component {
   render() {
     return (
       <div className="ourwork">
-        <h1 className="primary-heading color-w ">Our Work</h1>
+        <h1 className="primary-heading ">Our Work</h1>
         <div className="ourwork-section">
-          <div className="left-container color-w">
+          <div className="left-container ">
             <h2 className="secondary-heading ">campaigning</h2>
             <p className="primary-para">
               We strongly believe that campaigning is one of the most effective
@@ -53,7 +53,7 @@ export default class OurWork extends React.Component {
           </div>
         </div>
         <div className="ourwork-section">
-          <div className="left-container color-w">
+          <div className="left-container ">
             <h2 className="secondary-heading">webinars</h2>
             <p className="primary-para">
               We strongly believe that campaigning is one of the most effective

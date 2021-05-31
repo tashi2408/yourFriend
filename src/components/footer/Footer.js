@@ -41,7 +41,9 @@ export default class Footer extends React.Component {
             <p className="link-item">|</p>
             <p className="link-item">Report a Problem</p>
             <p className="link-item">|</p>
-            <p className="link-item">Become a Representative</p>
+            <p className="link-item">FAQ</p>
+            <p className="link-item">|</p>
+            <p className="link-item">Testimonials</p>
           </div>
         </div>
 

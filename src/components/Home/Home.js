@@ -13,10 +13,11 @@ function Home() {
     <div>
       <Title />
       <Overview />
+      <Segment />
       <OurWork />
       <Timeline />
       <Blog />
-      <Segment />
+
       <ContactUs />
       <Footer />
     </div>
