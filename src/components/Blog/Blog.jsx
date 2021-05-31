@@ -49,7 +49,18 @@ function Blog(){
               </div>
             </div>
           </main>
-         <button className="blogbuttoncss">Read More Article</button>
+         <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    paddingTop: "10px",
+                  }}
+                >
+                  <a href="#" className="button pulse">
+                    Read more
+                  </a>
+                </div>
         </div>
       </div>
     )
