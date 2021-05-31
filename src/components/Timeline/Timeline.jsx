@@ -16,7 +16,7 @@ return(
 <div className="backgroundcss">
       
     <div className="timelinecss">
-    <h1 className="h1-responsive font-weight-bold my-5 ">TIMELINE</h1>
+    <h1 className="h1-responsive font-weight-bold my-5 ">EVENTS</h1>
 
     <VerticalTimeline className={'check'}>
     
