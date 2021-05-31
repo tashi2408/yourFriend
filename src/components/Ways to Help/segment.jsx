@@ -9,8 +9,7 @@ function Segment() {
     return (
         <div class="main_body">
         <div class="upperpart">
-            <h1>WE MAY HELP-WITH YOUR PROBLEMS</h1>
-            <p class="underline">______________________________</p>
+            <h1 className='primary-heading'> WE MAY HELP-WITH YOUR PROBLEMS </h1>
         </div>
         <div class="lowerpart">
             

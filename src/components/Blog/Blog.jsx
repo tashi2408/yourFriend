@@ -11,7 +11,7 @@ function Blog(){
       <div className="blogmaincss">
         <div class="container">
           <header>
-            <h1>Latest on YourFriend Blog</h1>
+            <h1 className='primary-heading '>Latest on YourFriend Blog</h1>
             <p>In this section we are providing the latest update,blog and informative article which may help so do check it out!</p>
           </header>
     
