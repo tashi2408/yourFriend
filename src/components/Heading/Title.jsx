@@ -1,6 +1,6 @@
 import React from 'react'
 import Nav from '../Navbar/Nav';
-import TitlePhoto from './Images/Title photo.png' 
+import TitlePhoto from './Images/Title photos.png' 
 import './Title.css'
 
 function Title() {
