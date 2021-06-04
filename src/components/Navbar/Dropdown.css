@@ -8,6 +8,7 @@
 }
 
 .dropdown-menucss li {
+  background-color: antiquewhite;
   cursor: pointer;
   z-index: 1;
 }
@@ -27,7 +28,7 @@
   height: 100%;
   width: 100%;
   text-decoration: none;
-  color: #fff;
+  color: #393a98;
   padding: 16px;
   z-index: 1;
 }

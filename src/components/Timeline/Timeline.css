@@ -9,11 +9,11 @@
 }
 
 .check::before {
-  background: #f05b36;
+  background: #393b989c;
 }
 
 .check .vertical-timeline-element--work .vertical-timeline-element-icon {
-  box-shadow: 0 0 0 4px #f05b36, inset 0 2px 0 rgba(0, 0, 0, 0.08),
+  box-shadow: 0 0 0 4px #393b989c, inset 0 2px 0 rgba(0, 0, 0, 0.08),
     0 3px 0 4px rgba(0, 0, 0, 0.05);
 }
 

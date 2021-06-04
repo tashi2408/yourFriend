@@ -1,5 +1,9 @@
 .titlecss {
-  background-image: linear-gradient(to left, #fc4a1a, #f7b733);
+  background-image: url("back5.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: lighten;
   height: 600px;
 }
 
@@ -7,7 +11,37 @@
   margin-left: 20px;
   margin-top: 20px;
   padding: 10px;
+  color: #393a98;
+}
+
+.titlebuttoncss {
+  border: none;
   color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 0px;
+  margin-right: 10px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.button1 {
+  background-color: #f05b36;
+}
+
+.button2 {
+  background-color: #393a98;
+}
+
+.titlebuttoncss:hover {
+  transition: all 0.3s ease-out;
+  background-color: transparent;
+  color: #393a98;
+  border: 2px solid var(--primary);
+  transition: all 0.3s ease-out;
 }
 
 .titletextcss h1 {

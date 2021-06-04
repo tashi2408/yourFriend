@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import {Link} from 'react-router-dom'
 import Button from './Button';
 import Dropdown from './Dropdown'
-import logo from './Images/YIF Logo.png'
+import logo from './Images/Title logo.png'
 import './Nav.css';
 
 function Nav(){
@@ -61,7 +61,9 @@ function Nav(){
         </li>
         
         <li className="nav-itemcss"><Link to="/join-us" className="nav-linkscss" onClick={closeMobileMenu}>Join Us</Link></li>
+        <li className="nav-itemcss"><Link to="/join-us" className="nav-linkscss" onClick={closeMobileMenu}>Chat</Link></li>
         <li className="nav-itemcss"><Link to="/login" className="nav-links-mobilecss" onClick={closeMobileMenu}>Login</Link></li>
+        
 
         </ul>
 

@@ -1,6 +1,6 @@
 import React from 'react'
 import Nav from '../Navbar/Nav';
-import TitlePhoto from './Images/Title logo.png' 
+import TitlePhoto from './Images/Title photo.png' 
 import './Title.css'
 
 function Title() {
@@ -8,8 +8,10 @@ function Title() {
         <div className="titlecss">
           <Nav />
           <div className="titletextcss">
-             <h1>YOUTH INDIA FOUNDATION</h1>
-             <h3>A Mental Health Initiative By Youth India</h3>
+             <h1>YOUTH FRIEND</h1>
+             <h3>A Mental Health Initiative by Youth India Foundation</h3>
+             <button className="titlebuttoncss button1">Become a Representative</button>
+             <button className="titlebuttoncss button2">Book an Session</button>             
              <img src={TitlePhoto} alt="No Image Found" className="titleimgcss"></img>
           </div>
         </div>
