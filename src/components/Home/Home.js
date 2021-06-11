@@ -17,7 +17,6 @@ function Home() {
       <OurWork />
       <Timeline />
       <Blog />
-
       <ContactUs />
       <Footer />
     </div>
