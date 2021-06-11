@@ -1,5 +1,6 @@
 import React from "react";
 import Nav from "../Navbar/Nav.js";
+import Footer from "../footer/Footer.js";
 import {
   MDBJumbotron,
   MDBContainer,
@@ -162,6 +163,8 @@ function Campaign() {
           </MDBCard>
         </MDBCol>
       </div>
+
+      <Footer />
     </div>
   );
 }
