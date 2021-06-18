@@ -20,10 +20,10 @@ function Webinar() {
       <div className="pagenavcss">
         <Nav />
       </div>
-      <div className="campaignheadcss">
+      <div className="webinarheadcss">
         <MDBJumbotron fluid>
           <MDBContainer>
-            <h2 className="display-4 text-center">CAMPAIGNS</h2>
+            <h2 className="display-4 text-center">WEBINARS</h2>
             <p className="lead text-center">
               Your Friend by Youth India Foundation seek to break the stigma
               around mental health and wish to spread its awareness. For this
