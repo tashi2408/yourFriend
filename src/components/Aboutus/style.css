@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap");
+.about-section {
+  margin-top: 15px;
+  margin-bottom: 20px;
+  background: url(ab.jpg) no-repeat left;
+  background-size: 70%;
+  overflow: hidden;
+  padding: 10px 0;
+}
+.inner-container {
+  width: 55%;
+  float: right;
+  background: #fdfdfd;
+  background-image: linear-gradient(
+    180deg,
+    rgb(255, 255, 255),
+    rgb(235, 226, 178)
+  );
+  padding: 140px;
+}
+.inner-container h1 {
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-weight: 800;
+}
+.border {
+  height: 3px;
+  width: 150px;
+  background: rgb(245, 60, 28);
+}
+.text {
+  font-size: 15px;
+  color: #545454;
+  line-height: 20px;
+  text-align: justify;
+  margin-bottom: 40px;
+}
+.icons {
+  size: 30px;
+  width: 30%;
+  height: 35px;
+  /* background: #545454;*/
+  display: space-around;
+  flex-direction: row;
+}
+.fa-facebook {
+  font-size: 20px;
+  margin: 10px;
+}
+.fa-instagram {
+  font-size: 20px;
+  margin: 10px;
+}
+.fa-twitter {
+  font-size: 20px;
+  margin: 10px;
+}
+.fa-facebook,
+.fa-instagram,
+.fa-twitter:hover {
+  cursor: pointer;
+}
+@media screen and (max-width: 1200px) {
+  .inner-container {
+    padding: 80px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .about-section {
+    background-size: 100%;
+    padding: 100px 40px;
+  }
+  .inner-container {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .about-section {
+    padding: 0;
+  }
+  .inner-container {
+    padding: 60px;
+  }
+  .icons {
+    width: 80%;
+    margin-left: 50px;
+  }
+  .fa-facebook,
+  .fa-instagram,
+  .fa-twitter {
+    font-size: 12px;
+    margin: 7px;
+  }
+}

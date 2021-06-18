@@ -25,13 +25,19 @@ function Campaign() {
           <MDBContainer>
             <h2 className="display-4 text-center">CAMPAIGNS</h2>
             <p className="lead text-center">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+              Despite the slight improvement in attitudes towards mental health,
+              statistically the negative connotation of it still remains and is
+              going strong. This stigma caused my misinformation causes immense
+              pain and mental struggle for someone who is considering getting
+              professional help. In an attempt to combat all of this, we have
+              started our “All Ears to You, Always” Campaign to promote mental
+              health and provide a safe, welcoming and judgement free space for
+              students to express their feelings freely to a trained team of
+              representatives and mental health personnel. We do so by reaching
+              out to several educational institutions all over the country and
+              so far we have completed our campaign in Ashutosh College, Kolkata
+              on 3rd August with the help of 8 students who volunteered to be
+              part of the cause.
             </p>
           </MDBContainer>
         </MDBJumbotron>
