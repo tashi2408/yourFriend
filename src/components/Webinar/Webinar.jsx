@@ -12,9 +12,9 @@ import {
   MDBCardText,
   MDBCol,
 } from "mdbreact";
-import "./Campaign.css";
+import "./webinar.css";
 
-function Campaign() {
+function Webinar() {
   return (
     <div>
       <div className="pagenavcss">
@@ -47,4 +47,4 @@ function Campaign() {
   );
 }
 
-export default Campaign;
+export default Webinar;
