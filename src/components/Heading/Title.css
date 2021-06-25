@@ -1,9 +1,10 @@
 .titlecss {
-  background-image: url("back5.jpg");
+  /* background-image: url("back5.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-blend-mode: lighten;
+  background-blend-mode: lighten; */
+  background: var(--gradient);
   height: 600px;
 }
 
@@ -11,7 +12,9 @@
   margin-left: 20px;
   margin-top: 20px;
   padding: 10px;
-  color: #393a98;
+  /* color: #393a98; */
+  /* color: var(--dark); */
+  color: var(--white);
 }
 
 .titlebuttoncss {
@@ -29,11 +32,13 @@
 }
 
 .button1 {
-  background-color: #f05b36;
+  /* background-color: #f05b36; */
+  background-color: var(--primary-color);
 }
 
 .button2 {
-  background-color: #393a98;
+  /* background-color: #393a98; */
+  background-color: var(--secondary-color);
 }
 
 .titlebuttoncss:hover {
