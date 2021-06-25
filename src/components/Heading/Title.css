@@ -13,8 +13,8 @@
   margin-top: 20px;
   padding: 10px;
   /* color: #393a98; */
-  /* color: var(--dark); */
-  color: var(--white);
+  color: var(--primary-color);
+  /* color: var(--white); */
 }
 
 .titlebuttoncss {
@@ -33,7 +33,7 @@
 
 .button1 {
   /* background-color: #f05b36; */
-  background-color: var(--primary-color);
+  background-color: var(--dark);
 }
 
 .button2 {

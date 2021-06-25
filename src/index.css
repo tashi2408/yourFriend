@@ -13,7 +13,7 @@
     hsla(233, 100%, 94%, 1) 97%
   ); */
 
-  --primary-color: #ff9f1c;
+  /* --primary-color: #ff9f1c;
   --secondary-color: #2ec4b6;
   --dark: #ffbf69;
   --white: #fff;
@@ -22,6 +22,18 @@
     90deg,
     hsla(34, 100%, 71%, 1) 25%,
     hsla(176, 62%, 87%, 1) 75%
+  ); */
+
+  --primary-color: #6d6875;
+  --secondary-color: #b5838d;
+  --dark: #e5989b;
+  --white: #ffcdb2;
+  --light: #ffb4a2;
+  --gradient: linear-gradient(
+    to bottom right,
+    hsla(12, 100%, 82%, 1) 25%,
+    hsla(358, 60%, 75%, 1) 55%,
+    hsla(348, 25%, 61%, 1) 83%
   );
 }
 
