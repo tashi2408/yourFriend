@@ -77,7 +77,6 @@ body::-webkit-scrollbar-thumb {
 
 .primary-heading {
   text-align: center;
-  padding: 5px;
   margin: 0;
   font-size: 45px;
   font-weight: 400;
@@ -96,6 +95,11 @@ body::-webkit-scrollbar-thumb {
 .primary-para {
   font-size: 18px;
   line-height: 30px;
+}
+
+.secondary-para {
+  font-size: 15px;
+  line-height: 20px;
 }
 
 .color-w {
