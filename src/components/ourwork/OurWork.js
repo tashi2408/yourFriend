@@ -1,6 +1,9 @@
 import React from "react";
 import OurWorkC from "./OurWorkC.css";
-import Image from "./india.png";
+import Campaigns from "./Campaigns.jpg";
+import Internships from "./Internships.png";
+import Webinars from "./Webinars.jpg";
+
 import { IoArrowRedoCircleSharp } from "react-icons/io5";
 
 export default class OurWork extends React.Component {
@@ -27,12 +30,12 @@ export default class OurWork extends React.Component {
             </button>
           </div>
           <div className="right-container">
-            <img className="work-image" src={Image}></img>
+            <img className="work-image" src={Campaigns}></img>
           </div>
         </div>
         <div className="ourwork-section highlight">
           <div className="right-container">
-            <img className="work-image" src={Image}></img>
+            <img className="work-image" src={Internships}></img>
           </div>
           <div className="left-container">
             <h2 className="secondary-heading">internships</h2>
@@ -74,7 +77,7 @@ export default class OurWork extends React.Component {
             </button>
           </div>
           <div className="right-container">
-            <img className="work-image" src={Image}></img>
+            <img className="work-image" src={Webinars}></img>
           </div>
         </div>
       </div>
