@@ -26,9 +26,13 @@ const Membercontainer = {
 
 function OurTeam() {
   const animation2 = useAnimation();
+  const animation3 = useAnimation();
 
-  const { ref, inView } = useInView();
+  const [inViewRef, inView] = useInView();
+  const [inViewRef2, inView2] = useInView();
+
   const animation = useAnimation();
+  const animation4 = useAnimation();
 
   useEffect(() => {
     if (inView) {
@@ -50,11 +54,32 @@ function OurTeam() {
         rotate: 0,
       });
     }
-  }, [animation, inView]);
+
+    if (inView2) {
+      animation4.start("visible");
+      animation3.start({
+        x: [-80, 60, 0],
+        y: 0,
+        scale: 1,
+        rotate: 0,
+      });
+    }
+
+    if (!inView2) {
+      animation4.start("hidden");
+      animation3.start({
+        x: -60,
+        y: 0,
+        scale: 0.5,
+        rotate: 0,
+      });
+    }
+  }, [animation, inView, animation2, inView2, animation3, animation4]);
+
   return (
     <div>
-      <Nav />
       <header className="ourteam-header">
+        <Nav />
         <motion.div
           // initial={{ scale: 3 }}
           animate={{ scale: [1, 2, 1] }}
@@ -62,18 +87,18 @@ function OurTeam() {
             type: "spring",
             bounce: 0.3,
           }}
-          className="heading-ourteam color-w"
+          className="heading-ourteam"
         >
           Our team
         </motion.div>
       </header>
       <div className="ourteam">
         <motion.h2
-          ref={ref}
+          ref={inViewRef}
           animate={animation2}
           transition={{
             type: "spring",
-            bounce: 0.3,
+            bounce: 0.2,
           }}
           className="secondary-heading"
         >
@@ -81,7 +106,7 @@ function OurTeam() {
         </motion.h2>
 
         <motion.div
-          ref={ref}
+          ref={inViewRef}
           className="members-container Membercontainer "
           variants={Membercontainer}
           initial="hidden"
@@ -104,8 +129,51 @@ function OurTeam() {
           />
           <Card
             member={Member3}
+            name="Monika Bagri"
+            designation="Counsellor & Soft skills trainer"
+            headline="Monika Bagri is a dynamic & energetic trainer with the latest flair in psychology and soft skills."
+            description="She is an Engineer and has done post-graduation in Psychology. She has counselled many students and adults on one on one basis aa well in group setting. Apart from this, she has delivered assignments on life skills, soft skills, time management and communication skills to many Corporates, Educational / Coaching institutes and NGOs."
+          />
+        </motion.div>
+
+        <motion.h2
+          ref={inViewRef2}
+          animate={animation3}
+          transition={{
+            type: "spring",
+            bounce: 0.3,
+          }}
+          className="secondary-heading"
+        >
+          Other Advisors
+        </motion.h2>
+
+        <motion.div
+          ref={inViewRef2}
+          className="members-container Membercontainer"
+          variants={Membercontainer}
+          initial="hidden"
+          animate={animation4}
+        >
+          <Card
+            member={Member}
             name="Vikasni Kannan"
             designation="Clinical Psychologist"
+            headline="Vikasni Kannan is a RCI Licensed clinical psychologist. She did her graduation and post-graduation from the University of Delhi, before perusing her MPhil in Clinical Psychology. "
+            description="She is currently working as an independent practitioner and as a School Psychologist with the Vydehi Group of Institutions, Bangalore. She has previously worked with Your Dost, Generation India, Utsaah Psychology Clinic, and Sensitivity Early Intervention Centre. She specialises in diagnosis, assessment, and long term interventions for mental health concerns across age groups. Additionally, she regularly conducts Awareness and Training Workshops for students and teachers."
+          />
+
+          <Card
+            member={Member2}
+            name="Shruti Jajoo Jhanwar"
+            designation="Counselling Psychologist"
+            headline="Mrs. Shruti Jajoo Jhanwar is a Counselling Psychologist. She holds a Master’s degree in psychology. She is a certified Career Counselor at Bodhami. "
+            description="She is passionate about her work and loves interacting with people. She is an instagram influencer. Her expertise is in Child Counseling and Career Counseling. Her forte is to challenalise a person's potential in the right direction and troubleshoot a person's issues by providing real time solutions. She has worked as a counselor for 3 years in one of the Reputed schools in India and now during this pandemic, she is helping people by taking online counseling sessions."
+          />
+          <Card
+            member={Member3}
+            name="Monika Bagri"
+            designation="Counsellor & Soft skills trainer"
             headline="Monika Bagri is a dynamic & energetic trainer with the latest flair in psychology and soft skills."
             description="She is an Engineer and has done post-graduation in Psychology. She has counselled many students and adults on one on one basis aa well in group setting. Apart from this, she has delivered assignments on life skills, soft skills, time management and communication skills to many Corporates, Educational / Coaching institutes and NGOs."
           />

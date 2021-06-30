@@ -54,10 +54,12 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 5rem;
-  row-gap: 5rem;
   margin: 2rem 0;
 }
 
+.members-container:not(:last-of-type) {
+  padding-bottom: 5rem;
+}
 .member-image-container {
   overflow: hidden;
 }
@@ -216,16 +218,3 @@
     0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07),
     0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
 }
-
-/* .card-back a {
-  height: 20px;
-  width: 20px;
-  padding: 5px 5px;
-  border-radius: 4px;
-  line-height: 20px;
-}
-
-.card-back a:hover {
-  color: #000000;
-  background-color: #fff;
-} */
