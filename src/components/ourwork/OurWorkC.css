@@ -1,6 +1,7 @@
 .ourwork {
   padding: 20px 0;
   background: var(--gradient);
+  color: var(--primary-color);
   /* background: url(./background.jpg);
   background-repeat: no-repeat;
   background-size: cover; */
@@ -41,10 +42,10 @@
   height: 40px;
   width: 40px;
   transition: all 0.3s;
-  fill: #262626;
+  fill: var(--secondary-color);
 }
 
 .work-icon:hover,
 .work-icon-w:hover {
-  fill: #393b98;
+  fill: var(--primary-color);
 }
