@@ -5,7 +5,7 @@ export default class Overview extends React.Component {
   render() {
     return (
       <div className="overview">
-        <h1 className="primary-heading color">#wearelistening</h1>
+        <h1 className="primary-heading ">#wearelistening</h1>
         <div className="overview-content">
           <p className="primary-para">
             Dealing with mental health issues is not easy and we understand
