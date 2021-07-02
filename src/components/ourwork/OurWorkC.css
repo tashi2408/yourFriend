@@ -52,3 +52,24 @@
 .work-icon-w:hover {
   fill: var(--primary-color);
 }
+
+@media only screen and (max-width: 1000px) {
+  .ourwork-section {
+    padding: 30px 50px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .ourwork-section {
+    padding: 18px 50px;
+    grid-template-columns: 1fr;
+  }
+
+  .right-container {
+    display: none;
+  }
+
+  .left-container {
+    text-align: center;
+  }
+}
