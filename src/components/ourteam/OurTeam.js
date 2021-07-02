@@ -28,8 +28,12 @@ function OurTeam() {
   const animation2 = useAnimation();
   const animation3 = useAnimation();
 
-  const [inViewRef, inView] = useInView();
-  const [inViewRef2, inView2] = useInView();
+  const [inViewRef, inView] = useInView({
+    threshold: 0.000001,
+  });
+  const [inViewRef2, inView2] = useInView({
+    threshold: 0.00001,
+  });
 
   const animation = useAnimation();
   const animation4 = useAnimation();
