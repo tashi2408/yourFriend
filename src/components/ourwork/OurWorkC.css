@@ -73,3 +73,9 @@
     text-align: center;
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .ourwork-section {
+    padding: 15px 30px;
+  }
+}
