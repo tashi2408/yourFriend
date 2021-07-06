@@ -1,4 +1,42 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&display=swap");
+
+:root {
+  /* --primary-color: #cbc0d3;
+  --secondary-color: #dee2ff;
+  --dark: #8e9aaf;
+  --tertiary: #efd3d7;
+  --light: #feeafa;
+  --gradient: linear-gradient(
+    90deg,
+    hsla(351, 47%, 88%, 1) 22%,
+    hsla(312, 91%, 96%, 1) 53%,
+    hsla(233, 100%, 94%, 1) 97%
+  ); */
+
+  /* --primary-color: #ff9f1c;
+  --secondary-color: #2ec4b6;
+  --dark: #ffbf69;
+  --white: #fff;
+  --light: #cbf3f0;
+  --gradient: linear-gradient(
+    90deg,
+    hsla(34, 100%, 71%, 1) 25%,
+    hsla(176, 62%, 87%, 1) 75%
+  ); */
+
+  --primary-color: #6d6875;
+  --secondary-color: #b5838d;
+  --dark: #e5989b;
+  --white: #ffcdb2;
+  --light: #ffb4a2;
+  --gradient: linear-gradient(
+    to bottom right,
+    hsla(12, 100%, 82%, 1) 25%,
+    hsla(358, 60%, 75%, 1) 55%,
+    hsla(348, 25%, 61%, 1) 83%
+  );
+}
+
 body {
   margin: 0;
   font-family: "Open Sans", sans-serif;
@@ -14,21 +52,37 @@ body {
 
 html,
 body {
-  color: #262626;
   font-family: "Open Sans", sans-serif;
   background-color: #f5f5f5;
   text-decoration: none;
 }
 
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #f5f5f5;
+}
+
+body::-webkit-scrollbar {
+  width: 8px;
+  background-color: #f5f5f5;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: var(--primary-color);
+}
+
 .primary-heading {
   text-align: center;
-  padding: 5px;
   margin: 0;
   font-size: 45px;
   font-weight: 400;
   letter-spacing: 1px;
   word-spacing: 2px;
   text-transform: uppercase;
+  color: var(--primary-color);
 }
 
 .secondary-heading {
@@ -36,11 +90,21 @@ body {
   font-size: 32.5px;
   text-transform: uppercase;
   letter-spacing: 1px;
+  color: var(--primary-color);
+  margin: 0;
+  padding-bottom: 15px;
 }
 
 .primary-para {
   font-size: 18px;
   line-height: 30px;
+  color: var(--secondary-color);
+  margin: 0;
+}
+
+.secondary-para {
+  font-size: 15px;
+  line-height: 20px;
 }
 
 .color-w {
@@ -56,3 +120,18 @@ body {
 }
 
 /*********************************************************************************************************************/
+
+@media only screen and (max-width: 900px) {
+  .primary-heading {
+    font-size: 42px;
+  }
+
+  .secondary-heading {
+    font-size: 30px;
+    padding-bottom: 10px;
+  }
+  .primary-para {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}

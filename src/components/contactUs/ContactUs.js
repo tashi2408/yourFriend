@@ -5,7 +5,7 @@ export default class Contact extends React.Component {
   render() {
     return (
       <div className="contact-section ">
-        <h1 className="primary-heading">#Contact Us</h1>
+        <h1 className="primary-heading">#ContactUs</h1>
         <form>
           <div className="contact-form">
             <div className="row-cont">

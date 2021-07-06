@@ -1,6 +1,9 @@
 import React from "react";
 import OurWorkC from "./OurWorkC.css";
-import Image from "./india.png";
+import Campaigns from "./Campaigns.jpg";
+import Internships from "./Internships.png";
+import Webinars from "./Webinars.jpg";
+
 import { IoArrowRedoCircleSharp } from "react-icons/io5";
 
 export default class OurWork extends React.Component {
@@ -11,7 +14,7 @@ export default class OurWork extends React.Component {
         <div className="ourwork-section">
           <div className="left-container ">
             <h2 className="secondary-heading ">campaigns</h2>
-            <p className="primary-para">
+            <p className="primary-para color-w">
               We strongly believe that campaigning is one of the most effective
               ways to promote and work for a cause. With an increasing number of
               people using social media to educate themselves and take
@@ -27,12 +30,12 @@ export default class OurWork extends React.Component {
             </button>
           </div>
           <div className="right-container">
-            <img className="work-image" src={Image}></img>
+            <img className="work-image" src={Campaigns}></img>
           </div>
         </div>
         <div className="ourwork-section highlight">
           <div className="right-container">
-            <img className="work-image" src={Image}></img>
+            <img className="work-image" src={Internships}></img>
           </div>
           <div className="left-container">
             <h2 className="secondary-heading">internships</h2>
@@ -55,7 +58,7 @@ export default class OurWork extends React.Component {
         <div className="ourwork-section">
           <div className="left-container ">
             <h2 className="secondary-heading">webinars</h2>
-            <p className="primary-para">
+            <p className="primary-para color-w">
               Your Friend by Youth India Foundation seek to break the stigma
               around mental health and wish to spread its awareness. For this
               purpose we have chosen the platform of webinars with Professionals
@@ -74,7 +77,7 @@ export default class OurWork extends React.Component {
             </button>
           </div>
           <div className="right-container">
-            <img className="work-image" src={Image}></img>
+            <img className="work-image" src={Webinars}></img>
           </div>
         </div>
       </div>

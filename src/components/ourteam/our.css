@@ -1,30 +1,44 @@
 .ourteam {
   padding: 2rem 8rem;
+  background: var(--gradient);
 }
 
 .ourteam-header {
-  background-image: linear-gradient(to bottom right, #000000a8, #434343b6),
-    url("./our-team-bg.jpg");
+  background-image: linear-gradient(
+      to bottom right,
+      hsla(12, 100%, 82%, 0.2) 25%,
+      hsla(358, 60%, 75%, 0.2) 55%,
+      hsla(348, 25%, 61%, 0.2) 83%
+    ),
+    url("./team-bg-yf.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   margin: 0;
   width: 100%;
-  height: 30rem;
+  height: 80vh;
   position: relative;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
 }
 
 .heading-ourteam {
-  font-size: 4rem;
+  font-size: 6rem;
   text-align: center;
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 300;
   letter-spacing: 0.3rem;
+  color: var(--white);
   margin: 0;
-  position: absolute;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) !important; */
 }
 
 .member {
@@ -38,11 +52,15 @@
 
 .members-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  column-gap: 4rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 5rem;
+  row-gap: 5rem;
   margin: 2rem 0;
 }
 
+.members-container:not(:last-of-type) {
+  padding-bottom: 5rem;
+}
 .member-image-container {
   overflow: hidden;
 }
@@ -63,23 +81,23 @@
   font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 3px;
-  color: #393a98;
+  color: #fff;
   margin: 0;
 }
 
 .member-designation {
   font-size: 0.9rem;
   text-transform: capitalize;
-  padding: 0.3rem 0;
+  padding: 0.5rem 0;
   margin: 0;
   letter-spacing: 0.15rem;
 }
 
 .member-description {
-  font-size: 0.8rem;
-  line-height: 0.9rem;
+  font-size: 15px;
+  line-height: 22px;
   margin: 0;
-  color: #555;
+  color: #fff;
 }
 
 /* *************************************************************************** social icon**************************************************** */
@@ -98,7 +116,7 @@
 }
 
 .member-icons i {
-  color: #fff;
+  color: var(--primary-color);
   position: absolute;
   top: 0.95em;
   left: 0.96em;
@@ -118,7 +136,7 @@
   height: 45px;
   border-radius: 100%;
   display: block;
-  background: linear-gradient(45deg, #f05b36, #393a98);
+  background: var(--gradient);
   transition: all 265ms ease-out;
 }
 
@@ -131,9 +149,125 @@
   transform: scale(1.7);
   -ms-transform: scale(1.7);
   -webkit-transform: scale(1.7);
-  color: #393a98;
-  background: -webkit-linear-gradient(45deg, #f05b36, #393a98);
+  color: var(--dark);
+  background: var(--gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: all 265ms ease-in;
+}
+
+/* ********************************************************CARDS************************************************************************ */
+.card {
+  position: relative;
+  height: 500px;
+  /* width: 300px; */
+  transform-style: preserve-3d;
+  perspective: 600px;
+  transition: 0.5s;
+}
+.card:hover .card-front {
+  transform: rotateY(-180deg);
+}
+.card:hover .card-back {
+  transform: rotateY(0deg);
+}
+
+.card-front {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--primary-color);
+  backface-visibility: hidden;
+  transform: rotateY(0deg);
+  transition: 0.5s;
+  border-radius: 5px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07),
+    0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07),
+    0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
+}
+.card-front img {
+  width: 100%;
+  height: 50%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.card-front div {
+  position: absolute;
+  top: 50%;
+  color: var(--light);
+  margin: 12px 12px;
+}
+
+.card-back {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--primary-color);
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+  transition: 0.5s;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px 15px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07),
+    0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07),
+    0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
+}
+
+@media only screen and (max-width: 1024px) {
+  .ourteam {
+    padding: 2rem 3rem;
+  }
+  .members-container {
+    column-gap: 2rem;
+  }
+
+  .member-description {
+    font-size: 14px;
+  }
+
+  .card-front img {
+    height: 40%;
+  }
+
+  .card-front div {
+    top: 40%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .members-container {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3rem;
+    row-gap: 3rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .ourteam {
+    padding: 1rem 1rem;
+    text-align: center;
+  }
+
+  .heading-ourteam {
+    font-size: 4rem;
+  }
+
+  .members-container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+
+  .card {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+  }
 }
