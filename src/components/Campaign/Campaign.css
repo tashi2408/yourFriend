@@ -1,0 +1,30 @@
+.campaign-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.campaign-image {
+  flex-basis: 200%;
+  max-width: 100%;
+}
+.campaign-text {
+  font-size: 20px;
+  padding-left: 20px;
+}
+
+.campaign-head {
+  text-align: center;
+  align-items: center;
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.campaign-carousel {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+}

@@ -1,7 +1,7 @@
 export const MenuItems = [
   {
-    title: "Interships",
-    path: "/interships",
+    title: "Internship",
+    path: "/internship",
     cName: "dropdown-linkcss",
   },
   {
