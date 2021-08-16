@@ -138,10 +138,7 @@ const Timeline = () => {
               Events 6
             </h4>
             <h4 className="vertical-timeline-element-subtitle">Place</h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incidid
-            </p>
+            <p>Change Visible</p>
             <button className="work-button">
               <IoArrowRedoCircleSharp className="work-icon" />
             </button>
