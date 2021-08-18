@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/yourFriend/static/css/main.66ccc274.chunk.css",
-    "main.js": "/yourFriend/static/js/main.9e183290.chunk.js",
-    "main.js.map": "/yourFriend/static/js/main.9e183290.chunk.js.map",
+    "main.js": "/yourFriend/static/js/main.9a98b191.chunk.js",
+    "main.js.map": "/yourFriend/static/js/main.9a98b191.chunk.js.map",
     "runtime-main.js": "/yourFriend/static/js/runtime-main.245f3520.js",
     "runtime-main.js.map": "/yourFriend/static/js/runtime-main.245f3520.js.map",
     "static/css/2.2aa38b9c.chunk.css": "/yourFriend/static/css/2.2aa38b9c.chunk.css",
@@ -12,6 +12,8 @@
     "static/css/2.2aa38b9c.chunk.css.map": "/yourFriend/static/css/2.2aa38b9c.chunk.css.map",
     "static/css/main.66ccc274.chunk.css.map": "/yourFriend/static/css/main.66ccc274.chunk.css.map",
     "static/js/2.c3b86bbe.chunk.js.LICENSE.txt": "/yourFriend/static/js/2.c3b86bbe.chunk.js.LICENSE.txt",
+    "static/media/BOT1.1793611b.jpeg": "/yourFriend/static/media/BOT1.1793611b.jpeg",
+    "static/media/BOT2.8760489b.jpeg": "/yourFriend/static/media/BOT2.8760489b.jpeg",
     "static/media/Campaigns.f12ccbf0.jpg": "/yourFriend/static/media/Campaigns.f12ccbf0.jpg",
     "static/media/Internships.c972ff33.png": "/yourFriend/static/media/Internships.c972ff33.png",
     "static/media/Title logo.25841ce0.png": "/yourFriend/static/media/Title logo.25841ce0.png",
@@ -37,6 +39,6 @@
     "static/css/2.2aa38b9c.chunk.css",
     "static/js/2.c3b86bbe.chunk.js",
     "static/css/main.66ccc274.chunk.css",
-    "static/js/main.9e183290.chunk.js"
+    "static/js/main.9a98b191.chunk.js"
   ]
 }
