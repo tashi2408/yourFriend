@@ -4,6 +4,8 @@ import Footer from "../footer/Footer.js";
 import "./Internship.css";
 import { Button } from "react-bootstrap";
 
+import Headimage from "./head2.jpg";
+
 function Internship() {
   return (
     <div>
@@ -11,9 +13,12 @@ function Internship() {
         <Nav />
       </div>
 
+      <div>
+        <img className="head-div" src={Headimage}></img>
+      </div>
+
       <div className="campaign-head">
-        <h1>Internship</h1>
-        <h5>
+        <h5 className="intern-main-para">
           India has been gripped in fear due to the COVID virus outbreak. People
           have had time to reflect on themselves. But it has been found that
           many have had psychotic breakdowns and have needed help from
