@@ -79,8 +79,9 @@ export default class OurWork extends React.Component {
               Neelam Mishra and national level webinars guided by Divya Dureja.
             </p>
             <button className="work-button">
-              <Link to="/webinars"></Link>
-              <IoArrowRedoCircleSharp className="work-icon" />
+              <Link to="/webinars">
+                <IoArrowRedoCircleSharp className="work-icon" />
+              </Link>
             </button>
           </div>
           <div className="right-container">
