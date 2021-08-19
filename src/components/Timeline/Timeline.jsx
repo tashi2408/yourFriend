@@ -28,9 +28,7 @@ const Timeline = () => {
             iconStyle={{ background: "#fff", color: "#fff" }}
             icon={<WorkIcon />}
           >
-            <h4 className="vertical-timeline-element-title fontcss">
-              Events 1
-            </h4>
+            <h4 className="vertical-timeline-element-title fontcss"></h4>
             {/* <h4 className="vertical-timeline-element-subtitle">Place</h4> */}
             <p>
               “Break through Obstacles” National webinar with Dr Neelam Mishra
@@ -49,9 +47,7 @@ const Timeline = () => {
             iconStyle={{ background: "#fff", color: "#fff" }}
             icon={<MdEventAvailable className="colorcss" />}
           >
-            <h4 className="vertical-timeline-element-title fontcss fontcss">
-              Events 2
-            </h4>
+            <h4 className="vertical-timeline-element-title fontcss fontcss"></h4>
             {/* <h4 className="vertical-timeline-element-subtitle">Place</h4> */}
             <p>Fortis Hospitals Mental Health Month Collaboration</p>
             <button className="work-button">
@@ -68,9 +64,7 @@ const Timeline = () => {
             iconStyle={{ background: "#fff", color: "#fff" }}
             icon={<BiCodeAlt className="colorcss" />}
           >
-            <h4 className="vertical-timeline-element-title fontcss">
-              Events 3
-            </h4>
+            <h4 className="vertical-timeline-element-title fontcss"></h4>
             {/* <h4 className="vertical-timeline-element-subtitle">Place</h4> */}
             <p>
               Collaborations with Biocom, SRM and Baatien Unkaheesi (mental
@@ -90,9 +84,7 @@ const Timeline = () => {
             iconStyle={{ background: "#fff", color: "#fff" }}
             icon={<AiOutlineLink className="colorcss" />}
           >
-            <h4 className="vertical-timeline-element-title fontcss">
-              Events 4
-            </h4>
+            <h4 className="vertical-timeline-element-title fontcss"></h4>
             {/* <h4 className="vertical-timeline-element-subtitle">Place</h4> */}
             <p>“Psychology Simplified” - PAN India webinar series</p>
             <button className="work-button">
@@ -109,9 +101,7 @@ const Timeline = () => {
             iconStyle={{ background: "#fff", color: "#fff" }}
             icon={<BiCheck className="colorcss" />}
           >
-            <h4 className="vertical-timeline-element-title fontcss">
-              Events 5
-            </h4>
+            <h4 className="vertical-timeline-element-title fontcss"></h4>
             {/* <h4 className="vertical-timeline-element-subtitle">Place</h4> */}
             <p>
               Navratan Foundation Collaboration - mental health session with Mrs
@@ -131,9 +121,7 @@ const Timeline = () => {
             iconStyle={{ background: "#fff", color: "#fff" }}
             icon={<AiOutlineLink className="colorcss" />}
           >
-            <h4 className="vertical-timeline-element-title fontcss">
-              Events 6
-            </h4>
+            <h4 className="vertical-timeline-element-title fontcss"></h4>
             {/* <h4 className="vertical-timeline-element-subtitle">Place</h4> */}
             <p>“Tackle your Talk” with Sakshi Pasricha </p>
             <button className="work-button">
@@ -150,9 +138,7 @@ const Timeline = () => {
             iconStyle={{ background: "#fff", color: "#fff" }}
             icon={<AiOutlineLink className="colorcss" />}
           >
-            <h4 className="vertical-timeline-element-title fontcss">
-              Events 7
-            </h4>
+            <h4 className="vertical-timeline-element-title fontcss"></h4>
             {/* <h4 className="vertical-timeline-element-subtitle">Place</h4> */}
             <p>“Sought your Thoughts” with Anandita Anand </p>
             <button className="work-button">
@@ -169,9 +155,7 @@ const Timeline = () => {
             iconStyle={{ background: "#fff", color: "#fff" }}
             icon={<AiOutlineLink className="colorcss" />}
           >
-            <h4 className="vertical-timeline-element-title fontcss">
-              Events 8
-            </h4>
+            <h4 className="vertical-timeline-element-title fontcss"></h4>
             {/* <h4 className="vertical-timeline-element-subtitle">Place</h4> */}
             <p>
               panel discussion with mental health professionals: Shweta Sharma,
@@ -191,9 +175,7 @@ const Timeline = () => {
             iconStyle={{ background: "#fff", color: "#fff" }}
             icon={<AiOutlineLink className="colorcss" />}
           >
-            <h4 className="vertical-timeline-element-title fontcss">
-              Events 9
-            </h4>
+            <h4 className="vertical-timeline-element-title fontcss"></h4>
             {/* <h4 className="vertical-timeline-element-subtitle">Place</h4> */}
             <p>
               “YOU 2.0: -Unleashing a better version of yourself” A series of
@@ -213,9 +195,7 @@ const Timeline = () => {
             iconStyle={{ background: "#fff", color: "#fff" }}
             icon={<AiOutlineLink className="colorcss" />}
           >
-            <h4 className="vertical-timeline-element-title fontcss">
-              Events 10
-            </h4>
+            <h4 className="vertical-timeline-element-title fontcss"></h4>
             {/* <h4 className="vertical-timeline-element-subtitle">Place</h4> */}
             <p>
               “Awakening paths: Exploring psychology as a career” - PAN India

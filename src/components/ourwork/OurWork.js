@@ -4,6 +4,8 @@ import Campaigns from "./Campaigns.jpg";
 import Internships from "./Internships.png";
 import Webinars from "./Webinars.jpg";
 
+import { Link } from "react-router-dom";
+
 import { IoArrowRedoCircleSharp } from "react-icons/io5";
 
 export default class OurWork extends React.Component {
@@ -26,7 +28,9 @@ export default class OurWork extends React.Component {
               campaigns!
             </p>
             <button className="work-button">
-              <IoArrowRedoCircleSharp className="work-icon" />
+              <Link to="/campaign">
+                <IoArrowRedoCircleSharp className="work-icon" />
+              </Link>
             </button>
           </div>
           <div className="right-container">
@@ -51,7 +55,9 @@ export default class OurWork extends React.Component {
               campaigns!
             </p>
             <button className="work-button">
-              <IoArrowRedoCircleSharp className="work-icon-w" />
+              <Link to="/internship">
+                <IoArrowRedoCircleSharp className="work-icon-w" />
+              </Link>
             </button>
           </div>
         </div>
@@ -73,6 +79,7 @@ export default class OurWork extends React.Component {
               Neelam Mishra and national level webinars guided by Divya Dureja.
             </p>
             <button className="work-button">
+              <Link to="/webinars"></Link>
               <IoArrowRedoCircleSharp className="work-icon" />
             </button>
           </div>
