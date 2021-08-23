@@ -31,8 +31,10 @@ function Internship() {
           get hands-on experience by getting a chance to work under
           professionals directly helping them in their career development.
         </h5>
-        <Button onClick="https://www.youthindiafoundation.com/join/">
-          Apply For Internship
+        <Button>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSezaoNfRDVFprPw74aE16rZWTALnuExsl7jmraHPwqrvePZRg/viewform">
+            Apply For Internship
+          </a>
         </Button>
       </div>
 

@@ -62,7 +62,7 @@ function Nav() {
               Our Team
             </Link>
           </li>
-          <li className="nav-itemcss">
+          {/* <li className="nav-itemcss">
             <Link
               to="/self-test"
               className="nav-linkscss"
@@ -70,7 +70,7 @@ function Nav() {
             >
               Self test
             </Link>
-          </li>
+          </li> */}
           <li
             className="nav-itemcss"
             onMouseEnter={onMouseEnter}
@@ -84,13 +84,7 @@ function Nav() {
           </li>
 
           <li className="nav-itemcss">
-            <Link
-              to="/join-us"
-              className="nav-linkscss"
-              onClick={closeMobileMenu}
-            >
-              Join Us
-            </Link>
+            <a href="https://www.youthindiafoundation.com/join/">Join Us</a>
           </li>
           <li className="nav-itemcss">
             <Link
