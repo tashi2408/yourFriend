@@ -29,11 +29,18 @@
   --dark: #e5989b;
   --white: #ffcdb2;
   --light: #ffb4a2;
+  --purple: #393b989c;
   --gradient: linear-gradient(
     to bottom right,
     hsla(12, 100%, 82%, 1) 25%,
     hsla(358, 60%, 75%, 1) 55%,
     hsla(348, 25%, 61%, 1) 83%
+  );
+  --gradient-transparent: linear-gradient(
+    to bottom right,
+    hsla(12, 100%, 82%, 0.7) 25%,
+    hsla(358, 60%, 75%, 0.7) 55%,
+    hsla(348, 25%, 61%, 0.7) 83%
   );
 }
 
