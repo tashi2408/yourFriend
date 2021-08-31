@@ -19,7 +19,7 @@ function OurTeam() {
         <div className="heading-ourteam">Our team</div>
       </header>
       <div className="ourteam">
-        <h2 className="secondary-heading">Board of Psychologist</h2>
+        <h2 className="secondary-heading">Board of Counsellors</h2>
 
         <div className="members-container">
           <Card
@@ -29,7 +29,6 @@ function OurTeam() {
             headline="Vikasni Kannan is a RCI Licensed clinical psychologist. She did her graduation and post-graduation from the University of Delhi, before perusing her MPhil in Clinical Psychology. "
             description="She is currently working as an independent practitioner and as a School Psychologist with the Vydehi Group of Institutions, Bangalore. She has previously worked with Your Dost, Generation India, Utsaah Psychology Clinic, and Sensitivity Early Intervention Centre. She specialises in diagnosis, assessment, and long term interventions for mental health concerns across age groups. Additionally, she regularly conducts Awareness and Training Workshops for students and teachers."
           />
-
           <Card
             member={Member2}
             name="Shruti Jajoo Jhanwar"
@@ -50,12 +49,7 @@ function OurTeam() {
             designation="Counsellor"
             headline="Manasi Brahme is a highly motivated Industrial Psychologist who is skilled and experienced in various fields.Her experience in the HR field of different organisations deepened her understanding of human behaviour. "
             description="Ms Brahme worked in almost every branch of the HR industry, which is why her contributions towards employee development in an organisation are exceptional. Her expertise in Psychometry, public speaking and leadership, polished her career through the years. Ms Brahme worked with NGOs as a Psychology Volunteer and constructed questionnaires and data analysis sheets. Her certification and proficiency in German make her commendable in language training. Ms Brahme is a dedicated worker. She is always willing to work her fullest to make the organisation better for employees."
-          />
-        </div>
-
-        <h2 className="secondary-heading">Board of Therapists</h2>
-
-        <div className="members-container">
+          />{" "}
           <Card
             member={BOT1}
             name="Japneet Anand"

@@ -1,8 +1,8 @@
 import React from "react";
 import OurWorkC from "./OurWorkC.css";
-import Campaigns from "./Campaigns.jpg";
-import Internships from "./Internships.png";
-import Webinars from "./Webinars.jpg";
+import Campaigns from "./campaign.svg";
+import Internships from "./internship.svg";
+import Webinars from "./webinar.svg";
 
 import { Link } from "react-router-dom";
 
