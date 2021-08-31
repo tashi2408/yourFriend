@@ -17,8 +17,8 @@
 }
 .blogmaincss section {
   padding: 70px 0;
-  margin-top: 0x;
-  background: rgba(116, 185, 255, 0.09);
+  margin-top: 0;
+  background: rgba(var(--primary-color), 0.09);
   text-align: center;
 }
 .container {
@@ -39,8 +39,9 @@
 .blogmaincss header h1 {
   margin: 0;
   font-size: 50px;
-  color: rgba(52, 73, 94, 1);
-  font-weight: 500;
+  color: var(--primary-color);
+  font-weight: 300;
+  text-transform: uppercase;
 }
 .singleBlog {
   position: relative;
@@ -66,11 +67,7 @@
   width: 100%;
   color: #fff;
   padding: 10px 5px;
-  background: linear-gradient(
-    45deg,
-    rgba(21, 82, 153, 1) 0%,
-    rgba(144, 192, 229, 0.4) 100%
-  );
+  background: var(--gradient-transparent);
   transition: all 0.5s;
 }
 .singleBlog:hover .blogContent {
@@ -103,7 +100,7 @@
   font-weight: 400;
 }
 .blogContent .btn:hover {
-  background: rgba(52, 152, 219, 1);
+  background: var(--primary-color);
   transition: all 0.5s;
   text-decoration: none;
 }
