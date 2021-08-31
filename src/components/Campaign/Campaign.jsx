@@ -4,7 +4,11 @@ import Slide2 from "./Images/Slide2.jpg";
 import Slide3 from "./Images/Slide3.jpg";
 import Nav from "../Navbar/Nav.js";
 import Footer from "../footer/Footer.js";
-import { Carousel, Item, Caption } from "react-bootstrap";
+
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from "react-responsive-carousel";
+
+// import { Carousel, Item, Caption } from "react-bootstrap";
 import "./Campaign.css";
 
 function Campaign() {
@@ -42,28 +46,24 @@ function Campaign() {
       </div>
 
       <div className="campaign-carousel">
-        <Carousel>
-          <Carousel.Item>
-            <img
-              className="d-block w-100 carousel-image"
-              src={Slide1}
-              alt="First slide"
-            />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100 carousel-image"
-              src={Slide2}
-              alt="Second slide"
-            />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100 carousel-image"
-              src={Slide3}
-              alt="Third slide"
-            />
-          </Carousel.Item>
+        <Carousel
+          infiniteLoop={true}
+          autoFocus={true}
+          autoPlay={true}
+          interval={2000}
+        >
+          <div>
+            <img src={Slide1} className="carousel-image" />
+            {/* <p className="legend">Legend 1</p> */}
+          </div>
+          <div>
+            <img src={Slide2} className="carousel-image" />
+            {/* <p className="legend">Legend 2</p> */}
+          </div>
+          <div>
+            <img src={Slide3} className="carousel-image" />
+            {/* <p className="legend">Legend 3</p> */}
+          </div>
         </Carousel>
       </div>
 

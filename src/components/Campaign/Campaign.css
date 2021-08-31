@@ -2,7 +2,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 50px;
+
+  max-width: 1200px;
+  margin: 50px auto;
 }
 .campaign-image {
   flex-basis: 200%;
@@ -23,12 +25,10 @@
 }
 
 .campaign-carousel {
-  margin-top: 50px;
-  margin-bottom: 50px;
-  margin-left: 100px;
-  margin-right: 100px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .carousel-image {
-  height: 550px;
+  height: 100%;
 }
