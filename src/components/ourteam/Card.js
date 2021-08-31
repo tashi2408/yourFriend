@@ -1,6 +1,4 @@
-import React, { useEffect } from "react";
-
-import Member from "./user-2.jpg";
+import React from "react";
 
 import {
   FaFacebookF,
@@ -9,19 +7,7 @@ import {
   FaTwitter,
 } from "react-icons/fa";
 
-import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
-import { useAnimation } from "framer-motion";
-
 import "./our.css";
-
-const Memberitem = {
-  hidden: { y: 20, opacity: 0 },
-  visible: {
-    y: 0,
-    opacity: 1,
-  },
-};
 
 export default function Card({
   member,
@@ -30,23 +16,9 @@ export default function Card({
   headline,
   description,
 }) {
-  //   const { ref, inView } = useInView();
-  //   const animation = useAnimation();
-
-  //   useEffect(() => {
-  //     if (inView) {
-  //       animation.start("Memberitem.visible");
-  //       console.log("in view");
-  //     }
-
-  //     if (!inView) {
-  //       animation.start("Memberitem.hidden");
-  //       console.log("not in view");
-  //     }
-  //   }, [animation, inView]);
   return (
     <>
-      <motion.div className="card Memberitem" variants={Memberitem}>
+      <div className="card Memberitem">
         <div className="card-front">
           <img src={member} alt="team-member-photo" />
           <div className="member-content">
@@ -91,7 +63,7 @@ export default function Card({
             </li>
           </ul>
         </div>
-      </motion.div>
+      </div>
     </>
   );
 }
