@@ -1,0 +1,61 @@
+.about-info-page {
+  background: var(--gradient);
+  color: var(--primary-color);
+}
+
+.about-section-page {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-intro-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 50px;
+  margin: 50px 0;
+}
+
+.about-intro-left img {
+  max-width: 100%;
+}
+
+.about-intro-section h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.about-intro-section p {
+  line-height: 20px;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+}
+
+.about-services h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.about-services-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.about-services-section div {
+  background-color: var(--primary-color);
+
+  padding: 4vh;
+  font-size: 25px;
+  color: var(--dark);
+  border: 2px solid var(--secondary-color);
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.about-services-section:not(:last-child) {
+}
