@@ -54,13 +54,6 @@ export default function Card({
                 </i>
               </a>
             </li>
-            <li>
-              <a>
-                <i>
-                  <FaTwitter />
-                </i>
-              </a>
-            </li>
           </ul>
         </div>
       </div>
