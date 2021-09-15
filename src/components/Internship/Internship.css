@@ -1,8 +1,16 @@
+.internships-page {
+  background: var(--gradient);
+}
+
 .head-div {
-  height: 500px;
-  margin-bottom: 50px;
+  height: 60vh;
+  background-image: url(./head2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .intern-main-para {
-  margin-bottom: 50px;
+  font-size: 16px;
+  line-height: 30px;
+  margin-bottom: 20px;
 }

@@ -8,13 +8,11 @@ import Headimage from "./head2.jpg";
 
 function Internship() {
   return (
-    <div>
-      <div className="pagenavcss">
-        <Nav />
-      </div>
+    <div className="internships-page">
+      <div className="pagenavcss"></div>
 
-      <div>
-        <img className="head-div" src={Headimage}></img>
+      <div className="head-div">
+        <Nav />
       </div>
 
       <div className="campaign-head">
@@ -31,11 +29,21 @@ function Internship() {
           get hands-on experience by getting a chance to work under
           professionals directly helping them in their career development.
         </h5>
-        <Button>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSezaoNfRDVFprPw74aE16rZWTALnuExsl7jmraHPwqrvePZRg/viewform">
-            Apply For Internship
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            paddingTop: "5px",
+          }}
+        >
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSezaoNfRDVFprPw74aE16rZWTALnuExsl7jmraHPwqrvePZRg/viewform"
+            className="button pulse"
+          >
+            Apply for Internship
           </a>
-        </Button>
+        </div>
       </div>
 
       <Footer />
