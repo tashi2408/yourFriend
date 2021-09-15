@@ -17,20 +17,21 @@
 
 .about-intro-left img {
   max-width: 100%;
+  border-radius: 15px;
 }
 
 .about-intro-section h1 {
   font-size: 50px;
-  margin-bottom: 20px;
+  margin: 12px 0;
   font-weight: 300;
   text-transform: uppercase;
 }
 
 .about-intro-section p {
-  line-height: 20px;
+  line-height: 22px;
   font-size: 20px;
   color: white;
-  text-align: center;
+  text-align: justify;
 }
 
 .about-services h1 {
@@ -55,6 +56,8 @@
   border: 2px solid var(--secondary-color);
   margin-right: 20px;
   margin-bottom: 20px;
+  border-radius: 15px;
+  text-align: center;
 }
 
 .about-services-section:not(:last-child) {

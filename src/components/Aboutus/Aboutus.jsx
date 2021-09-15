@@ -1,8 +1,8 @@
 import React from "react";
 import Nav from "../Navbar/Nav.js";
 import Footer from "../footer/Footer.js";
-import four from "./four.jpg";
-import one from "./one.jpg";
+import four from "./about2.jpg";
+import one from "./about.svg";
 
 import "./about.css";
 
