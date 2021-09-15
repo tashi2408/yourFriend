@@ -4,13 +4,7 @@
 }
 
 .ourteam-header {
-  background-image: linear-gradient(
-      to bottom right,
-      hsla(12, 100%, 82%, 0.2) 25%,
-      hsla(358, 60%, 75%, 0.2) 55%,
-      hsla(348, 25%, 61%, 0.2) 83%
-    ),
-    url("./team-bg-yf.jpg");
+  background-image: url("./team.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;

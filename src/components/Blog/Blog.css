@@ -33,7 +33,7 @@
   margin: 30px 15px 0px 15px;
 }
 .blogmaincss header {
-  width: 70%;
+  width: 100%;
   margin: 0 auto;
 }
 .blogmaincss header h1 {
@@ -109,11 +109,10 @@
 }
 .blogbuttoncss {
   margin-top: 50px;
-  background: rgba(52, 73, 94, 1);
+  background: rgba(var(--primary-color), 0.09);
   padding: 15px 25px 15px 25px;
   border-radius: 10px;
   color: white;
-  font-family: "Montserrat", sans-serif;
   font-size: 15px;
   font-weight: bold;
   box-sizing: border-box;
@@ -121,7 +120,6 @@
   margin-bottom: 20px;
 }
 .blogbuttoncss:hover {
-  background-color: orangered;
   cursor: pointer;
 }
 
