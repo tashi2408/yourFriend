@@ -6,13 +6,13 @@ import "./Webinar.css";
 
 function Webinar() {
   return (
-    <div>
+    <div className="webinar-page">
       <div className="pagenavcss">
         <Nav />
       </div>
 
-      <div className="webinar-head">
-        <h1>Webinar</h1>
+      <div>
+        <h1 className="webinar-head">Webinar</h1>
       </div>
 
       <div className="webinar-container">
