@@ -13,13 +13,13 @@ import "./Campaign.css";
 
 function Campaign() {
   return (
-    <div>
+    <div className="campaigns-page">
       <div className="pagenavcss">
         <Nav />
       </div>
 
-      <div className="campaign-head">
-        <h1>Campaigns</h1>
+      <div>
+        <h1 className="campaign-head">Campaigns</h1>
       </div>
 
       <div className="campaign-container">
