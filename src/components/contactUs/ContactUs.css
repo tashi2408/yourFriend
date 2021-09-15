@@ -15,10 +15,22 @@
   display: flex;
 }
 
+.contact-divider {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact-left img {
+  max-width: 100%;
+}
+
 .row {
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   /* padding: 60px 30px; */
   position: relative;
   z-index: 1;
@@ -192,5 +204,28 @@
 @media only screen and (max-width: 500px) {
   .clean-slide {
     width: 320px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .contact-left {
+    display: none;
+  }
+  .contact-left img {
+    display: none;
+  }
+
+  .contact-divider {
+    display: block;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    /* padding: 60px 30px; */
+    position: relative;
+    z-index: 1;
+    text-align: center;
   }
 }
