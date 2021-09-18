@@ -1,29 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&display=swap");
 
 :root {
-  /* --primary-color: #cbc0d3;
-  --secondary-color: #dee2ff;
-  --dark: #8e9aaf;
-  --tertiary: #efd3d7;
-  --light: #feeafa;
-  --gradient: linear-gradient(
-    90deg,
-    hsla(351, 47%, 88%, 1) 22%,
-    hsla(312, 91%, 96%, 1) 53%,
-    hsla(233, 100%, 94%, 1) 97%
-  ); */
-
-  /* --primary-color: #ff9f1c;
-  --secondary-color: #2ec4b6;
-  --dark: #ffbf69;
-  --white: #fff;
-  --light: #cbf3f0;
-  --gradient: linear-gradient(
-    90deg,
-    hsla(34, 100%, 71%, 1) 25%,
-    hsla(176, 62%, 87%, 1) 75%
-  ); */
-
   --primary-color: #6d6875;
   --secondary-color: #b5838d;
   --dark: #e5989b;
@@ -112,18 +89,6 @@ body::-webkit-scrollbar-thumb {
 .secondary-para {
   font-size: 15px;
   line-height: 20px;
-}
-
-.color-w {
-  color: #fff;
-}
-
-.color {
-  color: #393a98;
-}
-
-.color-o {
-  color: #f05b36;
 }
 
 /*********************************************************************************************************************/

@@ -62,15 +62,7 @@ function Nav() {
               Our Team
             </Link>
           </li>
-          {/* <li className="nav-itemcss">
-            <Link
-              to="/self-test"
-              className="nav-linkscss"
-              onClick={closeMobileMenu}
-            >
-              Self test
-            </Link>
-          </li> */}
+
           <li
             className="nav-itemcss"
             onMouseEnter={onMouseEnter}
