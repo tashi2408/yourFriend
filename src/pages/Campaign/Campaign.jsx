@@ -1,14 +1,13 @@
 import React from "react";
-import Slide1 from "./Images/Slide1.png";
-import Slide2 from "./Images/Slide2.jpg";
-import Slide3 from "./Images/Slide3.jpg";
+import Slide1 from "../../assets/campaign/Slide1.png";
+import Slide2 from "../../assets/campaign/Slide2.jpg";
+import Slide3 from "../../assets/campaign/Slide3.jpg";
 import Nav from "../../components/Navbar/Nav.js";
 import Footer from "../../components/footer/Footer.js";
 
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 
-// import { Carousel, Item, Caption } from "react-bootstrap";
 import "./Campaign.css";
 
 function Campaign() {
