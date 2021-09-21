@@ -1,9 +1,9 @@
 import React from "react";
 import "./Blog.css";
-import f1 from "./Images/f1.jpg";
-import s from "./Images/s.jpg";
-import t from "./Images/t.jpg";
-import one from "./Images/one.jpg";
+import one from "../../../assets/blog/one.jpg";
+import two from "../../../assets/blog/two.jpg";
+import three from "../../../assets/blog/three.jpg";
+import four from "../../../assets/blog/four.jpg";
 
 function Blog() {
   return (
@@ -19,7 +19,7 @@ function Blog() {
 
         <main>
           <div class="singleBlog">
-            <img src={f1} alt=""></img>
+            <img src={one} alt=""></img>
             <div class="blogContent">
               <h3>
                 Psychological Impact of The life during Covid-19
@@ -34,7 +34,7 @@ function Blog() {
             </div>
           </div>
           <div class="singleBlog">
-            <img src={s} alt=""></img>
+            <img src={two} alt=""></img>
             <div class="blogContent">
               <h3>
                 Choose therapy over pain & Overcome fear <span>Article</span>
@@ -48,7 +48,7 @@ function Blog() {
             </div>
           </div>
           <div class="singleBlog">
-            <img src={t} alt=""></img>
+            <img src={three} alt=""></img>
             <div class="blogContent">
               <h3>
                 Counselors never tell you what to do,They help guide you{" "}
@@ -64,7 +64,7 @@ function Blog() {
             </div>
           </div>
           <div class="singleBlog">
-            <img src={one} alt=""></img>
+            <img src={four} alt=""></img>
             <div class="blogContent">
               <h3>
                 Support them and be there for them through ther worst time
