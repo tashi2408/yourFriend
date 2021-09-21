@@ -1,6 +1,6 @@
 import React from "react";
-import Nav from "../Navbar/Nav.js";
-import Footer from "../footer/Footer.js";
+import Nav from "../../components/Navbar/Nav.js";
+import Footer from "../../components/footer/Footer.js";
 import WebinarImage from "./Images/webinar.jpeg";
 import "./Webinar.css";
 
