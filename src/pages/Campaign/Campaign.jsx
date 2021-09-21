@@ -2,8 +2,8 @@ import React from "react";
 import Slide1 from "./Images/Slide1.png";
 import Slide2 from "./Images/Slide2.jpg";
 import Slide3 from "./Images/Slide3.jpg";
-import Nav from "../Navbar/Nav.js";
-import Footer from "../footer/Footer.js";
+import Nav from "../../components/Navbar/Nav.js";
+import Footer from "../../components/footer/Footer.js";
 
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
