@@ -1,6 +1,6 @@
 import React from "react";
-import Footer from "../../../components/footer/Footer";
-import Nav from "../../../components/Navbar/Nav";
+import Footer from "../../components/footer/Footer";
+import Nav from "../../components/Navbar/Nav";
 
 import Member from "../../../assets/teamMembers/y1.jpeg";
 import Member2 from "../../../assets/teamMembers/y2.jpeg";
@@ -9,7 +9,7 @@ import Member3 from "../../../assets/teamMembers/y3.jpeg";
 import BOT1 from "../../../assets/teamMembers/BOT1.jpeg";
 import BOT2 from "../../../assets/teamMembers/BOT2.jpeg";
 
-import Card from "../Card";
+import Card from "./Card";
 
 function OurTeam() {
   return (
