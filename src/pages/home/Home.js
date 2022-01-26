@@ -1,5 +1,11 @@
 import React from "react";
 
+import "./home.css";
+
 export default function Home() {
-  return <div>Heloo World</div>;
+  return (
+    <>
+      <h1>HOME</h1>
+    </>
+  );
 }
