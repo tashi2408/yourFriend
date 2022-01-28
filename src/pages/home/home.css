@@ -28,6 +28,7 @@ nav {
     backdrop-filter: blur(8px);
     background-color: #ffb4a275;
     font-size: 18px;
+    z-index: 3000;
 }
 
 nav .wrapper {
