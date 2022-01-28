@@ -10,7 +10,7 @@ a {
 }
 
 header {
-    height: 700vh;
+    height: 100vh;
     background: var(--gradient);
 }
 
