@@ -1,5 +1,6 @@
 import "./home.css";
 import Logo from "./logo.png";
+
 export default function Home() {
   return (
     <>
@@ -34,13 +35,15 @@ export default function Home() {
         </nav>
         <div className="content">
           <div className="wrapper">
+            <div class="left">
             <h1>Your Friend</h1>
-            <p>A Mental Health Initiative by Youth India Foundation</p>
+            <p>A Mental Health Initiative by <br/> <span className="yif">Youth India Foundation</span></p>
             <div className="btn-group">
               <a href="/#" className="btn">Join us</a>
               <a href="/#" className="btn">
                 Book a Session
               </a>
+            </div>
             </div>
           </div>
         </div>
