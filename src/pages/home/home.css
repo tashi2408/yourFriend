@@ -1,3 +1,6 @@
+:root {
+    --black: #212121;
+}
 a {
     color: currentColor;
     text-decoration: none;
@@ -49,10 +52,15 @@ nav ul {
 
 .links {
     font-weight: 600;
+    color: var(--black);
 }
 
 .linkItem {
     position: relative;
+}
+
+.linkItem:hover {
+    color: var(--primary-color);
 }
 
 .linkItem::after {
@@ -63,7 +71,7 @@ nav ul {
     bottom: -5px;
     width: 0%;
     transition: 0.2s;
-    background-color: #212121;
+    background-color: var(--primary-color);
 }
 
 .linkItem:hover::after {
@@ -91,31 +99,17 @@ nav ul {
 .btn-group {
     display: flex;
     gap: 30px;
-    width: 40%;
+    width: 100%;
     align-items: center;
 }
 
 .content {
-    width: 100%;
     height: 100%;
-}
-
-.content h1 {
-    font-size: 96px;
-    font-weight: 700;
-    margin: 0;
-}
-
-.content p {
-    font-size: 48px;
-    margin: 0 0 60px 0;
-    width: 50%;
 }
 
 .content .wrapper {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    align-items: center;
     height: 100%;
 }
 
@@ -125,4 +119,47 @@ nav ul {
 
 .yif {
     font-weight: 700;
+    color: var(--black);
+}
+
+.left {
+    max-width: 700px;
+}
+
+.left h1 {
+    font-size: 96px;
+    font-weight: 700;
+    margin: 0;
+    color: var(--black);
+}
+
+.left p {
+    font-size: 48px;
+    margin: 0;
+    color: var(--primary-color);
+}
+
+.left .btn-group {
+    margin-top: 30px;
+}
+
+.right {
+    display: flex;
+    justify-content: flex-end;
+    width: 700px;
+}
+
+.right img {
+    height: 500px;
+    width: 500px;
+    animation: rotating 1s infinite alternate;
+}
+
+@keyframes rotating {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-10deg);
+    }
 }

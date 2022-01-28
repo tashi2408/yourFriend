@@ -1,5 +1,6 @@
 import "./home.css";
 import Logo from "./logo.png";
+import Brain from "../../assets/brain.svg"
 
 export default function Home() {
   return (
@@ -19,7 +20,7 @@ export default function Home() {
                 <a href="/#">About</a>
               </li>
               <li className="linkItem">
-                <a href="/#">Join</a>
+                <a href="/#">Team</a>
               </li>
               <li className="linkItem">
                 <a href="/#">Events</a>
@@ -28,7 +29,7 @@ export default function Home() {
                 <a href="/#">Chat</a>
               </li>
               <li className="btn">
-                <a href="/#">Login</a>
+                <a href="/#">Join Us</a>
               </li>
             </ul>
           </div>
@@ -36,14 +37,17 @@ export default function Home() {
         <div className="content">
           <div className="wrapper">
             <div class="left">
-            <h1>Your Friend</h1>
-            <p>A Mental Health Initiative by <br/> <span className="yif">Youth India Foundation</span></p>
-            <div className="btn-group">
-              <a href="/#" className="btn">Join us</a>
-              <a href="/#" className="btn">
-                Book a Session
-              </a>
+              <h1>Your Friend</h1>
+              <p>A Mental Health Initiative by <br/> <span className="yif">Youth India Foundation</span></p>
+              <div className="btn-group">
+                <a href="/#" className="btn">Join us</a>
+                <a href="/#" className="btn">
+                  Book a Session
+                </a>
+              </div>
             </div>
+            <div class="right">
+              <img src={Brain} alt="brain" draggable={false}/>
             </div>
           </div>
         </div>
