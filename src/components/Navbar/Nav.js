@@ -1,4 +1,5 @@
 import Logo from './Images/Title logo.png';
+import { Link } from 'react-router-dom';
 import './Nav.css';
 
 const Nav = () => {
@@ -6,28 +7,30 @@ const Nav = () => {
     <>
       <nav>
         <div className="wrapper">
-          <img
-            className="logo"
-            alt="your friend logo"
-            src={Logo}
-            height={70}
-            width={70}
-          />
+          <Link to="/" className="logo">
+            <img
+              className="logo"
+              alt="your friend logo"
+              src={Logo}
+              height={70}
+              width={70}
+            />
+          </Link>
           <ul className="links">
             <li className="linkItem">
-              <a href="/#">About</a>
+              <Link to="/about">About</Link>
             </li>
             <li className="linkItem">
-              <a href="/#">Team</a>
+              <Link to="/team">Team</Link>
             </li>
             <li className="linkItem">
-              <a href="/#">Events</a>
+              <Link to="/events">Events</Link>
             </li>
             <li className="linkItem">
-              <a href="/#">Chat</a>
+              <Link to="/chat">Chat</Link>
             </li>
             <li className="btn">
-              <a href="/#">Join Us</a>
+              <Link to="/join">Join Us</Link>
             </li>
           </ul>
         </div>

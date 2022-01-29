@@ -1,22 +1,19 @@
-import React from "react";
-import "./Blog.css";
-import one from "../../../assets/blog/one.jpg";
-import two from "../../../assets/blog/two.jpg";
-import three from "../../../assets/blog/three.jpg";
-import four from "../../../assets/blog/four.jpg";
+import React from 'react';
+import './Blog.css';
+import one from '../../../assets/blog/one.jpg';
+import two from '../../../assets/blog/two.jpg';
+import three from '../../../assets/blog/three.jpg';
+import four from '../../../assets/blog/four.jpg';
 
 function Blog() {
   return (
     <div className="blogmaincss">
       <div class="container">
-        <header>
-          <h1 className="primary-heading ">Latest on Your Friend Blog</h1>
-          {/* <p>
+        <h1 className="primary-heading ">Latest on Your Friend Blog</h1>
+        {/* <p>
             In this section we are providing the latest update,blog and
             informative article which may help so do check it out!
           </p> */}
-        </header>
-
         <main>
           <div class="singleBlog">
             <img src={one} alt=""></img>
@@ -51,11 +48,11 @@ function Blog() {
             <img src={three} alt=""></img>
             <div class="blogContent">
               <h3>
-                Counselors never tell you what to do,They help guide you{" "}
+                Counselors never tell you what to do,They help guide you{' '}
                 <span>Article</span>
               </h3>
               <p>
-                6 Ways to distinguish <a href="#">Counselling</a> |{" "}
+                6 Ways to distinguish <a href="#">Counselling</a> |{' '}
                 <a href="#">Homepage</a>
               </p>
               <a href="#" class="btn">
@@ -71,7 +68,7 @@ function Blog() {
                 <span>Article</span>
               </h3>
               <p>
-                5 Tips to Encouraged <a href="#">the loved ones</a> |{" "}
+                5 Tips to Encouraged <a href="#">the loved ones</a> |{' '}
                 <a href="#">Family and Friends</a>
               </p>
               <a href="#" class="btn">
@@ -82,10 +79,10 @@ function Blog() {
         </main>
         <div
           style={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            paddingTop: "10px",
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            paddingTop: '10px',
           }}
         >
           <a href="#" className="button pulse">

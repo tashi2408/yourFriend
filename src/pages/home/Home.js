@@ -1,5 +1,6 @@
 import './home.css';
 import Brain from '../../assets/brain.svg';
+import Handshake from '../../assets/handshake.svg';
 import Nav from '../../components/Navbar/Nav';
 import Overview from './overview/Overview';
 import Contact from './contactUs/ContactUs';
@@ -12,7 +13,6 @@ export default function Home() {
   return (
     <>
       <header>
-        <Nav />
         <div className="content">
           <div className="wrapper">
             <div class="left">
@@ -31,7 +31,7 @@ export default function Home() {
               </div>
             </div>
             <div class="right">
-              <img src={Brain} alt="brain" draggable={false} />
+              <img src={Handshake} alt="brain" draggable={false} />
             </div>
           </div>
         </div>
@@ -41,7 +41,6 @@ export default function Home() {
       <Timeline />
       <Blog />
       <Contact />
-      <Footer />
     </>
   );
 }

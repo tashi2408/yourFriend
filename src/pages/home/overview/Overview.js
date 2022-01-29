@@ -1,3 +1,5 @@
+import './OverviewC.css';
+
 const Overview = () => {
   return (
     <div className="overview">
