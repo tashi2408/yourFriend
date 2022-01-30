@@ -86,3 +86,9 @@ nav ul {
 .btn:active {
   box-shadow: none;
 }
+
+@media (max-width: 420px) {
+  nav .btn {
+    display: none;
+  }
+}

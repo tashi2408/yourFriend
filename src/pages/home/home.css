@@ -2,7 +2,6 @@
   --black: #212121;
 }
 
-
 header {
   height: 80vh;
   background: var(--gradient);
@@ -35,6 +34,7 @@ header {
 
 .content {
   height: 100%;
+  padding: 16px
 }
 
 .content .wrapper {
@@ -92,4 +92,33 @@ header {
   to {
     transform: rotate(-10deg);
   }
+}
+
+@media (max-width: 420px) {
+  .right {
+    display: none;
+  }
+
+  .left {
+    text-align: center;
+  }
+
+  .left h1 {
+    font-size: 48px;
+  }
+  .left p {
+    font-size: 24px;
+  }
+  .content .wrapper {
+    justify-content: center;
+  }
+  .btn-group {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .left .btn {
+    width: 100%;
+  }
+
+
 }
