@@ -11,7 +11,7 @@ function App() {
       <Switch>
         <Route path={'/'} component={Home} exact />
         <Route path={'/test'} component={TestComp} />
-        <Route path={'/blog/:slug'} component={Blog} />
+        <Route path={'/blog/:id'} component={Blog} />
         <Route component={NotFound} />
       </Switch>
       <Footer />

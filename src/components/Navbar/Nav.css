@@ -7,12 +7,6 @@ a {
   text-decoration: none;
 }
 
-.wrapper {
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 10px;
-}
-
 nav {
   height: 80px;
   width: 100%;
