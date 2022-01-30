@@ -21,7 +21,10 @@ function App() {
 
 const TestComp = () => <h1>Test Component</h1>;
 const NotFound = () => (
-  <h1 style={{ margin: '50vh 0', textAlign: 'center' }}>404 | Not Found</h1>
+  <div style={{height: "calc(100vh - 146px)", display: 'flex', flexFlow:"column wrap", justifyContent: "center" , alignItems:'center'}}>
+    <img src="//placekitten.com/g/600/400" alt="Not Found" />
+  <h1 >404 | Not Found</h1>
+  </div>
 );
 
 export default App;

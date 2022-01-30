@@ -9,7 +9,9 @@ import Timeline from './timeline/Timeline';
 import Footer from '../../components/footer/Footer';
 import Reachout from './reachOut/segment';
 
-export default function Home() {
+import {Link} from "react-router-dom"
+
+const Home = () => {
   return (
     <>
       <header>
@@ -22,12 +24,12 @@ export default function Home() {
                 <span className="yif">Youth India Foundation</span>
               </p>
               <div className="btn-group">
-                <a href="/#" className="btn">
+              < Link to="/" className="btn">
                   Join us
-                </a>
-                <a href="/#" className="btn">
+                </Link>
+                <Link to="/" className="btn">
                   Book a Session
-                </a>
+                </Link>
               </div>
             </div>
             <div class="right">
@@ -44,3 +46,5 @@ export default function Home() {
     </>
   );
 }
+
+export default Home;

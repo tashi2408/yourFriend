@@ -4,11 +4,10 @@ import "./about.css";
 export default function About() {
   return (
     <div className="about-info-page">
-      <Nav />
       <div className="about-section-page">
         <div className="about-intro-section">
           <div className="about-intro-left">
-            <img src={four} alt="" />
+            <img src={""} alt="" />
           </div>
           <div className="about-intro-right">
             <h1>About Us</h1>
@@ -64,11 +63,10 @@ export default function About() {
             </p>
           </div>
           <div className="about-intro-left">
-            <img src={one} alt="" />
+            <img src={""} alt="" />
           </div>
         </div>
       </div>
-      <Footer />
     </div>
   );
 }
