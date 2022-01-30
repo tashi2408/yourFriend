@@ -52,13 +52,18 @@ const Blog = () => {
       image: "//placekitten.com/g/800/300"
     },
   ];
+  const Found = (Posts.find((post)=> post.id == id ));
+  const NotFound = `
+  # Sorry, We couldn't find that post
+  Check the sidebar to see the available posts.
+  `
     return (
       <>
     <div className='blog'>
       <div class="wrapper">
       <article>
-        <img src="//placekitten.com/g/800/300" alt="ok" draggable={false}/>
-        <ReactMarkdown children={(Posts.find((post)=> post.id == id )).markdown} remarkPlugins={[remarkGfm]} />
+        <img src={Found?Found.image:"//placekitten.com/g/800/300"} alt="ok" draggable={false}/>
+        <ReactMarkdown children={Found?Found.markdown:NotFound} remarkPlugins={[remarkGfm]} />
       </article>
       <aside>
         <h3>Read more</h3>
@@ -67,7 +72,7 @@ const Blog = () => {
           if (id == post.id) return null;
           return <Link to={`/blog/${post.id}`}>
             <li>
-              <img src="//placekitten.com/g/60/60" alt="no caption"/>
+              <img src="//placekitten.com/g/60/60" alt="no caption" draggable={false}/>
               <span class="title">{post.title}</span>
               </li>
           </Link>
