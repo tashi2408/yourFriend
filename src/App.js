@@ -9,6 +9,7 @@ import Team from './pages/Team/OurTeam';
 import About from './pages/Aboutus/About';
 import Internships from './pages/Internship/Internship';
 import Campaigns from './pages/Campaign/Campaign';
+import Webinars from './pages/Webinar/Webinar';
 
 function App() {
   return (
@@ -22,7 +23,7 @@ function App() {
         <Route path={'/about'} component={About} />
         <Route path={'/internships'} component={Internships} />
         <Route path={'/campaigns'} component={Campaigns} />
-        <Route path={'/webinars'} component={BlogHome} />
+        <Route path={'/webinars'} component={Webinars} />
         <Route path={'/blog/:id'} component={Post} />
         <Route component={NotFound} />
       </Switch>

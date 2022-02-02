@@ -1,15 +1,13 @@
 .webinar-page {
   background: var(--gradient);
-
-  margin: 0 auto;
-  color: white;
+  min-height: calc(100vh - 146px);
+  color: #fff;
+  padding: 120px;
 }
 
 .webinar-container {
   display: flex;
   align-items: center;
-  max-width: 1200px;
-  margin: 50px auto;
 }
 .webinar-image {
   max-width: 100%;
@@ -30,9 +28,9 @@
   color: var(--primary-color);
 }
 .webinar-actual-image {
-  height: 500px;
-  width: 700px;
   margin-left: 20px;
+  aspect-ratio: 9/16;
+  height: 600px;
 }
 
 .webinar-container-2 {
