@@ -1,3 +1,5 @@
+// Size for Images: 800x300
+
 const Posts = [
   {
     id: 1,
@@ -80,8 +82,6 @@ Psychology Graduate
 
 It is a basic need for humans to interact and maintain relationships with other people. Attachment refers to the emotional bond that exists between two people. It is essential to build nurturing attachments as they act as a foundation of a good life. It is what helps us survive, stay happy and achieve greatness.
 
-![](RackMultipart20220202-4-cx8jhs_html_5bd328ff80cc0722.jpg)
-
 Bowlby, the psychoanalyst who studied _Attachment_ stated that, the attachment a child forms will have a lasting effect on their psychological and emotional impact. His theory states that children form a lasting emotional bond with their primary caregivers as it is the child&#39;s first social interaction. The quality of this attachmentdetermines the nature of the individual&#39;s future relationships. When infants are given a proper caring and nurturing environment, they are likely to develop a secure attachment style. This in turn could be a factor of stable mental health as opposed to children who grow up abandoned, without a proper caregiver or a secure and nurturing environment. They develop a fearful-avoidant attachment style with low self-esteem and interpersonal trust and are more likely to have insecurities as they grow up with abandonment/ separation anxiety.
 
 The various attachment styles given by Bowlby were based on the degree of security an individual felt in interpersonal relationships. He stated that the styles develop based on the interactions between the infant and the caregiver and affects their level of self-esteem and interpersonal trust. With the conceptualization of these two dimensions, he proposed the different attachment styles–
@@ -90,8 +90,6 @@ The various attachment styles given by Bowlby were based on the degree of securi
 - Individuals who are low in both the dimensions are termed under **fearful-avoidant attachment style**. They refrain from forming close relationships or remain unhappy with their relationships.
 - The **preoccupied attachment style** is characterized by a low self-esteem and high interpersonal trust and easily form alliances but often consider themselves unworthy of it.
 - Individuals with high self esteem and low interpersonal trust fall under the category of **dismissing attachment style**. They believe they are worthy of the alliance but fail to trust or see the good in others and hence, hold back from forming a strong relationship.
-
-![](RackMultipart20220202-4-cx8jhs_html_afe05a782f170c61.jpg)
 
 An individual starts forming relations as a child and continue to do so throughout their life. The attachment style they experience is likely to be present throughout the individual&#39;s lifespan. It plays a major role in the formation of the individual&#39;s personality and how they react to different situations. For example, a child who is brought up in a secure attachment style is likely to be more successful compared to fearful avoidant, preoccupied or even a dismissing attachment style. They also mimic this behaviour of their parents which leads to healthy relationships. The attachment style determines the individual&#39;s self-confidence and their level of interpersonal trust. Unhealthy relationships can be harmful to the individual as it could lead to toxic behaviour, low self-esteem, insecurities, separation anxiety etc. A healthy relationship will ensure that the mental health of the individual is stable, as they feel supported, practice good communication, respect and trust each other. When an individual is unable to establish successful relationships, it often leads to loneliness and isolation.
 

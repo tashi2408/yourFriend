@@ -13,7 +13,7 @@ const Blog = () => {
   # Sorry, We couldn't find that post
   Check the sidebar to see the available posts.
   `;
-  const whatsappMessage = `Please visit our site ${window.location}`;
+  const whatsappMessage = `Checkout this post from Your Friend ${window.location}`;
   return (
     <>
       <div className="blog">
@@ -24,40 +24,42 @@ const Blog = () => {
               alt="ok"
               draggable={false}
             />
-            <ul class="social">
-              <li>
-                <span>Share this post: </span>
-              </li>
-              <li>
-                <span class="facebook">
-                  <BsFacebook
-                    cursor={'pointer'}
-                    color="royalblue"
-                    size={30}
-                    onClick={() =>
-                      window.open(
-                        `https://www.facebook.com/sharer/sharer.php?u=${window.location}`,
-                        '_blank'
-                      )
-                    }
-                  />
-                </span>
-              </li>
-              <li>
-                <span class="whatsapp">
-                  <IoLogoWhatsapp
-                    color="green"
-                    size={30}
-                    cursor={'pointer'}
-                    onClick={() =>
-                      window.open(
-                        `https://api.whatsapp.com/send?text=${whatsappMessage}`
-                      )
-                    }
-                  />
-                </span>
-              </li>
-            </ul>
+            {Found && (
+              <ul class="social">
+                <li>
+                  <span>Share this post: </span>
+                </li>
+                <li>
+                  <span class="facebook">
+                    <BsFacebook
+                      cursor={'pointer'}
+                      color="royalblue"
+                      size={30}
+                      onClick={() =>
+                        window.open(
+                          `https://www.facebook.com/sharer/sharer.php?u=${window.location}`,
+                          '_blank'
+                        )
+                      }
+                    />
+                  </span>
+                </li>
+                <li>
+                  <span class="whatsapp">
+                    <IoLogoWhatsapp
+                      color="green"
+                      size={30}
+                      cursor={'pointer'}
+                      onClick={() =>
+                        window.open(
+                          `https://api.whatsapp.com/send?text=${whatsappMessage}`
+                        )
+                      }
+                    />
+                  </span>
+                </li>
+              </ul>
+            )}
             <ReactMarkdown
               children={Found ? Found.markdown : NotFound}
               remarkPlugins={[remarkGfm]}
