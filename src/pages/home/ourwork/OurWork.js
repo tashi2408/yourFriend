@@ -1,4 +1,4 @@
-import OurWorkC from './OurWorkC.css';
+import './OurWorkC.css';
 import Campaigns from './campaign.svg';
 import Internships from './internship.svg';
 import Webinars from './webinar.svg';
@@ -25,18 +25,18 @@ const OurWork = () => {
             solutions. Know more about our campaigns!
           </p>
           <button className="work-button">
-            <Link to="/campaign">
+            <Link to="/campaigns">
               <IoArrowRedoCircleSharp className="work-icon" />
             </Link>
           </button>
         </div>
         <div className="right-container">
-          <img className="work-image" src={Campaigns}></img>
+          <img className="work-image" src={Campaigns} alt="work" />
         </div>
       </div>
       <div className="ourwork-section highlight">
         <div className="right-container">
-          <img className="work-image" src={Internships}></img>
+          <img className="work-image" src={Internships} alt="work" />
         </div>
         <div className="left-container">
           <h2 className="secondary-heading">internships</h2>
@@ -51,7 +51,7 @@ const OurWork = () => {
             solutions. Know more about our campaigns!
           </p>
           <button className="work-button">
-            <Link to="/internship">
+            <Link to="/internships">
               <IoArrowRedoCircleSharp className="work-icon-w" />
             </Link>
           </button>
@@ -81,7 +81,7 @@ const OurWork = () => {
           </button>
         </div>
         <div className="right-container">
-          <img className="work-image" src={Webinars}></img>
+          <img className="work-image" src={Webinars} alt="work" />
         </div>
       </div>
     </div>
