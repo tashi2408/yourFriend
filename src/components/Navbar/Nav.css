@@ -100,7 +100,7 @@ nav ul {
   z-index: 4000;
   background: var(--purple);
   color: #fff;
-  padding: 10px;
+  padding: 15px 10px;
   border-radius: 12px;
   box-shadow: 4px 4px 6px 0 #21212130;
   transition: 0.2s all;
