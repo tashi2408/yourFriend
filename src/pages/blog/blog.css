@@ -18,6 +18,7 @@
   min-height: calc(100vh - 240px);
   flex: 1;
   font-size: 1rem;
+  max-width: 75%;
 }
 
 .blog article h1 {
@@ -79,6 +80,7 @@
   border-radius: 12px;
   height: 60px;
   width: 60px;
+  object-fit: cover;
 }
 
 .blog aside > img {

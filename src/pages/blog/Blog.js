@@ -73,7 +73,7 @@ const Blog = () => {
                     <Link to={`/blog/${post.id}`}>
                       <li>
                         <img
-                          src="//placekitten.com/g/60/60"
+                          src={post.image}
                           alt="no caption"
                           draggable={false}
                         />

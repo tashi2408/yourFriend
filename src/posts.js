@@ -1,54 +1,111 @@
+const Posts = [
+  {
+    id: 1,
+    title: 'Mental Health and Wellbeing',
+    markdown: `
+# Mental Health and Wellbeing
 
-  const Posts=  [
-    {
-      id: 1,
-      title: 'Sample Title 1',
-      markdown: `
-  # This is, A *Sample* Title 1
-  #### This is a __Sample__ SubTitle
-  This is a very nice Sample ~post~.
-  Sample Link: https://shivom.me
-      `,
-      image: '//placekitten.com/g/800/300',
-    },
+&quot;_The only journey is the journey within.&quot;_
+      
+A good mental health is more than just the absence of mental disorders. It is what enables us to live our life to the fullest.
+      
+According to the _World Health Organization_, mental health is a state of wellbeing in which a person is able to cope with the normal stresses of life, work productively, realize their potential and contribute to the community. Mental illness can interfere with the individual&#39;s ability to function effectively on a day to day basis and hence affect their quality of life. A strong sense of wellbeing increases good mental health and protects us from developing a mental illness.
 
-    {
-      id: 2,
-      title: 'Sample Title 2',
-      markdown: `
-  # This is, A *Sample* Title 2
-  #### This is a __Sample__ SubTitle
-  This is a very nice Sample ~post~.
-  Sample Link: https://shivom.me
-      `,
-      image: '//placekitten.com/g/800/300',
-    },
-    {
-      id: 3,
-      title: 'Sample Title 3',
-      markdown: `
-  # This is, A *Sample* Title 3
-  #### This is a __Sample__ SubTitle
-  This is a very nice Sample ~post~.
-  Sample Link: https://shivom.me
-      `,
-      image: '//placekitten.com/g/800/300',
-    },
-    {
-      id: 4,
-      title: 'Sample Title 4',
-      markdown: `
-  # This is, A *Sample* Title 4
-  ### This is a __Sample__ SubTitle
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt aut eius quas tenetur inventore ex dolores maiores pariatur, 
-  eos hic optio assumenda voluptatem dignissimos consequuntur et magni, tempore asperiores aspernatur. 
-  Perspiciatis eveniet error ut quas necessitatibus doloremque id officia dolorum! 
-  Ipsa voluptas necessitatibus provident numquam asperiores vel facilis accusamus aut deleniti 
-  ### This is a __Sample__ SubTitle
-  magni sunt velit saepe sequi repellendus sapiente, natus est. Iste, architecto, optio expedita, aspernatur neque sint cumque ipsam in nulla ipsum vel fugit. Vel nihil ipsa atque rerum numquam? Eius delectus, quidem cum, voluptatibus assumenda, atque quibusdam culpa incidunt omnis eligendi a eum magni distinctio velit! Dolores, labore accusantium itaque architecto consequatur magnam exercitationem ut ea necessitatibus quasi atque reprehenderit, deleniti optio. Maxime, esse. Magni quo recusandae est! Autem qui repellat, dolorem illo natus rerum possimus deleniti consequuntur similique ducimus maiores consectetur laboriosam earum officia! Nostrum, iure illum? Nisi ab laudantium dolorum id dolor culpa cumque repudiandae sequi nemo vitae dolorem error odit incidunt minima, distinctio repellendus in odio adipisci optio iusto iste est totam! Omnis obcaecati consectetur distinctio, dicta, autem dignissimos ex nemo itaque magnam officia maiores perspiciatis animi maxime harum voluptate facere possimus modi quia iure unde. Animi, voluptas. Nam veritatis facere consectetur totam voluptatem ut at odio a? Commodi repellendus adipisci quo eos, omnis minus placeat voluptatibus temporibus nostrum, reprehenderit asperiores odio odit blanditiis sed ratione. Nisi optio corporis molestiae molestias minima, ipsum quisquam repellendus rerum error esse! Labore eaque illum quas? Beatae molestiae exercitationem quia. Accusamus voluptatem quis laudantium delectus unde? Magnam pariatur debitis recusandae, dolores reprehenderit eaque nostrum possimus quae autem mollitia porro aperiam, nisi impedit maiores laboriosam inventore qui. Cum minima quis optio, porro animi reprehenderit suscipit consectetur tempore autem sed, neque illum at tempora quibusdam laudantium saepe accusantium, dicta mollitia? A, quas consequuntur ea deleniti esse, dicta facere culpa optio aspernatur officia veniam doloribus porro voluptatibus voluptate obcaecati corporis inventore omnis officiis, eligendi nam. Aspernatur provident sunt placeat distinctio soluta quod totam minima quia ut, sint aperiam laudantium eum corrupti esse ullam omnis. Sunt, vitae? Blanditiis libero at vero perspiciatis. Corrupti perferendis sit quam voluptatem sunt minus excepturi obcaecati modi qui dolor odit illo delectus cum possimus, incidunt fuga nulla repudiandae nobis quibusdam dolorem maiores voluptate blanditiis suscipit! Molestiae rem odit amet suscipit unde iste eum fugiat, temporibus alias magni provident veritatis ab ut laborum quas sunt adipisci repudiandae doloribus possimus est necessitatibus quam atque laudantium illum. Amet ab ipsa sunt, sint repellat doloribus recusandae enim impedit saepe accusamus delectus repudiandae velit, magni ducimus veniam molestias eveniet quibusdam porro. Obcaecati dolores nostrum, delectus atque excepturi illo alias sapiente tenetur harum earum commodi quibusdam, iusto fugit, voluptatum aperiam impedit veniam enim ratione deleniti aliquid. Velit, dicta dolore iure, officia earum rerum cumque sed aspernatur quo nulla eveniet pariatur autem nostrum architecto, debitis commodi ipsa ducimus minus? Rem nemo aliquid ut minima expedita consequatur libero similique repellendus aspernatur voluptatem perferendis atque excepturi magnam perspiciatis ullam adipisci, veniam deserunt et. Natus iure dolor dolorem sequi iusto quas illum sit, consequatur, adipisci iste eum laboriosam inventore enim minima sunt dicta saepe molestiae, et repellendus nisi. Ad ipsam ab eius commodi impedit repellat qui quidem temporibus tempore delectus vitae, aspernatur maxime quo eaque porro? Laboriosam harum nam tempore quasi unde sequi, eos ad. Voluptas corporis quidem quis ex aspernatur eveniet omnis soluta, sequi tenetur quibusdam exercitationem? Dolorum obcaecati quisquam sequi cumque consectetur beatae id natus, recusandae omnis dolorem nam iusto assumenda temporibus. Earum dolorem necessitatibus praesentium labore? Quidem, commodi at. Vitae laborum voluptatem quisquam iste velit sapiente reiciendis explicabo reprehenderit in eaque nesciunt sunt, id labore qui perspiciatis ut nobis quidem hic aliquam recusandae voluptas? Sint consequuntur veritatis eum consectetur repellendus ullam qui, eligendi amet, aspernatur maxime earum soluta enim esse atque optio inventore corrupti veniam! Corrupti at exercitationem hic impedit deserunt. Accusamus repellendus ad sunt a, voluptatem eaque nihil, tenetur minus animi magnam earum eius deleniti, non debitis iure accusantium molestias? A ad praesentium corporis explicabo esse, voluptatem iste omnis illo cum neque tempora eligendi distinctio sed natus nostrum rerum? Odio sapiente corrupti omnis labore reprehenderit pariatur ab illo quia consequuntur corporis, nesciunt quidem voluptatum voluptates aspernatur quo, temporibus alias exercitationem ut facilis nisi, adipisci rerum. Amet eum in fugiat nemo nam corporis nisi hic, similique odio facere placeat doloribus minima, rem neque eaque ut doloremque officia voluptatibus voluptas accusantium quasi sit. Voluptas fugit autem veniam modi, inventore ullam reprehenderit distinctio amet ipsa, porro esse quisquam ratione beatae commodi dolor consectetur tempora optio alias excepturi nulla deleniti cumque repellendus atque. Fugit expedita, veniam quod placeat, officia beatae iste unde aliquid voluptatem enim facere sed id molestias quae doloribus! Esse qui excepturi asperiores aperiam ipsam deleniti earum nihil! Aperiam voluptatibus ad voluptatem! Perspiciatis possimus consequatur dolorum fugiat odio temporibus, molestias velit maxime autem, harum minus facere accusamus eius voluptatibus tenetur expedita maiores perferendis. Iste cum consequuntur esse! Labore possimus libero, ad facilis reiciendis, dolorem enim tempora quod excepturi autem vel impedit! Ullam optio architecto magnam nostrum corporis veritatis ratione, sunt eligendi minima corrupti voluptatibus deserunt neque quod, minus laborum. Quidem atque vel nulla quaerat delectus necessitatibus nihil placeat inventore? Iusto id non recusandae suscipit culpa illo libero modi nemo aliquid ratione repellat, corporis rerum reprehenderit, iste hic impedit quaerat fugiat ipsum, veritatis pariatur. Officiis voluptas quos cumque mollitia adipisci suscipit obcaecati sunt explicabo vero, dignissimos alias consequatur inventore harum quia iste nesciunt nam placeat aperiam distinctio, praesentium iusto neque! Nesciunt incidunt tenetur repellat, alias consectetur quos explicabo illum dicta pariatur ex non perspiciatis corporis sit eligendi libero repellendus commodi nihil sequi ad optio. Unde nobis fugit sint laboriosam, quaerat odio enim cum? Earum vel necessitatibus temporibus esse non reprehenderit reiciendis, illo placeat dolore mollitia incidunt sit nostrum maiores doloremque expedita nisi vitae. Dolor inventore architecto libero ex accusamus cum qui fugit magni eaque earum quo, non assumenda quaerat quia eos distinctio saepe! Natus nam illum voluptates officia quam sapiente cumque. Voluptates, illo accusamus? Nihil aperiam earum sit, odio ipsum laborum perspiciatis, debitis magni officia deserunt impedit eaque rerum? Iste nemo, quaerat autem delectus odit quam eaque quisquam.
-      `,
-      image: '//placekitten.com/g/800/300',
-    },
-  ];
+The _Oxford English Dictionary_ defines Wellbeing as the state of being **comfortable** , **healthy** or **happy**. Wellbeing is a positive condition of flourishing that varies from individual to individual. It is when one feels good about themselves and functions accordingly. It refers to the balance between one&#39;s emotional state, cognitive functioning and physiology. It is only when all the components are in **sync** , the person is said to have a good wellbeing. It determines the way an individual behaves in their immediate environment, i.e.,
 
-  export default Posts;
+- the family,
+- the workplace and
+- the community.
+
+Individuals with a strong sense of wellbeing derive pleasure from their actions and live life to the fullest potential.
+
+Positive mental health can be divided into emotional, psychological and social wellbeing.
+
+1. **Emotional wellbeing** refers to experiencing positive emotions like joy, compassion, love and these individuals generally feel good about themselves. Positive emotions help in building good coping strategies and resilience.
+2. **Psychological wellbeing** means the individual has a sense of purpose and meaning in life, makes effective contributions in society and functions well.
+3. **Social wellbeing** is a feeling of belonging ![](RackMultipart20220202-4-nb75o9_html_2632f22388c82b22.jpg)
+  and connection to society.
+
+Wellbeing is fundamental to the overall health and defines the essence of our life. It helps us to improve our quality of life by learning to cope with everyday difficulties, building resilience and social support. We must pursue what gives meaning to our lives and genuinely makes us happy. We can do this by nurturing social relationships, contributing to society and exploring our strengths. It is about creating a life that is meaningful and fulfilling through our contributions and by building long-lasting supportive relationships.
+
+**Submitted by**
+
+Neha Vineesh
+
+Psychology Graduate
+      `,
+    image:
+      '//images.unsplash.com/photo-1611077094733-db54f4445a4e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=300&q=80',
+  },
+
+  {
+    id: 2,
+    title: 'Positive Psychology and Mental Health',
+    markdown: `
+# Positive Psychology and Mental Health
+
+&quot;_A joyful life is an individual creation that cannot be copied from a recipe.&quot;_
+
+Positive psychology is the scientific study of human flourishing and the strengths and virtues that enable individuals and communities to thrive. More often than not, a common misconception that exists is that positive psychology is just about happiness. Happiness is not only the emotion of feeling good, but it is about living a meaningful life by accepting our true self and the world around us.
+
+
+Positive Psychology offers a significant shift in perspective from abnormal behaviour to a focus on wellbeing, happiness, the pursuit of happiness and a meaningful life.
+
+**Martin Seligman** is best known for his contributions in Positive Psychology. He is identified as the _Father of Modern Positive Psychology_. He wanted mental health to be more than the absence of mental illness, he wanted to focus on individual factors like motivation, positive thinking, happiness and emotional resilience. He was influenced by thinkers like Carl Rogers and Abraham Maslow. Seligman created the _PERMA Model_ to explore optimal human happiness and functioning.
+
+The PERMA Model highlights the five core elements that promote happiness and wellbeing. They are:
+
+1. **Positive Emotion** : It is about feeling good and remaining optimistic. It does not mean that they never experience negative feelings, it means that they try to see the good in most situations. These individuals are said to be more forgiving and creative.
+2. **Engagement:** It is the act of engaging in an activity wholeheartedly. They find joy in being engrossed in an activity and do not realize time passing by as they are lost in a world of their own. It could be something as simple as reading a book or cooking which brings them satisfaction.
+3. **Relationships** : Man being a _social animal_ desires to be part of a social group and depend on other individuals to remain healthy. We need love, intimacy, attraction and interaction with other humans and being connected makes us thrive.
+4. **Meaning** : We all wonder, &quot;What is my purpose?&quot;, &quot;Why was I born?&quot;, &quot;What do I have to do make my life meaningful?&quot;. Finding the answers to these questions is what makes our life fulfilling. When you begin to understand why you do what you do, you will find joy in your actions.
+5. **Accomplishments** : When we are proud of our achievements, our self esteem and confidence also boosts. We inspire ourselves to be better by reaching our goals. We must make sure that the goals we set are realistic and put in the effort to attain it. Accomplishments not only satisfy us but also provide a sense of fulfilment and act as a motivational drive.
+
+This model can be integrated in your daily life and will take you one step closer to leading a more meaningful and fruitful life.
+
+**Submitted by**
+
+Neha Vineesh
+
+Psychology Graduate
+      `,
+    image:
+      'https://images.unsplash.com/photo-1600618528240-fb9fc964b853?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=300&q=80',
+  },
+  {
+    id: 3,
+    title: 'Attachment and Styles of Attachment',
+    markdown: `
+# Attachment and Styles of Attachment
+
+It is a basic need for humans to interact and maintain relationships with other people. Attachment refers to the emotional bond that exists between two people. It is essential to build nurturing attachments as they act as a foundation of a good life. It is what helps us survive, stay happy and achieve greatness.
+
+![](RackMultipart20220202-4-cx8jhs_html_5bd328ff80cc0722.jpg)
+
+Bowlby, the psychoanalyst who studied _Attachment_ stated that, the attachment a child forms will have a lasting effect on their psychological and emotional impact. His theory states that children form a lasting emotional bond with their primary caregivers as it is the child&#39;s first social interaction. The quality of this attachmentdetermines the nature of the individual&#39;s future relationships. When infants are given a proper caring and nurturing environment, they are likely to develop a secure attachment style. This in turn could be a factor of stable mental health as opposed to children who grow up abandoned, without a proper caregiver or a secure and nurturing environment. They develop a fearful-avoidant attachment style with low self-esteem and interpersonal trust and are more likely to have insecurities as they grow up with abandonment/ separation anxiety.
+
+The various attachment styles given by Bowlby were based on the degree of security an individual felt in interpersonal relationships. He stated that the styles develop based on the interactions between the infant and the caregiver and affects their level of self-esteem and interpersonal trust. With the conceptualization of these two dimensions, he proposed the different attachment styles–
+
+- A **secure attachment style** is characterized by high self-esteem and high interpersonal trust, it is considered to be the ideal attachment style. These individuals are able to form lasting and satisfying relationships.
+- Individuals who are low in both the dimensions are termed under **fearful-avoidant attachment style**. They refrain from forming close relationships or remain unhappy with their relationships.
+- The **preoccupied attachment style** is characterized by a low self-esteem and high interpersonal trust and easily form alliances but often consider themselves unworthy of it.
+- Individuals with high self esteem and low interpersonal trust fall under the category of **dismissing attachment style**. They believe they are worthy of the alliance but fail to trust or see the good in others and hence, hold back from forming a strong relationship.
+
+![](RackMultipart20220202-4-cx8jhs_html_afe05a782f170c61.jpg)
+
+An individual starts forming relations as a child and continue to do so throughout their life. The attachment style they experience is likely to be present throughout the individual&#39;s lifespan. It plays a major role in the formation of the individual&#39;s personality and how they react to different situations. For example, a child who is brought up in a secure attachment style is likely to be more successful compared to fearful avoidant, preoccupied or even a dismissing attachment style. They also mimic this behaviour of their parents which leads to healthy relationships. The attachment style determines the individual&#39;s self-confidence and their level of interpersonal trust. Unhealthy relationships can be harmful to the individual as it could lead to toxic behaviour, low self-esteem, insecurities, separation anxiety etc. A healthy relationship will ensure that the mental health of the individual is stable, as they feel supported, practice good communication, respect and trust each other. When an individual is unable to establish successful relationships, it often leads to loneliness and isolation.
+
+Abraham Maslow said, &quot;Human relationships and the need for belonginess is a necessity for humans&quot;. Hence, it is necessary to establish positive relationships with others as it corresponds with the quality of life we lead.
+
+**Submitted by**
+
+Neha Vineesh
+
+Psychology Graduate
+      `,
+    image:
+      '//images.unsplash.com/photo-1611641277344-9863d05647f4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=300&q=80',
+  },
+];
+
+export default Posts;

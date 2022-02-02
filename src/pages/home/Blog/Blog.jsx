@@ -8,7 +8,7 @@ const Blog = () => {
       <div class="wrapper">
         <h1 className="primary-heading ">Latest on Your Friend Blog</h1>
         <main>
-          {Posts.map((post) => (
+          {Posts.slice(0, 4).map((post) => (
             <div class="singleBlog" key={post.id}>
               <img src={post.image} alt={post.title}></img>
               <div class="blogContent">
