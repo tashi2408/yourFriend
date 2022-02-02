@@ -1,15 +1,13 @@
 import './home.css';
-import Brain from '../../assets/brain.svg';
 import Handshake from '../../assets/handshake.svg';
-import Nav from '../../components/Navbar/Nav';
 import Overview from './overview/Overview';
 import Contact from './contactUs/ContactUs';
 import Blog from './Blog/Blog';
 import Timeline from './timeline/Timeline';
-import Footer from '../../components/footer/Footer';
 import Reachout from './reachOut/segment';
+import Ourwork from './ourwork/OurWork';
 
-import {Link} from "react-router-dom"
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
@@ -24,7 +22,7 @@ const Home = () => {
                 <span className="yif">Youth India Foundation</span>
               </p>
               <div className="btn-group">
-              < Link to="/" className="btn">
+                <Link to="/" className="btn">
                   Join us
                 </Link>
                 <Link to="/" className="btn">
@@ -40,11 +38,12 @@ const Home = () => {
       </header>
       <Overview />
       <Reachout />
+      <Ourwork />
       <Timeline />
       <Blog />
       <Contact />
     </>
   );
-}
+};
 
 export default Home;
