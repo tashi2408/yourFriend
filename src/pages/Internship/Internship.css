@@ -1,5 +1,6 @@
 .internships-page {
   background: var(--gradient);
+  min-height: calc(100vh - 146px);
 }
 
 .head-div {

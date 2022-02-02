@@ -4,7 +4,7 @@
 }
 
 .ourteam-header {
-  background-image: url("./team.jpg");
+  background-image: url('./team.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -57,8 +57,7 @@
 }
 
 .member-image {
-  /* border-radius: 50%; */
-  object-fit: fill;
+  object-fit: contain;
   height: 12rem;
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
@@ -118,7 +117,7 @@
   transform: scale(1);
   -ms-transform: scale(1);
   -webkit-transform: scale(1);
-  content: " ";
+  content: ' ';
   width: 45px;
   height: 45px;
   border-radius: 100%;

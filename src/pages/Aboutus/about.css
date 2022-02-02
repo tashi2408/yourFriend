@@ -1,6 +1,8 @@
 .about-info-page {
   background: var(--gradient);
   color: var(--primary-color);
+  min-height: calc(100vh - 146px);
+  padding-top: 120px;
 }
 
 .about-section-page {
@@ -13,6 +15,10 @@
   grid-template-columns: 1fr 1fr;
   column-gap: 50px;
   margin: 50px 0;
+}
+
+.about-intro-left {
+  align-self: center;
 }
 
 .about-intro-left img {

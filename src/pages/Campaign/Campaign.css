@@ -1,5 +1,6 @@
 .campaigns-page {
   background: var(--gradient);
+  padding-top: 120px;
 }
 .campaign-container {
   display: flex;
@@ -34,5 +35,5 @@
 }
 
 .carousel-image {
-  height: 50%;
+  height: 100%;
 }

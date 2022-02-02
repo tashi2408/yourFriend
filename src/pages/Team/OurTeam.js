@@ -1,21 +1,16 @@
-import React from "react";
-import Footer from "../../components/footer/Footer";
-import Nav from "../../components/Navbar/Nav";
+import Member from '../../assets/teamMembers/y1.jpeg';
+import Member2 from '../../assets/teamMembers/y2.jpeg';
+import Member3 from '../../assets/teamMembers/y3.jpeg';
 
-import Member from "../../assets/teamMembers/y1.jpeg";
-import Member2 from "../../assets/teamMembers/y2.jpeg";
-import Member3 from "../../assets/teamMembers/y3.jpeg";
+import BOT1 from '../../assets/teamMembers/BOT1.jpeg';
+import BOT2 from '../../assets/teamMembers/BOT2.jpeg';
 
-import BOT1 from "../../assets/teamMembers/BOT1.jpeg";
-import BOT2 from "../../assets/teamMembers/BOT2.jpeg";
-
-import Card from "./Card";
+import Card from './Card';
 
 function OurTeam() {
   return (
     <div>
       <header className="ourteam-header">
-        <Nav />
         {/* <div className="heading-ourteam">Our team</div> */}
       </header>
       <div className="ourteam">
@@ -49,7 +44,7 @@ function OurTeam() {
             designation="Counsellor"
             headline="Manasi Brahme is a highly motivated Industrial Psychologist who is skilled and experienced in various fields.Her experience in the HR field of different organisations deepened her understanding of human behaviour. "
             description="Ms Brahme worked in almost every branch of the HR industry, which is why her contributions towards employee development in an organisation are exceptional. Her expertise in Psychometry, public speaking and leadership, polished her career through the years. Ms Brahme worked with NGOs as a Psychology Volunteer and constructed questionnaires and data analysis sheets. Her certification and proficiency in German make her commendable in language training. Ms Brahme is a dedicated worker. She is always willing to work her fullest to make the organisation better for employees."
-          />{" "}
+          />{' '}
           <Card
             member={BOT1}
             name="Japneet Anand"
@@ -59,7 +54,6 @@ function OurTeam() {
           />
         </div>
       </div>
-      <Footer />
     </div>
   );
 }

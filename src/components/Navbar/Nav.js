@@ -24,7 +24,21 @@ const Nav = () => {
               <Link to="/team">Team</Link>
             </li>
             <li className="linkItem">
-              <Link to="/events">Events</Link>
+              <Link to="/blog">Blog</Link>
+            </li>
+            <li className="linkItem">
+              <Link>Events</Link>
+              <ul class="dropdown">
+                <li>
+                  <Link to="/internships">Internships</Link>
+                </li>
+                <li>
+                  <Link to="/campaigns">Campaigns</Link>
+                </li>
+                <li>
+                  <Link to="/webinars">Webinars</Link>
+                </li>
+              </ul>
             </li>
             <li className="linkItem">
               <Link to="/chat">Chat</Link>

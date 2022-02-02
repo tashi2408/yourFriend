@@ -12,7 +12,6 @@ nav {
   width: 100%;
   position: fixed;
   top: 0;
-  overflow: hidden;
   padding: 16px;
   -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
@@ -91,4 +90,34 @@ nav ul {
   nav .btn {
     display: none;
   }
+}
+
+.dropdown {
+  flex-direction: column;
+  gap: 15px;
+  position: absolute;
+  top: 32px;
+  z-index: 4000;
+  background: var(--purple);
+  color: #fff;
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: 4px 4px 6px 0 #21212130;
+  transition: 0.2s all;
+  transition-delay: 0.2s;
+  display: flex;
+  opacity: 0;
+  visibility: hidden;
+}
+.linkItem:hover > .dropdown {
+  visibility: visible;
+  opacity: 1;
+}
+.dropdown li {
+  padding: 5px 10px;
+  transition: 0.2s all;
+  border-radius: 12px;
+}
+.dropdown li:hover {
+  background: var(--dark);
 }

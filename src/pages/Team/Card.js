@@ -1,13 +1,11 @@
-import React from "react";
-
 import {
   FaFacebookF,
   FaInstagram,
   FaLinkedinIn,
   FaTwitter,
-} from "react-icons/fa";
+} from 'react-icons/fa';
 
-import "./our.css";
+import './our.css';
 
 export default function Card({
   member,
@@ -20,7 +18,7 @@ export default function Card({
     <>
       <div className="card Memberitem">
         <div className="card-front">
-          <img src={member} alt="team-member-photo" />
+          <img className="member-image" src={member} alt="team-member" />
           <div className="member-content">
             <h1 className="member-name">{name}</h1>
             <h2 className="member-designation">{designation}</h2>

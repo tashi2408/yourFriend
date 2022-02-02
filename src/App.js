@@ -5,6 +5,10 @@ import Footer from './components/footer/Footer';
 import Post from './pages/blog/Post';
 import BlogHome from './pages/blog/Home';
 import ScrollToTop from './util/scrollToTop';
+import Team from './pages/Team/OurTeam';
+import About from './pages/Aboutus/About';
+import Internships from './pages/Internship/Internship';
+import Campaigns from './pages/Campaign/Campaign';
 
 function App() {
   return (
@@ -13,8 +17,12 @@ function App() {
       <Nav />
       <Switch>
         <Route path={'/'} component={Home} exact />
-        <Route path={'/test'} component={TestComp} />
         <Route path={'/blog'} component={BlogHome} exact />
+        <Route path={'/team'} component={Team} />
+        <Route path={'/about'} component={About} />
+        <Route path={'/internships'} component={Internships} />
+        <Route path={'/campaigns'} component={Campaigns} />
+        <Route path={'/webinars'} component={BlogHome} />
         <Route path={'/blog/:id'} component={Post} />
         <Route component={NotFound} />
       </Switch>
@@ -23,7 +31,6 @@ function App() {
   );
 }
 
-const TestComp = () => <h1>Test Component</h1>;
 const NotFound = () => (
   <div
     style={{

@@ -1,13 +1,17 @@
-import React from "react";
-import "./about.css";
+import './about.css';
 
 export default function About() {
   return (
     <div className="about-info-page">
-      <div className="about-section-page">
+      <div className="wrapper">
         <div className="about-intro-section">
           <div className="about-intro-left">
-            <img src={""} alt="" />
+            <img
+              src={
+                '//images.unsplash.com/photo-1611872687047-5e5cabc8e1bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=300&q=80'
+              }
+              alt=""
+            />
           </div>
           <div className="about-intro-right">
             <h1>About Us</h1>
@@ -21,7 +25,7 @@ export default function About() {
               you cannot talk to a friend or a family member. <br />
               Through our 24/7 chat service we provide help seekers with a
               confidential and judgement free space talk to someone.We also have
-              the option to schedule a vedio call for the person in need,with an
+              the option to schedule a video call for the person in need,with an
               experienced therapist,counsellor or RCI licensed therapist.
             </p>
           </div>
@@ -63,7 +67,12 @@ export default function About() {
             </p>
           </div>
           <div className="about-intro-left">
-            <img src={""} alt="" />
+            <img
+              src={
+                '//images.unsplash.com/photo-1579488081757-b212dbd6ee72?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=250&q=80'
+              }
+              alt=""
+            />
           </div>
         </div>
       </div>
