@@ -3,8 +3,9 @@
 }
 
 header {
-  height: 80vh;
+  min-height: 700px;
   background: var(--gradient);
+  padding-top: 80px;
 }
 
 .btn {
@@ -32,19 +33,13 @@ header {
   align-items: center;
 }
 
-.content {
-  height: 100%;
-  padding: 16px;
-}
-
-.content .wrapper {
+header .wrapper {
   display: flex;
   align-items: center;
-  height: 100%;
-  overflow: hidden;
+  min-height: inherit;
 }
 
-.content .btn:nth-child(2) {
+.header .btn:nth-child(2) {
   background-color: var(--primary-color);
 }
 
@@ -108,7 +103,7 @@ header {
   .left p {
     font-size: 24px;
   }
-  .content .wrapper {
+  header .wrapper {
     justify-content: center;
   }
   .btn-group {
