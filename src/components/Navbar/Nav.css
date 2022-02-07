@@ -15,9 +15,13 @@ nav {
   padding: 16px;
   -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
-  background-color: #ffb4a275;
   font-size: 18px;
   z-index: 3000;
+  transition: background 0.2s;
+}
+
+.colorBar {
+  background-color: #ffb4a275;
 }
 
 nav .wrapper {

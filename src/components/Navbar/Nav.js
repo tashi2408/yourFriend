@@ -1,8 +1,20 @@
 import Logo from './Images/Title logo.png';
 import { Link } from 'react-router-dom';
 import './Nav.css';
+import { useEffect } from 'react';
 
 const Nav = () => {
+  useEffect(() => {
+    window.onscroll = () => {
+      var currentScrollPos = window.pageYOffset;
+      if (currentScrollPos !== 0) {
+        document.querySelector('nav').classList.add('colorBar');
+      }
+      if (currentScrollPos === 0) {
+        document.querySelector('nav').classList.remove('colorBar');
+      }
+    };
+  }, []);
   return (
     <>
       <nav>
