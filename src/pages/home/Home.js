@@ -1,5 +1,6 @@
 import './home.css';
 import Handshake from '../../assets/handshake.svg';
+import Help from '../../assets/help.svg';
 import Overview from './overview/Overview';
 import Contact from './contactUs/ContactUs';
 import Blog from './Blog/Blog';
@@ -31,7 +32,7 @@ const Home = () => {
               </div>
             </div>
             <div class="right">
-              <img src={Handshake} alt="brain" draggable={false} />
+              <img src={Help} alt="brain" draggable={false} />
             </div>
           </div>
         </div>

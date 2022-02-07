@@ -34,13 +34,14 @@ header {
 
 .content {
   height: 100%;
-  padding: 16px
+  padding: 16px;
 }
 
 .content .wrapper {
   display: flex;
   align-items: center;
   height: 100%;
+  overflow: hidden;
 }
 
 .content .btn:nth-child(2) {
@@ -76,13 +77,11 @@ header {
 .right {
   display: flex;
   justify-content: flex-end;
-  width: 700px;
+  min-width: 60%;
 }
 
 .right img {
-  height: 500px;
-  width: 500px;
-  animation: rotating 1s infinite alternate;
+  width: 100%;
 }
 
 @keyframes rotating {
@@ -119,6 +118,4 @@ header {
   .left .btn {
     width: 100%;
   }
-
-
 }

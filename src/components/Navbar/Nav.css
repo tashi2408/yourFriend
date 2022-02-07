@@ -98,7 +98,7 @@ nav ul {
   position: absolute;
   top: 32px;
   z-index: 4000;
-  background: var(--purple);
+  background: #393b989c;
   color: #fff;
   padding: 15px 10px;
   border-radius: 12px;
