@@ -10,7 +10,7 @@
   flex-wrap: wrap;
   justify-content: flex-start;
   height: 100%;
-  gap: 20px;
+  gap: 40px;
   position: relative;
   padding-top: 100px;
 }
@@ -18,12 +18,17 @@
 .blog article {
   min-height: calc(100vh - 240px);
   flex: 1 1 65%;
-  font-size: 1rem;
+  font-size: 16px;
+  line-height: 26px;
 }
 
 .blog article h1 {
   font-weight: 900;
   font-size: 3rem;
+}
+
+.blog article p {
+  margin-bottom: 26px;
 }
 
 .blog article img {
