@@ -37,6 +37,7 @@ header .wrapper {
   display: flex;
   align-items: center;
   min-height: inherit;
+  flex-wrap: wrap;
 }
 
 .header .btn:nth-child(2) {
@@ -49,7 +50,7 @@ header .wrapper {
 }
 
 .left {
-  max-width: 700px;
+  flex: 1 1 40%;
 }
 
 .left h1 {
@@ -72,7 +73,7 @@ header .wrapper {
 .right {
   display: flex;
   justify-content: flex-end;
-  min-width: 60%;
+  flex: 1 1 60%;
 }
 
 .right img {

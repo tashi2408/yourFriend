@@ -13,15 +13,15 @@ nav {
   position: fixed;
   top: 0;
   padding: 16px;
-  -webkit-backdrop-filter: blur(8px);
-  backdrop-filter: blur(8px);
   font-size: 18px;
   z-index: 3000;
-  transition: background 0.2s;
+  transition: all 0.2s ease;
 }
 
 .colorBar {
   background-color: #ffb4a275;
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
 }
 
 nav .wrapper {
@@ -91,7 +91,7 @@ nav ul {
 }
 
 @media (max-width: 420px) {
-  nav .btn {
+  .links {
     display: none;
   }
 }
