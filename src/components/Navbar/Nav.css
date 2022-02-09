@@ -90,9 +90,16 @@ nav ul {
   box-shadow: none;
 }
 
+.hamburger {
+  display: none;
+}
+
 @media (max-width: 420px) {
   .links {
     display: none;
+  }
+  .hamburger {
+    display: block;
   }
 }
 

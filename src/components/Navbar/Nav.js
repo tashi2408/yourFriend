@@ -2,8 +2,9 @@ import Logo from './Images/Title logo.png';
 import { Link } from 'react-router-dom';
 import './Nav.css';
 import { useEffect } from 'react';
+import Hamburger from 'hamburger-react';
 
-const Nav = () => {
+const Nav = ({ toggleMobileNav }) => {
   useEffect(() => {
     window.onscroll = () => {
       var currentScrollPos = window.pageYOffset;
@@ -59,6 +60,9 @@ const Nav = () => {
               <Link to="/join">Join Us</Link>
             </li>
           </ul>
+          <span className="hamburger">
+            <Hamburger onToggle={toggleMobileNav} duration={0.3} />
+          </span>
         </div>
       </nav>
     </>
