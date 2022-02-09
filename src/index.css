@@ -141,6 +141,7 @@ body::-webkit-scrollbar-thumb {
   color: #fafafa;
   position: fixed;
   top: 80px;
+  z-index: 4000;
 }
 
 .off-nav .list a {

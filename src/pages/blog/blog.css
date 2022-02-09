@@ -7,18 +7,18 @@
 
 .blog .wrapper {
   display: flex;
-  gap: 20px;
+  flex-wrap: wrap;
   justify-content: flex-start;
   height: 100%;
+  gap: 20px;
   position: relative;
   padding-top: 100px;
 }
 
 .blog article {
   min-height: calc(100vh - 240px);
-  flex: 1;
+  flex: 1 1 65%;
   font-size: 1rem;
-  max-width: 75%;
 }
 
 .blog article h1 {
@@ -32,12 +32,12 @@
 }
 
 .blog aside {
-  width: 25%;
+  flex: 1 1 20%;
 }
 
 .blog aside .read-more {
   width: 100%;
-  min-height: 600px;
+  min-height: 400px;
   background: var(--purple);
   color: #fafafa;
   border-radius: 12px;

@@ -40,10 +40,6 @@ const OffCanvas = ({ isVisible }) => {
   if (!isVisible) return null;
   const LinksList = [
     {
-      name: 'Home',
-      ref: '/',
-    },
-    {
       name: 'About',
       ref: '/about',
     },
@@ -79,7 +75,7 @@ const OffCanvas = ({ isVisible }) => {
         <div class="list">
           {LinksList.map((link) => (
             <div>
-              <Link to={link.ref}>
+              <Link to={link.ref || undefined}>
                 <span>{link.name}</span>
               </Link>
               <div style={{ paddingLeft: 30 }}>

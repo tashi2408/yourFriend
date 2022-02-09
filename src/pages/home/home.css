@@ -45,7 +45,7 @@ header .wrapper {
 }
 
 .yif {
-  font-weight: 700;
+  font-weight: 600;
   color: var(--black);
 }
 
@@ -55,7 +55,7 @@ header .wrapper {
 
 .left h1 {
   font-size: 80px;
-  font-weight: 700;
+  font-weight: 600;
   margin: 0;
   color: var(--black);
 }
