@@ -113,7 +113,7 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 540px) {
   .primary-heading {
     font-size: 32px;
   }

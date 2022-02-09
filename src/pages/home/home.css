@@ -28,7 +28,7 @@ header {
 
 .btn-group {
   display: flex;
-  gap: 30px;
+  gap: 20px;
   width: 100%;
   align-items: center;
 }
@@ -61,7 +61,7 @@ header .wrapper {
 }
 
 .left p {
-  font-size: 40px;
+  font-size: 38px;
   margin: 0;
   color: var(--primary-color);
 }
@@ -74,6 +74,7 @@ header .wrapper {
   display: flex;
   justify-content: flex-end;
   flex: 1 1 60%;
+  min-width: 300px;
 }
 
 .right img {
@@ -89,11 +90,7 @@ header .wrapper {
   }
 }
 
-@media (max-width: 420px) {
-  .right {
-    display: none;
-  }
-
+@media (max-width: 540px) {
   .left {
     text-align: center;
   }
