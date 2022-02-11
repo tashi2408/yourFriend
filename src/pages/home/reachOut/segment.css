@@ -16,6 +16,15 @@
   z-index: 50;
 }
 
+.reach-point .step {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 32px;
+  font-weight: 500;
+  color: var(--black);
+}
+
 .reach-out-point {
   background-color: var(--purple);
   height: 300px;
