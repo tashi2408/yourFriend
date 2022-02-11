@@ -1,16 +1,14 @@
-import React from "react";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
-} from "react-vertical-timeline-component";
-import "react-vertical-timeline-component/style.min.css";
-import { GrWorkshop as WorkIcon } from "react-icons/gr";
-import { MdEventAvailable } from "react-icons/md";
-import { BiCheck, BiCodeAlt } from "react-icons/bi";
-import { BsTrophy } from "react-icons/bs";
-import { AiOutlineLink } from "react-icons/ai";
-import { IoArrowRedoCircleSharp } from "react-icons/io5";
-import "./Timeline.css";
+} from 'react-vertical-timeline-component';
+import 'react-vertical-timeline-component/style.min.css';
+import { GrWorkshop as WorkIcon } from 'react-icons/gr';
+import { MdEventAvailable } from 'react-icons/md';
+import { BiCheck, BiCodeAlt } from 'react-icons/bi';
+import { AiOutlineLink } from 'react-icons/ai';
+import { IoArrowRedoCircleSharp } from 'react-icons/io5';
+import './Timeline.css';
 
 const Timeline = () => {
   return (
@@ -18,14 +16,14 @@ const Timeline = () => {
       <div className="timelinecss">
         <h1 className="h1-responsive font-weight-bold my-5 ">EVENTS</h1>
 
-        <VerticalTimeline className={"check"}>
+        <VerticalTimeline className={'check'} animate={false}>
           <VerticalTimelineElement
             className="vertical-timeline-element--work check"
-            contentStyle={{ background: "#393b989c", color: "#fff" }}
-            contentArrowStyle={{ borderRight: "7px solid  #393b989c" }}
+            contentStyle={{ background: '#393b989c', color: '#fff' }}
+            contentArrowStyle={{ borderRight: '7px solid  #393b989c' }}
             date="13th of July 2020"
-            dateClassName={"datecolor"}
-            iconStyle={{ background: "#fff", color: "#fff" }}
+            dateClassName={'datecolor'}
+            iconStyle={{ background: '#fff', color: '#fff' }}
             icon={<WorkIcon />}
           >
             <h4 className="vertical-timeline-element-title fontcss"></h4>
@@ -40,11 +38,11 @@ const Timeline = () => {
 
           <VerticalTimelineElement
             className="vertical-timeline-element--work check"
-            contentStyle={{ background: "#393b989c", color: "#fff" }}
-            contentArrowStyle={{ borderRight: "7px solid  #393b989c" }}
+            contentStyle={{ background: '#393b989c', color: '#fff' }}
+            contentArrowStyle={{ borderRight: '7px solid  #393b989c' }}
             date="24th of May 2020"
-            dateClassName={"datecolor"}
-            iconStyle={{ background: "#fff", color: "#fff" }}
+            dateClassName={'datecolor'}
+            iconStyle={{ background: '#fff', color: '#fff' }}
             icon={<MdEventAvailable className="colorcss" />}
           >
             <h4 className="vertical-timeline-element-title fontcss fontcss"></h4>
@@ -57,11 +55,11 @@ const Timeline = () => {
 
           <VerticalTimelineElement
             className="vertical-timeline-element--work check"
-            contentStyle={{ background: "#393b989c", color: "#fff" }}
-            contentArrowStyle={{ borderRight: "7px solid  #393b989c" }}
+            contentStyle={{ background: '#393b989c', color: '#fff' }}
+            contentArrowStyle={{ borderRight: '7px solid  #393b989c' }}
             date="June 2020"
-            dateClassName={"datecolor"}
-            iconStyle={{ background: "#fff", color: "#fff" }}
+            dateClassName={'datecolor'}
+            iconStyle={{ background: '#fff', color: '#fff' }}
             icon={<BiCodeAlt className="colorcss" />}
           >
             <h4 className="vertical-timeline-element-title fontcss"></h4>
@@ -77,11 +75,11 @@ const Timeline = () => {
 
           <VerticalTimelineElement
             className="vertical-timeline-element--work check"
-            contentStyle={{ background: "#393b989c", color: "#fff" }}
-            contentArrowStyle={{ borderRight: "7px solid  #393b989c" }}
+            contentStyle={{ background: '#393b989c', color: '#fff' }}
+            contentArrowStyle={{ borderRight: '7px solid  #393b989c' }}
             date="August 2020"
-            dateClassName={"datecolor"}
-            iconStyle={{ background: "#fff", color: "#fff" }}
+            dateClassName={'datecolor'}
+            iconStyle={{ background: '#fff', color: '#fff' }}
             icon={<AiOutlineLink className="colorcss" />}
           >
             <h4 className="vertical-timeline-element-title fontcss"></h4>
@@ -94,11 +92,11 @@ const Timeline = () => {
 
           <VerticalTimelineElement
             className="vertical-timeline-element--work check"
-            contentStyle={{ background: "#393b989c", color: "#fff" }}
-            contentArrowStyle={{ borderRight: "7px solid  #393b989c" }}
+            contentStyle={{ background: '#393b989c', color: '#fff' }}
+            contentArrowStyle={{ borderRight: '7px solid  #393b989c' }}
             date="19th September 2020"
-            dateClassName={"datecolor"}
-            iconStyle={{ background: "#fff", color: "#fff" }}
+            dateClassName={'datecolor'}
+            iconStyle={{ background: '#fff', color: '#fff' }}
             icon={<BiCheck className="colorcss" />}
           >
             <h4 className="vertical-timeline-element-title fontcss"></h4>
@@ -114,11 +112,11 @@ const Timeline = () => {
 
           <VerticalTimelineElement
             className="vertical-timeline-element--work check"
-            contentStyle={{ background: "#393b989c", color: "#fff" }}
-            contentArrowStyle={{ borderRight: "7px solid  #393b989c" }}
+            contentStyle={{ background: '#393b989c', color: '#fff' }}
+            contentArrowStyle={{ borderRight: '7px solid  #393b989c' }}
             date="31st October 2020"
-            dateClassName={"datecolor"}
-            iconStyle={{ background: "#fff", color: "#fff" }}
+            dateClassName={'datecolor'}
+            iconStyle={{ background: '#fff', color: '#fff' }}
             icon={<AiOutlineLink className="colorcss" />}
           >
             <h4 className="vertical-timeline-element-title fontcss"></h4>
@@ -131,11 +129,11 @@ const Timeline = () => {
 
           <VerticalTimelineElement
             className="vertical-timeline-element--work check"
-            contentStyle={{ background: "#393b989c", color: "#fff" }}
-            contentArrowStyle={{ borderRight: "7px solid  #393b989c" }}
+            contentStyle={{ background: '#393b989c', color: '#fff' }}
+            contentArrowStyle={{ borderRight: '7px solid  #393b989c' }}
             date="24th October 2020"
-            dateClassName={"datecolor"}
-            iconStyle={{ background: "#fff", color: "#fff" }}
+            dateClassName={'datecolor'}
+            iconStyle={{ background: '#fff', color: '#fff' }}
             icon={<AiOutlineLink className="colorcss" />}
           >
             <h4 className="vertical-timeline-element-title fontcss"></h4>
@@ -148,11 +146,11 @@ const Timeline = () => {
 
           <VerticalTimelineElement
             className="vertical-timeline-element--work check"
-            contentStyle={{ background: "#393b989c", color: "#fff" }}
-            contentArrowStyle={{ borderRight: "7px solid  #393b989c" }}
+            contentStyle={{ background: '#393b989c', color: '#fff' }}
+            contentArrowStyle={{ borderRight: '7px solid  #393b989c' }}
             date="23rd April 2021"
-            dateClassName={"datecolor"}
-            iconStyle={{ background: "#fff", color: "#fff" }}
+            dateClassName={'datecolor'}
+            iconStyle={{ background: '#fff', color: '#fff' }}
             icon={<AiOutlineLink className="colorcss" />}
           >
             <h4 className="vertical-timeline-element-title fontcss"></h4>
@@ -168,11 +166,11 @@ const Timeline = () => {
 
           <VerticalTimelineElement
             className="vertical-timeline-element--work check"
-            contentStyle={{ background: "#393b989c", color: "#fff" }}
-            contentArrowStyle={{ borderRight: "7px solid  #393b989c" }}
+            contentStyle={{ background: '#393b989c', color: '#fff' }}
+            contentArrowStyle={{ borderRight: '7px solid  #393b989c' }}
             date="26th June 2021"
-            dateClassName={"datecolor"}
-            iconStyle={{ background: "#fff", color: "#fff" }}
+            dateClassName={'datecolor'}
+            iconStyle={{ background: '#fff', color: '#fff' }}
             icon={<AiOutlineLink className="colorcss" />}
           >
             <h4 className="vertical-timeline-element-title fontcss"></h4>
@@ -188,11 +186,11 @@ const Timeline = () => {
 
           <VerticalTimelineElement
             className="vertical-timeline-element--work check"
-            contentStyle={{ background: "#393b989c", color: "#fff" }}
-            contentArrowStyle={{ borderRight: "7px solid  #393b989c" }}
+            contentStyle={{ background: '#393b989c', color: '#fff' }}
+            contentArrowStyle={{ borderRight: '7px solid  #393b989c' }}
             date="31st July 2021"
-            dateClassName={"datecolor"}
-            iconStyle={{ background: "#fff", color: "#fff" }}
+            dateClassName={'datecolor'}
+            iconStyle={{ background: '#fff', color: '#fff' }}
             icon={<AiOutlineLink className="colorcss" />}
           >
             <h4 className="vertical-timeline-element-title fontcss"></h4>
