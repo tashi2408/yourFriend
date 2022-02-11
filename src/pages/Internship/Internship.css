@@ -12,15 +12,19 @@
   justify-content: center;
 }
 
-h1 {
-  font-size: 40px;
+.intern-grid h1 {
+  font-size: 45px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  word-spacing: 2px;
   text-transform: uppercase;
   color: var(--primary-color);
 }
 
-p {
+.intern-grid p {
   font-size: 18px;
   color: white;
+  text-align: justify;
 }
 
 .image {
@@ -67,7 +71,7 @@ p {
     max-width: 400px;
   }
 
-  p {
+  .intern-grid p {
     font-size: 16px;
   }
 }
