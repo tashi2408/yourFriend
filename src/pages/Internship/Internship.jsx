@@ -6,7 +6,7 @@ function Internship() {
     <div className="internships-page">
       <div className="intern-grid">
         <div>
-          <hi>Interships</hi>
+          <h1>Interships</h1>
           <p>
             India has been gripped in fear due to the COVID virus outbreak.
             People have had time to reflect on themselves. But it has been found
@@ -21,10 +21,10 @@ function Internship() {
             chance to work under professionals directly helping them in their
             career development.
           </p>
-          <a>Apply Now</a>
+          <a className="button">Apply Now</a>
         </div>
-        <div>
-          <img src={Intern} alt="intern" />
+        <div className="image">
+          <img className="intern" src={Intern} alt="intern" />
         </div>
       </div>
     </div>
