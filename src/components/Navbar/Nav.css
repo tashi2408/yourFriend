@@ -1,5 +1,6 @@
 :root {
   --black: #212121;
+  --nav-back: #ffb4a275;
 }
 
 a {
@@ -19,7 +20,7 @@ nav {
 }
 
 .colorBar {
-  background-color: #ffb4a275;
+  background-color: var(--nav-back);
   -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
 }

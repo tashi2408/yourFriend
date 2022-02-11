@@ -137,8 +137,6 @@ body::-webkit-scrollbar-thumb {
 .off-nav {
   height: 100vh;
   width: 100%;
-  background-color: var(--primary-color);
-  color: #fafafa;
   position: fixed;
   top: 80px;
   z-index: 4000;
