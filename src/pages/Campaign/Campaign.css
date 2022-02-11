@@ -1,6 +1,7 @@
 .campaigns-page {
   background: var(--gradient);
   padding-top: 120px;
+  padding-bottom: 1px;
 }
 .campaign-container {
   display: flex;
@@ -17,6 +18,7 @@
 .campaign-text {
   font-size: 20px;
   padding-left: 20px;
+  text-align: justify;
 }
 
 .campaign-head {

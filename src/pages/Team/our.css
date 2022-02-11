@@ -149,7 +149,7 @@
   /* width: 300px; */
   transform-style: preserve-3d;
   perspective: 600px;
-  transition: 0.5s;
+  transition: 1.2s;
 }
 .card:hover .card-front {
   transform: rotateY(-180deg);
