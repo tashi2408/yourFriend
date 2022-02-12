@@ -4,6 +4,8 @@ import './Nav.css';
 import { useEffect } from 'react';
 import Hamburger from 'hamburger-react';
 
+export const joinURL = 'https://www.youthindiafoundation.com/join/';
+
 const Nav = ({ toggleMobileNav }) => {
   useEffect(() => {
     window.onscroll = () => {
@@ -57,7 +59,9 @@ const Nav = ({ toggleMobileNav }) => {
               <Link to="/chat">Chat</Link>
             </li>
             <li className="btn">
-              <Link to="/join">Join Us</Link>
+              <a href={joinURL} target="_blank" rel="noreferrer">
+                Join Us
+              </a>
             </li>
           </ul>
           <span className="hamburger">

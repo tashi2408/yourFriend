@@ -7,6 +7,8 @@ import Timeline from './timeline/Timeline';
 import Reachout from './reachOut/segment';
 import Ourwork from './ourwork/OurWork';
 
+import { joinURL } from '../../components/Navbar/Nav';
+
 import { Link } from 'react-router-dom';
 
 const Home = () => {
@@ -21,9 +23,14 @@ const Home = () => {
               <span className="yif">Youth India Foundation</span>
             </p>
             <div className="btn-group">
-              <Link to="/" className="btn">
+              <a
+                href={joinURL}
+                target="_blank"
+                rel="noreferrer"
+                className="btn"
+              >
                 Join us
-              </Link>
+              </a>
               <Link to="/" className="btn">
                 Book a Session
               </Link>
