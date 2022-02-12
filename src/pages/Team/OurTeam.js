@@ -1,9 +1,9 @@
-import Member from '../../assets/teamMembers/y1.jpeg';
-import Member2 from '../../assets/teamMembers/y2.jpeg';
-import Member3 from '../../assets/teamMembers/y3.jpeg';
+import Member from '../../assets/teamMembers/33.jpg';
+import Member2 from '../../assets/teamMembers/44.jpg';
+import Member3 from '../../assets/teamMembers/55.jpg';
 
-import BOT1 from '../../assets/teamMembers/BOT1.jpeg';
-import BOT2 from '../../assets/teamMembers/BOT2.jpeg';
+import BOT1 from '../../assets/teamMembers/11.jpg';
+import BOT2 from '../../assets/teamMembers/22.jpg';
 
 import Card from './Card';
 
@@ -50,7 +50,7 @@ function OurTeam() {
             name="Japneet Anand"
             designation="Counsellor"
             headline="Japneet Anand is the founder of Awaken: Positive Psychological Approach to Mental Health and Training."
-            description="Fourteen years of work experience conducting workshops and training many people in educational institutes, NGOs, corporate and Youth groups made Mrs Anand an exemplary professional. Her work proves that he is as passionate about training as he is for one on one consultations. Mrs Anand's passion for the job has guided her in understanding the wholesomeness in helping. Her forte is his determination to mentor people towards positivity, change, and balance in life through counselling and coaching. Mrs Anand, through various psychological techniques, also helps the individual pave their way towards a deeper understanding of their life at large."
+            description="Fourteen years of work experience conducting workshops & training many people in educational institutes, NGOs, corporate & Youth groups made Mrs Anand an exemplary professional. Her work proves that she is as passionate about training as she is for one on one consultations. Mrs Anand's passion for the job has guided her in understanding the wholesomeness in helping. Her forte is his determination to mentor people towards positivity, change, and balance in life through counselling & coaching. Mrs Anand, through various psychological techniques, also helps the individual pave their way towards a deeper understanding of their life at large."
           />
         </div>
       </div>
