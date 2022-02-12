@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { SocialIcon } from 'react-social-icons';
+import Links from '../socialLinks';
 const FloatingBar = () => {
   const [visible, setVisible] = useState(true);
   const niceRef = useRef();
@@ -11,12 +12,9 @@ const FloatingBar = () => {
   }, [visible]);
   return (
     <div className="floating-bar" ref={niceRef}>
-      <SocialIcon url="https://facebook.com/" />
-      <SocialIcon
-        url={`https://api.whatsapp.com/send?text=${window.location}`}
-      />
-      <SocialIcon url="https://twitter.com/twitter/" />
-      <SocialIcon url="https://linkedin.com/" />
+      {Links.map((link) => (
+        <SocialIcon url={link.url} key={link.name} />
+      ))}
       <span className="hide-click" onClick={() => setVisible(false)}>
         hide
       </span>

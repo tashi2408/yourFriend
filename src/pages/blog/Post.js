@@ -5,6 +5,7 @@ import './blog.css';
 import Posts from '../../posts';
 import { SocialIcon } from 'react-social-icons';
 import { RiShareLine } from 'react-icons/ri';
+import Links from '../../socialLinks';
 
 const Blog = () => {
   const { id } = useParams();
@@ -13,7 +14,6 @@ const Blog = () => {
   # Sorry, We couldn't find that post
   Check the sidebar to see the available posts.
   `;
-  const whatsappMessage = `Checkout this post from Your Friend ${window.location}`;
   return (
     <>
       <div className="blog">
@@ -27,13 +27,9 @@ const Blog = () => {
             {Found && (
               <div class="social">
                 <RiShareLine size={32} />
-                <SocialIcon
-                  url={`https://www.facebook.com/sharer/sharer.php?u=${window.location}`}
-                />
-                <SocialIcon
-                  url={`https://api.whatsapp.com/send?text=${whatsappMessage}`}
-                />
-                <SocialIcon url={`https://instagram.com`} />
+                {Links.map((link) => (
+                  <SocialIcon url={link.url} key={link.name} />
+                ))}
               </div>
             )}
             <ReactMarkdown
