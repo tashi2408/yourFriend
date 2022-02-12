@@ -55,9 +55,6 @@ const Nav = ({ toggleMobileNav }) => {
                 </li>
               </ul>
             </li>
-            <li className="linkItem">
-              <Link to="/chat">Chat</Link>
-            </li>
             <li>
               <a
                 className="btn"

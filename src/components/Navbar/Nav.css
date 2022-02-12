@@ -90,7 +90,7 @@ nav ul {
   flex-direction: column;
   gap: 15px;
   position: absolute;
-  top: 32px;
+  top: 40px;
   z-index: 4000;
   background: #393b989c;
   color: #fff;
