@@ -1,12 +1,13 @@
 import './Internship.css';
+import Intern from '../../assets/internship/internship.svg';
+
 function Internship() {
   return (
     <div className="internships-page">
-      <div className="pagenavcss"></div>
-      <div className="head-div"></div>
-      <div className="campaign-head">
-        <div className="wrapper">
-          <h5 className="intern-main-para">
+      <div className="intern-grid">
+        <div>
+          <h1>Interships</h1>
+          <p>
             India has been gripped in fear due to the COVID virus outbreak.
             People have had time to reflect on themselves. But it has been found
             that many have had psychotic breakdowns and have needed help from
@@ -19,22 +20,11 @@ function Internship() {
             students and graduates to get hands-on experience by getting a
             chance to work under professionals directly helping them in their
             career development.
-          </h5>
-          <div
-            style={{
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              paddingTop: '5px',
-            }}
-          >
-            <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSezaoNfRDVFprPw74aE16rZWTALnuExsl7jmraHPwqrvePZRg/viewform"
-              className="button pulse"
-            >
-              Apply for Internship
-            </a>
-          </div>
+          </p>
+          <a className="button">Apply Now</a>
+        </div>
+        <div className="image">
+          <img className="intern" src={Intern} alt="intern" />
         </div>
       </div>
     </div>
@@ -42,3 +32,5 @@ function Internship() {
 }
 
 export default Internship;
+
+// https://docs.google.com/forms/d/e/1FAIpQLSezaoNfRDVFprPw74aE16rZWTALnuExsl7jmraHPwqrvePZRg/viewform

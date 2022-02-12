@@ -3,16 +3,81 @@
   min-height: calc(100vh - 146px);
 }
 
-.head-div {
-  height: 60vh;
-  background-image: url(../../assets/internship/head2.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+.intern-grid {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  align-items: center;
+  justify-content: center;
 }
 
-.intern-main-para {
-  font-size: 16px;
-  line-height: 30px;
-  margin-bottom: 20px;
-  text-transform: lowercase;
+.intern-grid h1 {
+  font-size: 45px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--primary-color);
+}
+
+.intern-grid p {
+  font-size: 18px;
+  color: white;
+  text-align: justify;
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.intern {
+  height: 100%;
+  width: 100%;
+}
+
+@media only screen and (max-width: 1400px) {
+  .intern-grid {
+    max-width: 1200px;
+  }
+}
+
+@media only screen and (max-width: 1230px) {
+  .intern-grid {
+    max-width: 1000px;
+    grid-template-columns: 1fr 1.5fr;
+    column-gap: 20px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .intern-grid {
+    max-width: 850px;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .intern-grid {
+    max-width: 600px;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .intern-grid {
+    max-width: 400px;
+  }
+
+  .intern-grid p {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .intern-grid {
+    max-width: 300px;
+  }
 }

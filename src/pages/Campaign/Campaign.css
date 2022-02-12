@@ -1,6 +1,7 @@
 .campaigns-page {
   background: var(--gradient);
-  padding-top: 120px;
+  padding-top: 50px;
+  padding-bottom: 1px;
 }
 .campaign-container {
   display: flex;
@@ -8,15 +9,13 @@
   justify-content: center;
 
   max-width: 1200px;
-  margin: 50px auto;
-}
-.campaign-image {
-  flex-basis: 200%;
-  max-width: 100%;
+  margin: 5px auto;
 }
 .campaign-text {
-  font-size: 20px;
-  padding-left: 20px;
+  font-size: 18px;
+  padding-left: 40px;
+  padding-right: 40px;
+  text-align: justify;
 }
 
 .campaign-head {
@@ -27,12 +26,14 @@
   word-spacing: 2px;
   text-transform: uppercase;
   color: var(--primary-color);
+  margin: 1px auto;
 }
 
 .campaign-carousel {
-  max-width: 1000px;
+  max-width: 500px;
   margin: 0 auto;
 }
+
 
 .carousel-image {
   height: 100%;
