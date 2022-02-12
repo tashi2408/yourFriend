@@ -3,6 +3,7 @@
   width: 100%;
   background-color: #f5f5f5;
   color: var(--black);
+  --text-p: #393b98ea;
 }
 
 .blog .wrapper {
@@ -26,11 +27,17 @@
 .blog article h1 {
   font-weight: 900;
   font-size: 3rem;
-  color: #393b98ea;
+  color: var(--text-p);
+  text-align: left;
+  line-height: 3rem;
 }
 
 .blog article p {
   margin-bottom: 26px;
+}
+
+.blog article strong {
+  color: var(--text-p);
 }
 
 .blog article img {
