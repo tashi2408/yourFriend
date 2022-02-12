@@ -3,8 +3,8 @@ import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import './blog.css';
 import Posts from '../../posts';
-import { BsFacebook } from 'react-icons/bs';
-import { IoLogoWhatsapp } from 'react-icons/io';
+import { SocialIcon } from 'react-social-icons';
+import { RiShareLine } from 'react-icons/ri';
 
 const Blog = () => {
   const { id } = useParams();
@@ -25,40 +25,16 @@ const Blog = () => {
               draggable={false}
             />
             {Found && (
-              <ul class="social">
-                <li>
-                  <span>Share this post: </span>
-                </li>
-                <li>
-                  <span class="facebook">
-                    <BsFacebook
-                      cursor={'pointer'}
-                      color="royalblue"
-                      size={30}
-                      onClick={() =>
-                        window.open(
-                          `https://www.facebook.com/sharer/sharer.php?u=${window.location}`,
-                          '_blank'
-                        )
-                      }
-                    />
-                  </span>
-                </li>
-                <li>
-                  <span class="whatsapp">
-                    <IoLogoWhatsapp
-                      color="green"
-                      size={30}
-                      cursor={'pointer'}
-                      onClick={() =>
-                        window.open(
-                          `https://api.whatsapp.com/send?text=${whatsappMessage}`
-                        )
-                      }
-                    />
-                  </span>
-                </li>
-              </ul>
+              <div class="social">
+                <RiShareLine size={32} />
+                <SocialIcon
+                  url={`https://www.facebook.com/sharer/sharer.php?u=${window.location}`}
+                />
+                <SocialIcon
+                  url={`https://api.whatsapp.com/send?text=${whatsappMessage}`}
+                />
+                <SocialIcon url={`https://instagram.com`} />
+              </div>
             )}
             <ReactMarkdown
               children={Found ? Found.markdown : NotFound}
