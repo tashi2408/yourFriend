@@ -171,7 +171,7 @@ body::-webkit-scrollbar-thumb {
 
 .btn:hover {
   box-shadow: 4px 4px 10px 0 var(--purple);
-  filter: brightness(110%);
+  background-color: #393b98cb;
 }
 
 .btn-group {
