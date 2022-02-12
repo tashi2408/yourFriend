@@ -73,24 +73,6 @@ nav ul {
   width: 100%;
 }
 
-.btn {
-  background-color: var(--purple);
-  width: 50%;
-  height: 100%;
-  padding: 15px 20px;
-  font-weight: 700;
-  cursor: pointer;
-  box-shadow: 4px 4px 6px 0 #21212130;
-  text-align: center;
-  transition: 0.2s;
-  border-radius: 500px;
-  color: #fafafa;
-}
-
-.btn:active {
-  box-shadow: none;
-}
-
 .hamburger {
   display: none;
 }
