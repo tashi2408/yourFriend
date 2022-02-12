@@ -12,6 +12,7 @@ import Campaigns from './pages/Campaign/Campaign';
 import Webinars from './pages/Webinar/Webinar';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import FloatingBar from './components/floatingBar';
 
 function App() {
   const [visible, setVisible] = useState(false);
@@ -32,6 +33,7 @@ function App() {
         <Route component={NotFound} />
       </Switch>
       <Footer />
+      <FloatingBar />
     </BrowserRouter>
   );
 }

@@ -27,7 +27,7 @@ const niceList = [
 
 function Segment() {
   return (
-    <div class="wrapper">
+    <div class="wrapper section">
       <h1 className="primary-heading">Reach out to us</h1>
       <div className="reach-out-points">
         {niceList.map((reachPoint, index) => (

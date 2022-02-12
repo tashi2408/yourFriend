@@ -87,3 +87,23 @@ header .wrapper {
     width: 100%;
   }
 }
+
+/*******************************************************************************************/
+
+.floating-bar {
+  background: #fafafa;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 40%;
+  left: 0;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  padding: 20px;
+  gap: 16px;
+  box-shadow: 0 8px 8px 0 #21212130;
+}
+
+.floating-bar > * {
+  cursor: pointer;
+}
