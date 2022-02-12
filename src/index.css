@@ -204,6 +204,7 @@ body::-webkit-scrollbar-thumb {
   transition: 0.3s all;
   opacity: 1;
   box-shadow: 0 8px 8px 0 #21212130;
+  z-index: 10000;
 }
 
 .floating-bar > * {
