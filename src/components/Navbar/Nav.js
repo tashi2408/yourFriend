@@ -58,8 +58,13 @@ const Nav = ({ toggleMobileNav }) => {
             <li className="linkItem">
               <Link to="/chat">Chat</Link>
             </li>
-            <li className="btn">
-              <a href={joinURL} target="_blank" rel="noreferrer">
+            <li>
+              <a
+                className="btn"
+                href={joinURL}
+                target="_blank"
+                rel="noreferrer"
+              >
                 Join Us
               </a>
             </li>
