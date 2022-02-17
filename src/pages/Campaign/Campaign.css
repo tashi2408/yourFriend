@@ -1,39 +1,94 @@
 .campaigns-page {
   background: var(--gradient);
-  padding-top: 50px;
-  padding-bottom: 1px;
+  min-height: calc(100vh - 146px);
+  padding-bottom: 20px;
 }
-.campaign-container {
-  display: flex;
+
+.campaign-grid {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2.2fr 3fr;
   align-items: center;
   justify-content: center;
-
-  max-width: 1200px;
-  margin: 5px auto;
-}
-.campaign-text {
-  font-size: 18px;
-  padding-left: 40px;
-  padding-right: 40px;
-  text-align: justify;
 }
 
-.campaign-head {
-  text-align: center;
+.campaign-grid h1 {
   font-size: 45px;
   font-weight: 400;
   letter-spacing: 1px;
   word-spacing: 2px;
   text-transform: uppercase;
   color: var(--primary-color);
-  margin: 1px auto;
+}
+
+.campaign-grid p {
+  font-size: 18px;
+  color: white;
+  text-align: justify;
 }
 
 .campaign-carousel {
-  max-width: 500px;
-  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  padding-left: 10px;
 }
 
+@media only screen and (max-width: 1400px) {
+  .campaign-grid {
+    max-width: 1200px;
+  }
+}
+
+@media only screen and (max-width: 1230px) {
+  .campaign-grid {
+    max-width: 1000px;
+    grid-template-columns: 1fr 1.5fr;
+    column-gap: 20px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .campaign-grid {
+    max-width: 850px;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .campaign-grid {
+    max-width: 600px;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .campaign-grid {
+    max-width: 400px;
+  }
+
+  .campaign-grid p {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .cangaign-grid {
+    max-width: 300px;
+  }
+}
+
+.campaign {
+  height: 100%;
+  width: 100%;
+}
+
+.campaign-carousel {
+  max-width: 600px;
+  height: auto;
+  margin: 0 auto;
+}
 
 .carousel-image {
   height: 100%;
