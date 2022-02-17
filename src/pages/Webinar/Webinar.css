@@ -1,98 +1,98 @@
 .webinar-page {
   background: var(--gradient);
   min-height: calc(100vh - 146px);
-  color: white;
-  padding: 20px 0;
+  padding-bottom: 20px;
 }
 
-.webinar {
+.webinar-grid {
+  padding-top: 0%;
+  margin-top: 0%;
   max-width: 1400px;
   margin: 0 auto;
+  display: grid;
+  grid-template-columns: 3fr 3fr;
+  align-items: center;
+  justify-content: center;
 }
 
-.webinar-head {
-  text-align: center;
+.webinar-grid h1 {
   font-size: 45px;
   font-weight: 400;
   letter-spacing: 1px;
   word-spacing: 2px;
   text-transform: uppercase;
   color: var(--primary-color);
+  padding: 0px;
+  margin-top: 0%;
 }
 
-.webinar-page p {
-  font-size: 20px;
+.webinar-grid p {
+  font-size: 18px;
+  color: white;
+  text-align: justify;
+  padding-bottom: 230px;
 }
 
-.webinar-grid {
-  padding: 20px 0;
-  display: grid;
-  height: 500px;
-  grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 10px;
+.webinar-carousel {
+  display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.webinar-grid img {
-  max-width: 100%;
-  max-height: 100%;
-  overflow: hidden;
-
-  justify-self: center;
+  padding: 70px 0px 0px 10px;
 }
 
 @media only screen and (max-width: 1400px) {
-  .webinar {
+  .webinar-grid {
     max-width: 1200px;
   }
 }
 
 @media only screen and (max-width: 1230px) {
-  .webinar {
+  .webinar-grid {
     max-width: 1000px;
+    grid-template-columns: 1fr 1.5fr;
+    column-gap: 20px;
   }
 }
 
 @media only screen and (max-width: 1024px) {
-  .webinar {
-    max-width: 850px;
-  }
-
   .webinar-grid {
-    padding: 0;
-    column-gap: 25px;
+    max-width: 850px;
   }
 }
 
 @media only screen and (max-width: 850px) {
-  .webinar {
-    max-width: 600px;
-  }
-
   .webinar-grid {
-    grid-template-columns: 1fr 1fr;
-    column-gap: 0;
-    row-gap: 20px;
+    max-width: 600px;
+    grid-template-columns: 1fr;
   }
 }
 
 @media only screen and (max-width: 600px) {
-  .webinar {
+  .webinar-grid {
     max-width: 400px;
   }
 
-  .webinar-page p {
+  .webinar-grid p {
     font-size: 16px;
   }
 }
 
 @media only screen and (max-width: 425px) {
-  .webinar {
+  .webinar-grid {
     max-width: 300px;
   }
+}
 
-  .webinar-grid {
-    grid-template-columns: 1fr;
-  }
+.webinar {
+  height: 100%;
+  width: 100%;
+}
+
+.webinar-carousel {
+  max-width: 400px;
+  margin: 20px 0px 0px 130px;
+}
+
+.carousel-image {
+  height: 10%;
 }

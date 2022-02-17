@@ -8,7 +8,7 @@
   max-width: 1400px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 2.2fr 3fr;
+  grid-template-columns: 2.3fr 3fr;
   align-items: center;
   justify-content: center;
 }
@@ -26,6 +26,7 @@
   font-size: 18px;
   color: white;
   text-align: justify;
+  padding-bottom: 68px;
 }
 
 .campaign-carousel {
@@ -85,7 +86,7 @@
 
 .campaign-carousel {
   max-width: 600px;
-  margin: 80px 0px 0px 50px;
+  margin: 80px 0px 0px 70px;
 }
 
 .carousel-image {
