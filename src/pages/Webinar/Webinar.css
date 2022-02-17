@@ -1,6 +1,7 @@
 .webinar-page {
   background: var(--gradient);
   min-height: calc(100vh - 146px);
+  padding-top: 60px;
 }
 
 .webinar-grid {
@@ -10,7 +11,7 @@
   margin: 0 auto;
   display: grid;
   grid-template-columns: 2fr 3fr;
-  align-items: center;
+  align-items: start;
   justify-content: center;
 }
 
@@ -32,7 +33,7 @@
 .webinar-carousel {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   padding: 20px 0;
 }
 
@@ -42,6 +43,7 @@
 }
 
 .webinar-carousel {
+  
   max-width: 300px;
   margin: 0 auto;
 }

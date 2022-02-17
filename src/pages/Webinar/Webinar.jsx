@@ -26,6 +26,7 @@ function Webinar() {
           cost, paid webinars with Neelam Mishra and national level webinars
           guided by Divya Dureja.
       </p>
+      
     </div>
     <div className="webinar-carousel">
         <Carousel

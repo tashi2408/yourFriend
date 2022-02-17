@@ -1,6 +1,7 @@
 .campaigns-page {
   background: var(--gradient);
   min-height: calc(100vh - 146px);
+  padding-top: 60px;
 }
 
 .campaign-grid {
@@ -8,7 +9,7 @@
   margin: 0 auto;
   display: grid;
   grid-template-columns: 2fr 3fr;
-  align-items: center;
+  align-items: start;
   justify-content: center;
 }
 
@@ -30,7 +31,7 @@
 .campaign-carousel {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   padding: 20px 0;
 }
 
