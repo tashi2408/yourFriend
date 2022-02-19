@@ -1,0 +1,85 @@
+.sessions-page {
+    min-height: calc(100vh - 146px);
+    padding: 100px 0px 100px 0px;
+  }
+                                
+  .session-grid {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .session-grid h1 {
+    font-size: 45px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--primary-color);
+  }
+  
+  .session-grid p {
+    font-size: 18px;
+    color: var(--gradient);
+    text-align: justify;
+  }
+  
+  .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    max-width: 400px;
+  }
+  
+  .session {
+    height: 100%;
+    width: 100%;
+  }
+  
+  @media only screen and (max-width: 1400px) {
+    .session-grid {
+      max-width: 1200px;
+    }
+  }
+  
+  @media only screen and (max-width: 1230px) {
+    .session-grid {
+      max-width: 1000px;
+      grid-template-columns: 1fr 1.5fr;
+      column-gap: 20px;
+    }
+  }
+  
+  @media only screen and (max-width: 1024px) {
+    .session-grid {
+      max-width: 850px;
+    }
+  }
+  
+  @media only screen and (max-width: 850px) {
+    .session-grid {
+      max-width: 600px;
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .session-grid {
+      max-width: 400px;
+    }
+  
+    .session-grid p {
+      font-size: 16px;
+    }
+  }
+  
+  @media only screen and (max-width: 425px) {
+    .session-grid {
+      max-width: 300px;
+    }
+  }
+  

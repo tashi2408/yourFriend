@@ -19,14 +19,13 @@ function Webinar() {
           health field to guide you in the right direction and help you live a
           full and peaceful life. We hope to provide every attendee with the
           confidence to take on any challenge and better their mental health
-          after our sessions, some of which are free and others at a small fee.<br></br>
+          after our sessions, some of which are free and others at a small fee.</p>
+      <p>
           Our three successful webinars have been with the renowned speakers
           such as Dr. Samir Parikh, director of department of mental health and
           behavioural sciences of fortis healthcare which was help free of all
           cost, paid webinars with Neelam Mishra and national level webinars
-          guided by Divya Dureja.
-      </p>
-      
+          guided by Divya Dureja.</p>
     </div>
     <div className="webinar-carousel">
         <Carousel
