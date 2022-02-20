@@ -14,19 +14,19 @@ function Pricing() {
         <div className="pack-container">
           <Card
             pack={Package}
-            name="Silver"
+            name="Pack1"
             description="zzzzzzzzzzzzzz"
             recommondation="most useful"
           />
           <Card
             pack={Package2}
-            name="Gold"
+            name="Pack2"
             description="zzzzzzzzzzzzzz"
             recommondation="best seller"
           />
           <Card
             pack={Package3}
-            name="Platinum"
+            name="Pack3"
             description="zzzzzzzzzzzzzz"
             recommondation="recommended"
           />

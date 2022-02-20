@@ -38,17 +38,21 @@
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
   }
-  
-  .pack-name {
+
+  .styled-button {
     font-size: 1.5rem;
     text-transform: uppercase;
-    letter-spacing: 3px;
-    color: black;
     margin: 0;
+    border: 1.5px solid black;
+    color: black;
+    background-color: white;
+    border-radius: 30px;
+    text-align: center;
+    justify-content: center;
   }
-  
+
   .pack-recommondation {
-    font-size: 0.9rem;
+    font-size: 1.0rem;
     text-transform: capitalize;
     padding: 0.5rem 0;
     margin: 10;
