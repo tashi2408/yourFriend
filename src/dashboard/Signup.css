@@ -1,0 +1,58 @@
+.signup {
+    text-align: center;
+    justify-content: center;
+    display: flex; 
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-color: white;
+  }
+  
+  .sub-main {
+    display: flex;
+    justify-content: center;
+    height: 320px;
+    width: 38%;
+    box-shadow: 11px 12px 13px 12px rgb(87, 84, 84);
+    padding-top: 0px;
+    border-radius: 30px; 
+    background-color: white;
+  }
+  
+  .sub-main h1 {
+    font-size: 45px;
+    font-weight: 400;
+    word-spacing: 2px;
+    text-transform: uppercase;
+    color: black;
+    padding-bottom: 0%;
+  }
+
+  .sub-main p {
+    font-size: 14px;
+    color: var(--gradient);
+    text-align: justify;
+    padding-top: 7px;
+  }
+  
+  .or {
+    padding: 5px 0px 0px 0px;
+    color: black;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .link a{
+      font-size: 20px;
+      font-weight: 400;
+      color: rgb(172, 13, 119);
+      text-decoration: underline;
+  }
+
+  .link a:hover{
+    font-size: 21px;
+  }
+
+  
+
