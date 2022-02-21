@@ -1,0 +1,52 @@
+.login {
+  text-align: center;
+  justify-content: center;
+  display: flex; 
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-color: white;
+}
+
+.sub-main {
+  display: flex;
+  justify-content: center;
+  height: 300px;
+  width: 35%;
+  box-shadow: 11px 12px 13px 12px rgb(87, 84, 84);
+  padding-top: 0px;
+  border-radius: 30px; 
+  background-color: white;
+}
+
+.sub-main h1 {
+  font-size: 45px;
+  font-weight: 400;
+  word-spacing: 2px;
+  text-transform: uppercase;
+  color: black;
+}
+
+.or {
+  padding: 40px 0px 0px 0px;
+  color: black;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.link{
+    font-size: 20px;
+    font-weight: 400;
+    color: rgb(172, 13, 119);
+    text-decoration: underline;
+}
+ 
+.link:hover{
+  font-size: 21px;
+}
+
+
+
+
+
