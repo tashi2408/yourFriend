@@ -50,18 +50,17 @@
 
 .about-services-section {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 20px;
 }
 
 .about-services-section div {
   background-color: var(--primary-color);
-
+  overflow-wrap: break-word;
   padding: 4vh;
   font-size: 25px;
   color: var(--dark);
   border: 2px solid var(--secondary-color);
-  margin-right: 20px;
-  margin-bottom: 20px;
   border-radius: 15px;
   text-align: center;
 }
