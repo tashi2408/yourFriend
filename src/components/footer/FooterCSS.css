@@ -19,10 +19,6 @@
   flex: 1 1 60%;
 }
 
-.footer-content .footer-left p {
-  max-width: 80%;
-}
-
 .footer-content .bae {
   color: #fff;
   flex: 1 1 40%;
@@ -162,6 +158,7 @@
     flex-direction: column;
     align-items: center;
     padding: 0;
+    text-align: center;
   }
 
   .links-footer {

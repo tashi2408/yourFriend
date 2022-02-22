@@ -12,7 +12,7 @@ import Campaigns from './pages/Campaign/Campaign';
 import Webinars from './pages/Webinar/Webinar';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import FloatingBar from './components/floatingBar';
+import Review from './dashbord/bookings/Review';
 
 function App() {
   const [visible, setVisible] = useState(false);
@@ -30,10 +30,10 @@ function App() {
         <Route path={'/campaigns'} component={Campaigns} />
         <Route path={'/webinars'} component={Webinars} />
         <Route path={'/blog/:id'} component={Post} />
+        <Route path={'/dashboard/bookings'} component={Review} />
         <Route component={NotFound} />
       </Switch>
       <Footer />
-      <FloatingBar />
     </BrowserRouter>
   );
 }
