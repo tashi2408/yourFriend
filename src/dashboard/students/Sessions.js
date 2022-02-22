@@ -15,7 +15,7 @@ function Sessions() {
           </p>
           <a className="button">Book Apointment</a>
         </div>
-        <div className="image">
+        <div className="icon">
           <img className="session" src={Session} alt="session" />
         </div>
       </div>
