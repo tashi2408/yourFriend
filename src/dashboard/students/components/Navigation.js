@@ -1,12 +1,17 @@
-import Logo from './Images/Title logo.png';
+import Logo from './logo/logo.png';
 import { Link } from 'react-router-dom';
-import './Nav.css';
+import './Navigation.css';
 import { useEffect } from 'react';
 import Hamburger from 'hamburger-react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUser } from '@fortawesome/free-solid-svg-icons';
+import { faClockRotateLeft } from '@fortawesome/free-solid-svg-icons';
+import { faLock } from '@fortawesome/free-solid-svg-icons';
+import { faSignOut } from '@fortawesome/free-solid-svg-icons';
+import { faMessage} from '@fortawesome/free-solid-svg-icons';
 
-export const joinURL = 'https://www.youthindiafoundation.com/join/';
 
-const Nav = ({ toggleMobileNav }) => {
+const Navigation = ({ toggleMobileNav }) => {
   useEffect(() => {
     window.onscroll = () => {
       var currentScrollPos = window.pageYOffset;
@@ -33,37 +38,30 @@ const Nav = ({ toggleMobileNav }) => {
           </Link>
           <ul className="links">
             <li className="linkItem">
-              <Link to="/about">About</Link>
-            </li>
-            <li className="linkItem">
-              <Link to="/team">Team</Link>
+              <Link to="/Experts">Experts</Link>
             </li>
             <li className="linkItem">
               <Link to="/blog">Blog</Link>
             </li>
             <li className="linkItem">
-              <Link>Events</Link>
+              <Link to="/Chat"><FontAwesomeIcon icon={faMessage}/></Link>
+            </li>
+            <li className="linkItem">
+              <Link><FontAwesomeIcon icon={faUser} /> <a style={{ marginLeft: '.5rem' }} >User-name</a></Link>
               <ul class="dropdown">
                 <li>
-                  <Link to="/internships">Internships</Link>
+                  <Link to="/Profile"><FontAwesomeIcon icon={faUser} /><a style={{ marginLeft: '.5rem' }} >Profile</a></Link>
                 </li>
                 <li>
-                  <Link to="/campaigns">Campaigns</Link>
+                  <Link to="/Sessions"><FontAwesomeIcon icon={faClockRotateLeft}/><a style={{ marginLeft: '.5rem' }} >Sessions</a></Link>
                 </li>
                 <li>
-                  <Link to="/webinars">Webinars</Link>
+                  <Link to="/Password"><FontAwesomeIcon icon={faLock}/><a style={{ marginLeft: '.5rem' }} >Password</a></Link>
+                </li>
+                <li>
+                  <Link to="/"><FontAwesomeIcon icon={faSignOut}/><a style={{ marginLeft: '.5rem' }} >Logout</a></Link>
                 </li>
               </ul>
-            </li>
-            <li>
-              <a
-                className="btn"
-                href={joinURL}
-                target="_blank"
-                rel="noreferrer"
-              >
-                Join Us
-              </a>
             </li>
           </ul>
           <span className="hamburger">
@@ -75,4 +73,4 @@ const Nav = ({ toggleMobileNav }) => {
   );
 };
 
-export default Nav;
+export default Navigation;  
