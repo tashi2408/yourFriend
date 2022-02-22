@@ -4,7 +4,7 @@
   display: flex; 
   padding-top: 200px;
   padding-bottom: 200px;
-  background-color: white;
+  background: var(--gradient);
 }
 
 .sub-main {
@@ -29,6 +29,7 @@
 
 .sub-main p {
   font-size: 14px;
+  font-weight: 400;
   color: var(--gradient);
   text-align: justify;
   padding-top: 7px;
@@ -46,7 +47,7 @@
 .link a{
     font-size: 20px;
     font-weight: 400;
-    color: rgb(172, 13, 119);
+    color: purple;
     text-decoration: underline;
 }
 
