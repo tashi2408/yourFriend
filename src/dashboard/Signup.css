@@ -4,7 +4,7 @@
     display: flex; 
     padding-top: 200px;
     padding-bottom: 200px;
-    background: var(--gradient)
+    background: var(--gradient);
   }
   
   .sub-main {
