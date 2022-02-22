@@ -6,6 +6,7 @@ import Posts from '../../posts';
 import { SocialIcon } from 'react-social-icons';
 import { RiShareLine } from 'react-icons/ri';
 import Links from '../../socialLinks';
+import FloatingSidebar from '../../components/floatingBar';
 
 const Blog = () => {
   const { id } = useParams();
@@ -66,6 +67,7 @@ const Blog = () => {
           </aside>
         </div>
       </div>
+      <FloatingSidebar />
     </>
   );
 };
