@@ -2,7 +2,7 @@
   background: var(--gradient);
   color: var(--primary-color);
   min-height: calc(100vh - 146px);
-  padding-top: 120px;
+  padding-top: 50px;
 }
 
 .about-section-page {
