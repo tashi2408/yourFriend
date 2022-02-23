@@ -38,25 +38,25 @@ const Navigation = ({ toggleMobileNav }) => {
           </Link>
           <ul className="links">
             <li className="linkItem">
-              <Link to="/Experts">Experts</Link>
+              <Link to="/experts">Experts</Link>
             </li>
             <li className="linkItem">
               <Link to="/blog">Blog</Link>
             </li>
             <li className="linkItem">
-              <Link to="/Chat"><FontAwesomeIcon icon={faMessage}/></Link>
+              <Link to="/chat"><FontAwesomeIcon icon={faMessage}/></Link>
             </li>
             <li className="linkItem">
               <Link><FontAwesomeIcon icon={faUser} /> <a style={{ marginLeft: '.5rem' }} >User-name</a></Link>
               <ul class="dropdown">
                 <li>
-                  <Link to="/Profile"><FontAwesomeIcon icon={faUser} /><a style={{ marginLeft: '.5rem' }} >Profile</a></Link>
+                  <Link to="/profile"><FontAwesomeIcon icon={faUser} /><a style={{ marginLeft: '.5rem' }} >Profile</a></Link>
                 </li>
                 <li>
-                  <Link to="/Sessions"><FontAwesomeIcon icon={faClockRotateLeft}/><a style={{ marginLeft: '.5rem' }} >Sessions</a></Link>
+                  <Link to="/sessions"><FontAwesomeIcon icon={faClockRotateLeft}/><a style={{ marginLeft: '.5rem' }} >Sessions</a></Link>
                 </li>
                 <li>
-                  <Link to="/Password"><FontAwesomeIcon icon={faLock}/><a style={{ marginLeft: '.5rem' }} >Password</a></Link>
+                  <Link to="/password"><FontAwesomeIcon icon={faLock}/><a style={{ marginLeft: '.5rem' }} >Password</a></Link>
                 </li>
                 <li>
                   <Link to="/"><FontAwesomeIcon icon={faSignOut}/><a style={{ marginLeft: '.5rem' }} >Logout</a></Link>
