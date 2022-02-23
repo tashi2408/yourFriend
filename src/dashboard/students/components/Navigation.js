@@ -27,7 +27,7 @@ const Navigation = ({ toggleMobileNav }) => {
     <>
       <nav>
         <div className="wrapper">
-          <Link to="/" className="logo">
+          <Link to="/dashboard" className="logo">
             <img
               className="logo"
               alt="your friend logo"
