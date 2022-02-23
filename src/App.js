@@ -13,6 +13,11 @@ import Webinars from './pages/Webinar/Webinar';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Review from './dashbord/bookings/Review';
+import Sessions from './dashboard/students/Sessions';
+import Pricing from './dashboard/students/Pricing';
+import Login from './dashboard/Login';
+import Signup from './dashboard/Signup';
+import Navigation from './dashboard/students/components/Navigation';
 
 function App() {
   const [visible, setVisible] = useState(false);
@@ -31,6 +36,10 @@ function App() {
         <Route path={'/webinars'} component={Webinars} />
         <Route path={'/blog/:id'} component={Post} />
         <Route path={'/dashboard/bookings'} component={Review} />
+        <Route path={'/sessions'} component={Sessions} />
+        <Route path={'/pricing'} component={Pricing} />
+        <Route path={'/login'} component={Login} />
+        <Route path={'/signup'} component={Signup} />
         <Route component={NotFound} />
       </Switch>
       <Footer />

@@ -1,5 +1,5 @@
-import React from 'react';
 import './Login.css';
+import { Link } from 'react-router-dom';
 import GoogleSignup from 'react-google-login'
 
 function Login() {
@@ -19,7 +19,7 @@ function Login() {
           OR
           </div>
             <h2 className="link">
-              <a href="#">Signup now</a>
+              <a href="#"><Link to="/Signup">Signup now</Link></a>
             </h2>
             </div>
          </div>

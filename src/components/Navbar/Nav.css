@@ -77,7 +77,7 @@ nav ul {
   display: none;
 }
 
-@media (max-width: 525px) {
+@media (max-width: 635px) {
   .links {
     display: none;
   }
