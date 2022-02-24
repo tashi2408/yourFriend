@@ -19,6 +19,9 @@
     "react-vertical-timeline-component": "^3.3.3",
     "remark-gfm": "^3.0.1"
   },
+  "resolutions": {
+    "react-error-overlay": "6.0.9"
+  },
   "scripts": {
     "start": "NODE_PATH=src react-scripts start",
     "build": "react-scripts build",
@@ -44,5 +47,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "react-error-overlay": "^6.0.9"
   }
 }
