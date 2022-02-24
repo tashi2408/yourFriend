@@ -4,6 +4,9 @@
 
 tasks:
   - init: npm install && npm run build
+          npm i --save @fortawesome/react-fontawesome
+          npm i --save @fortawesome/free-solid-svg-icons
+          npm install react-google-login
     command: npm run start
 vscode:
   extensions:
