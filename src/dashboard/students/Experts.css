@@ -1,0 +1,13 @@
+.experts_header {
+  background-color: var(--purple);
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.experts_title {
+  font-size: 50px;
+  color: white;
+  font-weight: 200;
+}
