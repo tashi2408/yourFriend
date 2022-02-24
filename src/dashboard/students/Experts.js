@@ -16,10 +16,9 @@ export default function Experts() {
 
         <div className="experts_search"></div>
         <div className="experts">
-          {data.map((val, i) =>
-            //   <ExpertCard data={val} key={i} />
-            console.log(val)
-          )}
+          {data.map((val, i) => (
+            <ExpertCard data={val} key={i} />
+          ))}
         </div>
       </div>
     </div>
