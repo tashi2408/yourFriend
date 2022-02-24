@@ -12,14 +12,13 @@ function Login() {
           <div>
           <GoogleSignup theme="dark">
           </GoogleSignup><p>
-          Don't worry, you stay anonymous even with social login.
-          </p>
+          Don't worry, you stay anonymous even with social login.</p>
           </div>
           <div className="or">
           OR
           </div>
             <h2 className="link">
-              <a href="#"><Link to="/Signup">Signup now</Link></a>
+            <a href="#"><Link to="/Signup">Signup now</Link></a>
             </h2>
             </div>
          </div>
