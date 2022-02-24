@@ -36,7 +36,7 @@
 
 .about-intro-section p {
   line-height: 26px;
-  text-align: justify;
+  /* text-align: justify; */
   color: white;
 }
 
