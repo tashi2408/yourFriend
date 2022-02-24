@@ -2,8 +2,8 @@
   text-align: center;
   justify-content: center;
   display: flex; 
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 180px;
+  padding-bottom: 180px;
   background: var(--gradient);
 }
 
@@ -12,7 +12,7 @@
   justify-content: center;
   height: 320px;
   width: 38%;
-  box-shadow: 11px 12px 13px 12px rgb(87, 84, 84);
+  box-shadow: 11px 12px 13px 12px rgba(0, 0, 0, 0.07);
   padding-top: 0px;
   border-radius: 30px; 
   background-color: white;
@@ -54,6 +54,8 @@
 .link a:hover{
   font-size: 21px;
 }
+
+
 
 
 
