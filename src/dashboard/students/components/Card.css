@@ -1,0 +1,79 @@
+.expert_card {
+  -webkit-box-shadow: 10px 10px 43px 0px rgba(0, 0, 0, 0.34);
+  -moz-box-shadow: 10px 10px 43px 0px rgba(0, 0, 0, 0.34);
+  box-shadow: 10px 10px 43px 0px rgba(0, 0, 0, 0.34);
+  /* padding: 10px; */
+  color: var(--primary-color);
+  font-size: 14px;
+}
+
+.expert_flex {
+  padding: 20px;
+  display: flex;
+  padding-bottom: 15px;
+  align-items: center;
+  margin: 0;
+}
+
+.expert_img {
+  flex: 1;
+}
+
+.expert_img img {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+}
+
+.expert_info {
+  flex: 2;
+}
+
+.expert_name {
+  font-size: 16px;
+  color: var(--purple);
+}
+
+.expert_designation {
+  padding: 10px 0;
+}
+
+.expert_rating {
+  display: flex;
+  padding-right: 3px;
+}
+
+.expert_rating svg {
+  fill: var(--purple);
+}
+
+.expert_contact {
+  display: flex;
+
+  border: 2px solid #6d687549;
+  text-align: center;
+}
+
+.expert_available {
+  padding: 10px 0;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  text-transform: capitalize;
+}
+
+.expert_available svg {
+  fill: var(--purple);
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+}
+
+.expert_contact div {
+  padding: 10px;
+  font-weight: 400;
+  width: 50%;
+}
+.expert_contact div:first-child {
+  border-right: 2px solid #6d687549;
+}
