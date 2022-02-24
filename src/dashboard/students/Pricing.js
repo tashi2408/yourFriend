@@ -16,13 +16,13 @@ function Pricing() {
             pack={Package}
             name="Pack1"
             description="zzzzzzzzzzzzzz"
-            recommondation="most useful"
+            recommondation="most--useful!!!"
           />
           <Card
             pack={Package2}
             name="Pack2"
             description="zzzzzzzzzzzzzz"
-            recommondation="best seller"
+            recommondation="**best-seller**"
           />
           <Card
             pack={Package3}
@@ -36,3 +36,4 @@ function Pricing() {
 }
 
 export default Pricing;
+

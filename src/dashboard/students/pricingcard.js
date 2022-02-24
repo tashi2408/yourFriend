@@ -12,7 +12,7 @@ export default function Card({
         <div className="pricingcard-front">
           <img className="pack-image" src={pack} alt="pack-item" />
           <div className="pack-content">
-            <h1 className="styled-button">{name}</h1>
+            <p className="styled-button">{name}</p>
             <h2 className="pack-description">{description}</h2>
             <p className="pack-recommondation">{recommondation}</p>
             <a className="button">Buy</a>
