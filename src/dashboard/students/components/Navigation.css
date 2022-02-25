@@ -82,7 +82,7 @@
     position: absolute;
     top: 40px;
     z-index: 4000;
-    background-color: var(--dark);
+    background-color: #f1f1f1;
     font-size: 15px;
     color: var(--black);
     padding: 15px 10px;
@@ -93,7 +93,7 @@
     display: flex;
     opacity: 0;
     visibility: hidden;
-    text-align: center;
+    text-align: start;
     justify-content: center;
   }
   .LinkItem:hover > .Dropdown {
@@ -106,6 +106,6 @@
     border-radius: 12px;
   }
   .Dropdown li:hover {
-    background: #f1f1f1;
+    background: var(--purple);
   }
   
