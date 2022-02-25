@@ -3,11 +3,6 @@
     --nav-back: #ffb4a275;
   }
   
-  a {
-    color: currentColor;
-    text-decoration: none;
-  }
-  
   nav {
     height: 80px;
     width: 100%;
@@ -20,7 +15,7 @@
     padding-right: 100px;
   }
   
-  .colorBar {
+  .ColorBar {
     background-color: var(--nav-back);
     -webkit-backdrop-filter: blur(8px);
     backdrop-filter: blur(8px);
@@ -32,11 +27,11 @@
     height: 100%;
   }
   
-  .logo {
+  .Logo {
     margin-right: auto;
     height: 70;
     width: 70;
-    padding-left: 30px;
+    padding-left: 40px;
   }
   
   nav ul {
@@ -47,21 +42,17 @@
     gap: 15px;
   }
   
-  .links {
+  .Links {
     font-weight: 600;
     color: var(--black);
   }
   
-  .linkItem {
+  .LinkItem {
     position: relative;
     padding-right: 10px;
   }
   
-  .linkItem:hover {
-    color: var(--primary-color);
-  }
-  
-  .linkItem::after {
+  .LinkItem::after {
     content: '';
     height: 3px;
     position: absolute;
@@ -72,32 +63,28 @@
     background-color: var(--primary-color);
   }
   
-  .linkItem:hover::after {
-    width: 100%;
-  }
-  
-  .hamburger {
+  .Hamburger {
     display: none;
   }
   
   @media (max-width: 635px) {
-    .links {
+    .Links {
       display: none;
     }
-    .hamburger {
+    .Hamburger {
       display: block;
     }
   }
   
-  .dropdown {
+  .Dropdown {
     flex-direction: column;
     gap: 15px;
     position: absolute;
     top: 40px;
     z-index: 4000;
-    background: #393b989c;
+    background-color: var(--dark);
     font-size: 15px;
-    color: #fff;
+    color: var(--black);
     padding: 15px 10px;
     border-radius: 12px;
     box-shadow: 4px 4px 6px 0 #21212130;
@@ -109,16 +96,16 @@
     text-align: center;
     justify-content: center;
   }
-  .linkItem:hover > .dropdown {
+  .LinkItem:hover > .Dropdown {
     visibility: visible;
     opacity: 1;
   }
-  .dropdown li {
+  .Dropdown li {
     padding: 5px 10px;
     transition: 0.2s all;
     border-radius: 12px;
   }
-  .dropdown li:hover {
-    background: var(--dark);
+  .Dropdown li:hover {
+    background: #f1f1f1;
   }
   

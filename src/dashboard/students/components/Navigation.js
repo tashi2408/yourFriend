@@ -8,7 +8,9 @@ import { faUser } from '@fortawesome/free-solid-svg-icons';
 import { faClockRotateLeft } from '@fortawesome/free-solid-svg-icons';
 import { faLock } from '@fortawesome/free-solid-svg-icons';
 import { faSignOut } from '@fortawesome/free-solid-svg-icons';
-import { faMessage} from '@fortawesome/free-solid-svg-icons';
+import { faComment} from '@fortawesome/free-solid-svg-icons';
+import { faUsers} from '@fortawesome/free-solid-svg-icons';
+import { faBookmark} from '@fortawesome/free-solid-svg-icons';
 
 
 const Navigation = ({ toggleMobileNav }) => {
@@ -16,10 +18,10 @@ const Navigation = ({ toggleMobileNav }) => {
     window.onscroll = () => {
       var currentScrollPos = window.pageYOffset;
       if (currentScrollPos !== 0) {
-        document.querySelector('nav').classList.add('colorBar');
+        document.querySelector('nav').classList.add('ColorBar');
       }
       if (currentScrollPos === 0) {
-        document.querySelector('nav').classList.remove('colorBar');
+        document.querySelector('nav').classList.remove('ColorBar');
       }
     };
   }, []);
@@ -27,28 +29,28 @@ const Navigation = ({ toggleMobileNav }) => {
     <>
       <nav>
         <div className="wrapper">
-          <Link to="/dashboard" className="logo">
+          <Link to="/dashboard" className="Logo">
             <img
-              className="logo"
+              className="Logo"
               alt="your friend logo"
               src={Logo}
               height={70}
-              width={100}
+              width={110}
             />
           </Link>
-          <ul className="links">
-            <li className="linkItem">
-              <Link to="/dashboard/experts">Experts</Link>
+          <ul className="Links">
+            <li className="LinkItem">
+              <Link to="/dashboard/experts"><FontAwesomeIcon icon={faUsers}/><a style={{ marginLeft: '.5rem' }} >Experts</a></Link>
             </li>
-            <li className="linkItem">
-              <Link to="/blog">Blog</Link>
+            <li className="LinkItem">
+              <Link to="/blog"><FontAwesomeIcon icon={faBookmark}/><a style={{ marginLeft: '.5rem' }} >Blog</a></Link>
             </li>
-            <li className="linkItem">
-              <Link to="/chat"><FontAwesomeIcon icon={faMessage}/></Link>
+            <li className="LinkItem">
+              <Link to="/chat"><FontAwesomeIcon icon={faComment}/><a style={{ marginLeft: '.5rem' }} >Chat</a></Link>
             </li>
-            <li className="linkItem">
-              <Link><FontAwesomeIcon icon={faUser} /> <a style={{ marginLeft: '.5rem' }} >User-name</a></Link>
-              <ul class="dropdown">
+            <li className="LinkItem">
+              <Link><FontAwesomeIcon icon={faUser} /> <a style={{ marginLeft: '.25rem' }} >User-name</a></Link>
+              <ul class="Dropdown">
                 <li>
                   <Link to="/profile"><FontAwesomeIcon icon={faUser} /><a style={{ marginLeft: '.5rem' }} >Profile</a></Link>
                 </li>
@@ -64,7 +66,7 @@ const Navigation = ({ toggleMobileNav }) => {
               </ul>
             </li>
           </ul>
-          <span className="hamburger">
+          <span className="Hamburger">
             <Hamburger onToggle={toggleMobileNav} duration={0.3} />
           </span>
         </div>
