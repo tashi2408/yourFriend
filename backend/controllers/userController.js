@@ -14,13 +14,19 @@ const googleLogin = asyncHandler(async (req, res) => {
     idToken: token,
     audience: process.env.CLIENT_ID,
   });
-  const { name, email, picture } = ticket.getPayload();
+  console.log(ticket.getPayload());
+  const { name, email, picture, jti } = ticket.getPayload();
+
+  // Hash password
+  const salt = await bcrypt.genSalt(10);
+  const hashedPassword = await bcrypt.hash(jti, salt);
 
   // Create user
   const user = await User.create({
     name,
     email,
-    password: '123',
+    password: hashedPassword,
+    picture,
   });
 
   if (user) {
@@ -41,7 +47,6 @@ const googleLogin = asyncHandler(async (req, res) => {
 // @access  Public
 const registerUser = asyncHandler(async (req, res) => {
   const { name, email, password } = req.body;
-  console.log(req.body);
 
   if (!name || !email || !password) {
     res.status(400);
@@ -69,10 +74,10 @@ const registerUser = asyncHandler(async (req, res) => {
 
   if (user) {
     res.status(201).json({
-      _id: user.id,
+      id: user.id,
       name: user.name,
       email: user.email,
-      token: generateToken(user._id),
+      token: generateToken(user.id),
     });
   } else {
     res.status(400);
@@ -91,13 +96,13 @@ const loginUser = asyncHandler(async (req, res) => {
 
   if (user && (await bcrypt.compare(password, user.password))) {
     res.json({
-      _id: user.id,
+      id: user.id,
       name: user.name,
       email: user.email,
       token: generateToken(user._id),
     });
   } else {
-    res.status(400);
+    res.status(401);
     throw new Error('Invalid credentials');
   }
 });
@@ -107,6 +112,51 @@ const loginUser = asyncHandler(async (req, res) => {
 // @access  Private
 const getMe = asyncHandler(async (req, res) => {
   res.status(200).json(req.user);
+});
+
+// @desc    Get All users
+// @route   GET /api/users
+// @access  Private
+const getAllUsers = asyncHandler(async (req, res) => {
+  if (req.user.isAdmin) {
+    const users = await User.find();
+    res.status(200).json(users);
+  }
+  res.status(403);
+  throw new Error('Forbidden');
+});
+
+// @desc    UPDATE user data
+// @route   PUT /api/users/:id
+// @access  Private
+const updateUser = asyncHandler(async (req, res) => {
+  if (req.body.password) {
+    // Hash password
+    const salt = await bcrypt.genSalt(10);
+    req.body.password = await bcrypt.hash(req.body.password, salt);
+  }
+  const user = await User.findById(req.params.id);
+  if (!user) {
+    res.status(400);
+    throw new Error('User not found');
+  }
+  const updatedUser = await User.findByIdAndUpdate(req.params.id, req.body, {
+    new: true,
+  });
+  res.status(200).json(updatedUser);
+});
+
+// @desc    UPDATE user data
+// @route   PUT /api/users/:id
+// @access  Private
+const deleteUser = asyncHandler(async (req, res) => {
+  const user = await User.findById(req.params.id);
+  if (!user) {
+    res.status(400);
+    throw new Error('User not found');
+  }
+  await user.remove();
+  res.status(200).json({ message: 'User deleted' });
 });
 
 // Generate JWT
@@ -121,4 +171,7 @@ module.exports = {
   loginUser,
   getMe,
   googleLogin,
+  getAllUsers,
+  updateUser,
+  deleteUser,
 };

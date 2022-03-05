@@ -15,7 +15,7 @@ function Login() {
   };
 
   const handleLogin = async (googleData) => {
-    const res = await fetch('/api/google-login', {
+    const res = await fetch('/api/users/google-login', {
       method: 'POST',
       body: JSON.stringify({
         token: googleData.tokenId,

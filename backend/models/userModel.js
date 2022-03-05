@@ -14,6 +14,20 @@ const userSchema = mongoose.Schema(
     picture: {
       type: String,
     },
+    isVerified: {
+      type: Boolean,
+      default: false,
+    },
+    resetToken: {
+      type: String,
+    },
+    isAdmin: {
+      type: Boolean,
+      default: false,
+    },
+    expireToken: {
+      type: Date,
+    },
     password: {
       type: String,
       required: [true, 'Please add a password'],
