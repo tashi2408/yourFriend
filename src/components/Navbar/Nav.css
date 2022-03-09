@@ -35,6 +35,7 @@ nav .wrapper {
   margin-right: auto;
   height: 70;
   width: 70;
+  padding-left: 40px;
 }
 
 nav ul {
@@ -52,6 +53,7 @@ nav ul {
 
 .linkItem {
   position: relative;
+  padding-right: 5px;
 }
 
 .linkItem:hover {
@@ -93,6 +95,7 @@ nav ul {
   top: 40px;
   z-index: 4000;
   background: #393b989c;
+  font-size: 15px;
   color: #fff;
   padding: 15px 10px;
   border-radius: 12px;

@@ -28,7 +28,7 @@ const Nav = ({ toggleMobileNav }) => {
               alt="your friend logo"
               src={Logo}
               height={70}
-              width={100}
+              width={110}
             />
           </Link>
           <ul className="links">
