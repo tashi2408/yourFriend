@@ -56,13 +56,9 @@ const Nav = ({ toggleMobileNav }) => {
               </ul>
             </li>
             <li>
-              <a
-                className="btn"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <Link to="/Login">Login</Link>
-              </a>
+              <Link className="btn" to="/Login">
+                Login
+              </Link>
             </li>
           </ul>
           <span className="hamburger">
