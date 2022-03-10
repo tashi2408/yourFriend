@@ -18,13 +18,13 @@
   font-size: 6rem;
   text-align: center;
   text-transform: uppercase;
-  font-weight: 300;
+  font-weight: 600;
   letter-spacing: 0.3rem;
-  color: var(--white);
+  color: var(--purple);
   margin: 0;
   height: 80%;
   display: flex;
-  align-items: center;
+  align-items: top;
   justify-content: center;
 }
 
