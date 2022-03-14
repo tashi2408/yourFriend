@@ -1,6 +1,6 @@
-import React from "react";
-import "./ContactUs.css";
-import ConatctUs from "./contact.svg";
+import React from 'react';
+import './ContactUs.css';
+import ConatctUs from './contact.svg';
 
 export default class Contact extends React.Component {
   render() {
@@ -54,13 +54,13 @@ export default class Contact extends React.Component {
                     </span>
                     <div
                       style={{
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
-                        paddingTop: "5px",
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        paddingTop: '5px',
                       }}
                     >
-                      <a href="#" className="button pulse">
+                      <a href="#" className="btn">
                         Submit
                       </a>
                     </div>
