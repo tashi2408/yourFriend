@@ -16,9 +16,6 @@ const Blog = () => {
                   {post.title}
                   <span>Article</span>
                 </h3>
-                {/* <p>
-                  Impact<a href="/">by covid 19</a> | <a href="/">Insight</a>
-                </p> */}
                 <Link to={`/blog/${post.id}`} className="btn">
                   Read More
                 </Link>
@@ -26,7 +23,7 @@ const Blog = () => {
             </div>
           ))}
         </main>
-        <div
+        {/* <div
           style={{
             display: 'flex',
             alignItems: 'center',
@@ -37,7 +34,7 @@ const Blog = () => {
           <Link to="/blog" className="btn">
             Read more
           </Link>
-        </div>
+        </div> */}
       </div>
     </div>
   );
