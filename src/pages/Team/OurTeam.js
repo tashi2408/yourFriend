@@ -11,7 +11,7 @@ function OurTeam() {
   return (
     <div>
       <header className="ourteam-header">
-        {/* <div className="heading-ourteam">Our team</div> */}
+        <div className="heading-ourteam">Our team</div> 
       </header>
       <div className="ourteam">
         <h2 className="secondary-heading">Board of Counsellors</h2>

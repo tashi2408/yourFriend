@@ -12,9 +12,11 @@ const Nav = ({ toggleMobileNav }) => {
       var currentScrollPos = window.pageYOffset;
       if (currentScrollPos !== 0) {
         document.querySelector('nav').classList.add('colorBar');
+        // document.querySelector('.logo img').classList.remove('bigLogo');
       }
       if (currentScrollPos === 0) {
         document.querySelector('nav').classList.remove('colorBar');
+        // document.querySelector('.logo img').classList.add('bigLogo');
       }
     };
   }, []);
@@ -23,13 +25,7 @@ const Nav = ({ toggleMobileNav }) => {
       <nav>
         <div className="wrapper">
           <Link to="/" className="logo">
-            <img
-              className="logo"
-              alt="your friend logo"
-              src={Logo}
-              height={70}
-              width={110}
-            />
+            <img alt="your friend logo" src={Logo} />
           </Link>
           <ul className="links">
             <li className="linkItem">
@@ -56,13 +52,9 @@ const Nav = ({ toggleMobileNav }) => {
               </ul>
             </li>
             <li>
-              <a
-                className="btn"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <Link to="/Login">Login</Link>
-              </a>
+              <Link className="btn" to="/Login">
+                Login
+              </Link>
             </li>
           </ul>
           <span className="hamburger">
