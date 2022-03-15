@@ -1,5 +1,7 @@
+
+
 import './Login.css';
-import { Link } from 'react-router-dom';
+import { Link, Redirect } from 'react-router-dom';
 import GoogleLogin from 'react-google-login';
 import { useState } from 'react';
 
@@ -41,10 +43,11 @@ function Login() {
             <h1>Login</h1>
             <div>
               {loginData ? (
-                <div>
-                  <h3>You logged in as {loginData.email}</h3>
-                  <button onClick={handleLogout}>Logout</button>
-                </div>
+                // <div>
+                //   <h3>You logged in as {loginData.email}</h3>
+                //   <button onClick={handleLogout}>Logout</button>
+                // </div>
+                <Redirect to='/dashboard' />
               ) : (
                 <div>
                   <GoogleLogin
