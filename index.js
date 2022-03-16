@@ -10,7 +10,9 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 app.use('/api/users', require('./routes/userRoutes'));
-app.use('/api/therapist', require('./routes/therapistRoutes'));
+app.get('/api/therapist', (req, res) => {
+  res.send('hello')
+});
 app.use(errorHandler);
 
 app.listen(process.env.PORT || 5000, () => {
