@@ -1,4 +1,3 @@
-import './home.css';
 import Help from '../../assets/help.svg';
 import Overview from './overview/Overview';
 import Contact from './contactUs/ContactUs';
@@ -6,10 +5,9 @@ import Blog from './Blog/Blog';
 import Timeline from './timeline/Timeline';
 import Reachout from './reachOut/segment';
 import Ourwork from './ourwork/OurWork';
-
 import { joinURL } from '../../components/Navbar/Nav';
-
 import { Link } from 'react-router-dom';
+import './home.css';
 
 const Home = () => {
   return (
