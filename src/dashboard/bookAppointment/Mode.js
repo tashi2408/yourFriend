@@ -1,20 +1,17 @@
 import { useState } from 'react';
-import { DateTimePicker } from '@mui/lab';
-import LocalizationProvider from '@mui/lab/LocalizationProvider';
-import { TextField } from '@mui/material';
-import AdapterDateFns from '@mui/lab/AdapterDateFns';
+import DatePicker from 'react-datepicker';
+import 'react-datepicker/dist/react-datepicker.css';
 
 const Mode = () => {
-  const [value, setValue] = useState(new Date('2020-06-03T21:11:54'));
-  const handleChange = (newVal) => setValue(newVal);
+  const [selectedDate, setSelectedDate] = useState(null);
   return (
-    <LocalizationProvider dateAdapter={AdapterDateFns}>
-      <div class="ba">
-        <div className="wrapper">
-          <h3>YourFriend will assign the best available Expert to you.</h3>
-          <p>Choose your mode of contact</p>
-          <div className="baModeContainer">
-            <div className="baBox baModeBox">
+    <div class="ba">
+      <div className="wrapper">
+        <h3>YourFriend will assign the best available Expert to you.</h3>
+        <p>Choose your mode of contact</p>
+        <div className="baModeContainer">
+          <div className="baBox baModeBox">
+            <div className="baModeBox_main">
               <span className="baModeBox_price">3000$</span>
               <div className="baModeBox_about">
                 <div>VOICE CALL</div>
@@ -28,19 +25,24 @@ const Mode = () => {
               <a href="/bookAppointment/mode" className="btn">
                 SELECT
               </a>
-              <DateTimePicker
-                label="Date&Time picker"
-                value={value}
-                onChange={handleChange}
-                renderInput={(params) => <TextField {...params} />}
+            </div>
+            <div className="dateSection">
+              <span className="smolText">
+                Please Choose any Available Date & Time Below
+              </span>
+              <DatePicker
+                selected={selectedDate}
+                onChange={(date) => setSelectedDate(date)}
+                minDate={new Date()}
+                showTimeInput
               />
             </div>
-            <div className="baBox baModeBox"></div>
-            <div className="baBox baModeBox"></div>
           </div>
+          <div className="baBox baModeBox"></div>
+          <div className="baBox baModeBox"></div>
         </div>
       </div>
-    </LocalizationProvider>
+    </div>
   );
 };
 
