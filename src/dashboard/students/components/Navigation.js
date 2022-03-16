@@ -8,12 +8,16 @@ import { faUser } from '@fortawesome/free-solid-svg-icons';
 import { faClockRotateLeft } from '@fortawesome/free-solid-svg-icons';
 import { faLock } from '@fortawesome/free-solid-svg-icons';
 import { faSignOut } from '@fortawesome/free-solid-svg-icons';
-import { faComment} from '@fortawesome/free-solid-svg-icons';
-import { faUsers} from '@fortawesome/free-solid-svg-icons';
-import { faBookmark} from '@fortawesome/free-solid-svg-icons';
+import { faComment } from '@fortawesome/free-solid-svg-icons';
+import { faUsers } from '@fortawesome/free-solid-svg-icons';
+import { faBookmark } from '@fortawesome/free-solid-svg-icons';
 
 
 const Navigation = ({ toggleMobileNav }) => {
+
+  const handleLogout = () => {
+    localStorage.removeItem('loginData');
+  }
   useEffect(() => {
     window.onscroll = () => {
       var currentScrollPos = window.pageYOffset;
@@ -40,13 +44,13 @@ const Navigation = ({ toggleMobileNav }) => {
           </Link>
           <ul className="Links">
             <li className="LinkItem">
-              <Link to="/dashboard/experts"><FontAwesomeIcon icon={faUsers}/><a style={{ marginLeft: '.5rem' }} >Experts</a></Link>
+              <Link to="/dashboard/experts"><FontAwesomeIcon icon={faUsers} /><a style={{ marginLeft: '.5rem' }} >Experts</a></Link>
             </li>
             <li className="LinkItem">
-              <Link to="/blog"><FontAwesomeIcon icon={faBookmark}/><a style={{ marginLeft: '.5rem' }} >Blog</a></Link>
+              <Link to="/blog"><FontAwesomeIcon icon={faBookmark} /><a style={{ marginLeft: '.5rem' }} >Blog</a></Link>
             </li>
             <li className="LinkItem">
-              <Link to="/chat"><FontAwesomeIcon icon={faComment}/><a style={{ marginLeft: '.5rem' }} >Chat</a></Link>
+              <Link to="/chat"><FontAwesomeIcon icon={faComment} /><a style={{ marginLeft: '.5rem' }} >Chat</a></Link>
             </li>
             <li className="LinkItem">
               <Link><FontAwesomeIcon icon={faUser} /> <a style={{ marginLeft: '.25rem' }} >User-name</a></Link>
@@ -55,13 +59,13 @@ const Navigation = ({ toggleMobileNav }) => {
                   <Link to="/profile"><FontAwesomeIcon icon={faUser} /><a style={{ marginLeft: '.5rem' }} >Profile</a></Link>
                 </li>
                 <li>
-                  <Link to="/sessions"><FontAwesomeIcon icon={faClockRotateLeft}/><a style={{ marginLeft: '.5rem' }} >Sessions</a></Link>
+                  <Link to="/sessions"><FontAwesomeIcon icon={faClockRotateLeft} /><a style={{ marginLeft: '.5rem' }} >Sessions</a></Link>
                 </li>
                 <li>
-                  <Link to="/password"><FontAwesomeIcon icon={faLock}/><a style={{ marginLeft: '.5rem' }} >Password</a></Link>
+                  <Link to="/password"><FontAwesomeIcon icon={faLock} /><a style={{ marginLeft: '.5rem' }} >Password</a></Link>
                 </li>
                 <li>
-                  <Link to="/"><FontAwesomeIcon icon={faSignOut}/><a style={{ marginLeft: '.5rem' }} >Logout</a></Link>
+                  <Link to="/" onClick={handleLogout}><FontAwesomeIcon icon={faSignOut} /><a style={{ marginLeft: '.5rem' }} >Logout</a></Link>
                 </li>
               </ul>
             </li>

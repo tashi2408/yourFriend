@@ -18,16 +18,21 @@ import Pricing from './dashboard/students/Pricing';
 import Login from './dashboard/Login';
 import Signup from './dashboard/Signup';
 import Experts from './dashboard/students/Experts';
-import BookAppointment from "./dashboard/bookAppointment/index"
+import BookAppointment from './dashboard/bookAppointment/index';
 import BookAppointmentCategory from './dashboard/bookAppointment/Category';
 import BookAppointmentMode from './dashboard/bookAppointment/Mode';
+import Navigation from './dashboard/students/components/Navigation';
 
 function App() {
   const [visible, setVisible] = useState(false);
   return (
     <BrowserRouter basePath="/">
       <ScrollToTop />
-      <Nav toggleMobileNav={() => setVisible(!visible)} />
+      {localStorage.getItem('loginData') ? (
+        <Navigation toggleMobileNav={() => setVisible(!visible)} />
+      ) : (
+        <Nav toggleMobileNav={() => setVisible(!visible)} />
+      )}
       <OffCanvas isVisible={visible} />
       <Switch>
         <Route path={'/'} component={Home} exact />
@@ -45,7 +50,10 @@ function App() {
         <Route path={'/signup'} component={Signup} />
         <Route path={'/dashboard/experts'} component={Experts} />
         <Route path={'/bookAppointment'} component={BookAppointment} exact />
-        <Route path={'/bookAppointment/category'} component={BookAppointmentCategory} />
+        <Route
+          path={'/bookAppointment/category'}
+          component={BookAppointmentCategory}
+        />
         <Route path={'/bookAppointment/mode'} component={BookAppointmentMode} />
         <Route component={NotFound} />
       </Switch>
@@ -113,7 +121,8 @@ const OffCanvas = ({ isVisible }) => {
 };
 
 const NotFound = () => (
-  <div style={{
+  <div
+    style={{
       height: 'calc(100vh - 146px)',
       display: 'flex',
       flexFlow: 'column wrap',
