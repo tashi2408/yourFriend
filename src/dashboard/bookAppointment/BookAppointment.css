@@ -29,6 +29,52 @@
   width: 500px;
 }
 
+.baModeContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  margin-top: 50px;
+}
+
+.baModeBox {
+  width: 80%;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 0px;
+  position: relative;
+}
+
+.baModeBox_about {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  width: 50%;
+}
+.baModeBox .baModeBox_price {
+  box-shadow: 2px 4px 4px #21212120;
+  font-size: 32px;
+  position: absolute;
+  top: -24px;
+  background-color: #212121;
+  color: #fafafa;
+  width: 250px;
+  border-radius: 12px;
+  padding: 20px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.baModeBox .btn {
+  height: 50px;
+  width: 240px;
+}
+
+.baModeBox .baModeBox_price:hover {
+  background-color: #fafafa;
+  color: #212121;
+}
+
 .textLeft {
   text-align: left;
 }

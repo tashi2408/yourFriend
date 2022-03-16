@@ -1,67 +1,46 @@
-import InputLabel from '@mui/material/InputLabel';
-import MenuItem from '@mui/material/MenuItem';
-import FormControl from '@mui/material/FormControl';
-import Select from '@mui/material/Select';
-const Categories = {
-  'Career/Academic': [
-    'Career Confusion',
-    'Career Shift',
-    'Interview Prep',
-    'Entreprenuership',
-    'Time Management',
-    'Study Skills',
-    'Others',
-    'Job Loss',
-    'Work-life balance',
-  ],
-  'Domestic Abuse': ['Financial', 'Neglect', 'Emotional', 'Sexual', 'Physical'],
-};
+import { useState } from 'react';
+import { DateTimePicker } from '@mui/lab';
+import LocalizationProvider from '@mui/lab/LocalizationProvider';
+import { TextField } from '@mui/material';
+import AdapterDateFns from '@mui/lab/AdapterDateFns';
+
 const Mode = () => {
+  const [value, setValue] = useState(new Date('2020-06-03T21:11:54'));
+  const handleChange = (newVal) => setValue(newVal);
   return (
-    <div className="ba">
-      <div class="wrapper">
-        <div class="baBoxContainer">
-          <div class="baBox textLeft">
-            <h3 className="textJustify">Help us find you the right Expert</h3>
-            <FormControl fullWidth>
-              <InputLabel id="demo-simple-select-label">Category</InputLabel>
-              <Select
-                labelId="demo-simple-select-label"
-                id="demo-simple-select"
-                label="Category"
-              >
-                <MenuItem value={1}>Career/Academic</MenuItem>
-                <MenuItem value={2}>Domestic Abuse</MenuItem>
-                <MenuItem value={3}>Family & Friends</MenuItem>
-                <MenuItem value={4}>Love-Relationship</MenuItem>
-                <MenuItem value={5}>Self-Improvement</MenuItem>
-                <MenuItem value={5}>Sexual-Wellness</MenuItem>
-              </Select>
-            </FormControl>
-            <FormControl fullWidth>
-              <InputLabel id="demo-simple-select-label">
-                Sub Category
-              </InputLabel>
-              <Select
-                labelId="demo-simple-select-label"
-                id="demo-simple-select"
-                label="Sub Category"
-              >
-                <MenuItem value={1}>Career/Academic</MenuItem>
-                <MenuItem value={2}>Domestic Abuse</MenuItem>
-                <MenuItem value={3}>Family & Friends</MenuItem>
-                <MenuItem value={4}>Love-Relationship</MenuItem>
-                <MenuItem value={5}>Self-Improvement</MenuItem>
-                <MenuItem value={6}>Sexual-Wellness</MenuItem>
-              </Select>
-            </FormControl>
-            <a href="/" class="btn">
-              Continue
-            </a>
+    <LocalizationProvider dateAdapter={AdapterDateFns}>
+      <div class="ba">
+        <div className="wrapper">
+          <h3>YourFriend will assign the best available Expert to you.</h3>
+          <p>Choose your mode of contact</p>
+          <div className="baModeContainer">
+            <div className="baBox baModeBox">
+              <span className="baModeBox_price">3000$</span>
+              <div className="baModeBox_about">
+                <div>VOICE CALL</div>
+                <div>For Initial 45 minutes</div>
+                <p>
+                  Your Expert will talk to you one on one over a dedicated phone
+                  line and work with you to help find the answers you need.
+                  Confidentiality is guaranteed.
+                </p>
+              </div>
+              <a href="/bookAppointment/mode" className="btn">
+                SELECT
+              </a>
+              <DateTimePicker
+                label="Date&Time picker"
+                value={value}
+                onChange={handleChange}
+                renderInput={(params) => <TextField {...params} />}
+              />
+            </div>
+            <div className="baBox baModeBox"></div>
+            <div className="baBox baModeBox"></div>
           </div>
         </div>
       </div>
-    </div>
+    </LocalizationProvider>
   );
 };
 

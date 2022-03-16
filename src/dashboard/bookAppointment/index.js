@@ -13,14 +13,14 @@ const BookAppointment = () => {
               Just select your preferred time and concern category. We will
               select the right Expert for you.
             </p>
-            <a href="/" className="btn">
+            <a href="/bookAppointment/mode" className="btn">
               CONTINUE
             </a>
           </div>
           <div class="baBox">
             <h3>Select your Expert</h3>
             <p>Select your Expert and we will book the appointment for you.</p>
-            <a href="/" className="btn">
+            <a href="/bookAppointment/mode" className="btn">
               CONTINUE
             </a>
           </div>
