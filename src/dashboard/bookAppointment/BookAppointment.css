@@ -34,7 +34,6 @@
   flex-direction: column;
   align-items: center;
   gap: 32px;
-  margin-top: 50px;
 }
 
 .baModeBox {
@@ -42,6 +41,7 @@
   width: 80%;
   box-shadow: 2px 8px 12px #21212130;
   background-color: #fff;
+  margin-top: 50px;
 }
 
 .baModeBox .baModeBox_main {
