@@ -3,7 +3,7 @@ import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 
 const Mode = () => {
-  const [selectedDate, setSelectedDate] = useState(null);
+  const [dateVisible, setDateVisible] = useState(false);
   return (
     <div class="ba">
       <div className="wrapper">
@@ -12,9 +12,13 @@ const Mode = () => {
         <div className="baModeContainer">
           <div className="baBox baModeBox">
             <div className="baModeBox_main">
+              <img
+                src="https://www.svgrepo.com/show/52469/phone-call.svg"
+                alt="phone"
+              />
               <span className="baModeBox_price">3000$</span>
               <div className="baModeBox_about">
-                <div>VOICE CALL</div>
+                <div className="baType">VOICE CALL</div>
                 <div>For Initial 45 minutes</div>
                 <p>
                   Your Expert will talk to you one on one over a dedicated phone
@@ -22,26 +26,37 @@ const Mode = () => {
                   Confidentiality is guaranteed.
                 </p>
               </div>
-              <a href="/bookAppointment/mode" className="btn">
+              <a
+                href="/bookAppointment/mode"
+                className="btn"
+                onClick={() => setDateVisible(!dateVisible)}
+              >
                 SELECT
               </a>
             </div>
-            <div className="dateSection">
-              <span className="smolText">
-                Please Choose any Available Date & Time Below
-              </span>
-              <DatePicker
-                selected={selectedDate}
-                onChange={(date) => setSelectedDate(date)}
-                minDate={new Date()}
-                showTimeInput
-              />
-            </div>
+            <DateSection dateVisible={dateVisible} />
           </div>
           <div className="baBox baModeBox"></div>
           <div className="baBox baModeBox"></div>
         </div>
       </div>
+    </div>
+  );
+};
+const DateSection = ({ dateVisible }) => {
+  const [selectedDate, setSelectedDate] = useState(null);
+  if (!dateVisible) return null;
+  return (
+    <div className="dateSection">
+      <span className="smolText">
+        Choose/Type any Available Date & Time Below
+      </span>
+      <DatePicker
+        selected={selectedDate}
+        onChange={(date) => setSelectedDate(date)}
+        minDate={new Date()}
+        showTimeInput
+      />
     </div>
   );
 };

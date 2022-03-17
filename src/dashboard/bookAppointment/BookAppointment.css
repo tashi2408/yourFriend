@@ -51,6 +51,15 @@
   align-items: center;
   gap: 30px;
 }
+
+.baModeBox .baModeBox_main img {
+  height: 160px;
+  width: 160px;
+}
+.baModeBox .baModeBox_main .baType {
+  font-size: 18px;
+  font-weight: bold;
+}
 .baModeBox .dateSection {
   display: flex;
   flex-direction: column;
