@@ -10,14 +10,14 @@ const Mode = () => {
         <p>Choose your mode of contact</p>
         <div className="baModeContainer">
           <Plan />
-          <Plan />
+          <Plan price={4000} time={60} />
         </div>
       </div>
     </div>
   );
 };
 
-const Plan = () => {
+const Plan = ({ price = 3000, time = 45 }) => {
   const [dateVisible, setDateVisible] = useState(false);
   return (
     <div className="baBox baModeBox">
@@ -26,10 +26,10 @@ const Plan = () => {
           src="https://www.svgrepo.com/show/52469/phone-call.svg"
           alt="phone"
         />
-        <span className="baModeBox_price">3000$</span>
+        <span className="baModeBox_price">{`₹ ${price}`}</span>
         <div className="baModeBox_about">
           <div className="baType">VOICE CALL</div>
-          <div>For Initial 45 minutes</div>
+          <div>{`For Initial ${time} minutes`}</div>
           <p>
             Your Expert will talk to you one on one over a dedicated phone line
             and work with you to help find the answers you need. Confidentiality

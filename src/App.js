@@ -31,23 +31,20 @@ function App() {
 
   const checkLogIn = () => {
     if (localStorage.getItem('loginData')) {
-      setIsLogin(true)
+      setIsLogin(true);
     }
-  }
+  };
 
   useEffect(() => {
     window.addEventListener('storage', () => {
-      console.log("change to local storage!");
-      setIsLogin('Yes')
-
-    })
+      console.log('change to local storage!');
+      setIsLogin('Yes');
+    });
     window.addEventListener('logout', () => {
-      console.log("change to local storage!2");
-      setIsLogin('Na')
-
-    })
+      console.log('change to local storage!2');
+      setIsLogin('Na');
+    });
   }, [isLogin]); // <- add the count variable here
-
 
   return (
     <BrowserRouter basePath="/">
@@ -83,7 +80,7 @@ function App() {
         <Route path={'/bookAppointment/mode'} component={BookAppointmentMode} />
         <Route component={NotFound} />
       </Switch>
-
+      <Footer />
     </BrowserRouter>
   );
 }
