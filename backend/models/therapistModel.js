@@ -14,8 +14,8 @@ const therapistSchema = mongoose.Schema(
         picture: {
             type: String,
         },
-        nextAvailableDate: {
-            type: Date
+        allAvailabeSlots: {
+            type: [Date]
         },
         profession: {
             type: String

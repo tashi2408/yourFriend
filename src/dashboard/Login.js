@@ -30,6 +30,7 @@ function Login() {
     const data = await res.json();
     setLoginData(data);
     localStorage.setItem('loginData', JSON.stringify(data));
+    window.dispatchEvent(new Event("storage"));
   };
   const handleLogout = () => {
     localStorage.removeItem('loginData');
@@ -50,7 +51,7 @@ function Login() {
                 <Redirect to='/dashboard' />
               ) : (
                 <div>
-                  <GoogleLogin
+                  <GoogleLogin theme="dark"
                     clientId={process.env.REACT_APP_GOOGLE_CLIENT_ID}
                     buttonText="Log in with Google"
                     onSuccess={handleLogin}

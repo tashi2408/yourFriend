@@ -17,6 +17,7 @@ const Navigation = ({ toggleMobileNav }) => {
 
   const handleLogout = () => {
     localStorage.removeItem('loginData');
+    window.dispatchEvent(new Event("logout"));
   }
   useEffect(() => {
     window.onscroll = () => {

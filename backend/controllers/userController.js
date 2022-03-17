@@ -35,6 +35,7 @@ const googleLogin = asyncHandler(async (req, res) => {
       name: user.name,
       email: user.email,
       token: generateToken(user._id),
+      picture: user.picture
     });
   } else {
     res.status(400);
