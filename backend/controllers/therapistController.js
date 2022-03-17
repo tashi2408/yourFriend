@@ -102,7 +102,8 @@ const loginUser = asyncHandler(async (req, res) => {
 // @route   GET /api/users/me
 // @access  Private
 const getMe = asyncHandler(async (req, res) => {
-    res.status(200).json(req.user);
+    const therapist = await Therapist.findById(req.params.id);
+    res.status(200).json(therapist);
 });
 
 // @desc    Get All users
