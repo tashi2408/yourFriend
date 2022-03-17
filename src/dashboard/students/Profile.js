@@ -11,8 +11,8 @@ function Profile() {
                 <img className={"img"} alt="oops" src={JSON.parse(localStorage.getItem('loginData')).picture}></img>
             </div>
             <div className="infocard">
-                <p className="username">Username: {JSON.parse(localStorage.getItem('loginData')).name}</p>
-                <p className="mail-id">Mail-Id: {JSON.parse(localStorage.getItem('loginData')).email}</p>
+                <p className="username">{JSON.parse(localStorage.getItem('loginData')).name}</p>
+                <p className="mail-id">{JSON.parse(localStorage.getItem('loginData')).email}</p>
             </div>
             <div className="detailscard" >
                 <div className="edit"><h2>Personal Details</h2><a style={{ float: "right" }} ><FontAwesomeIcon icon={faUserEdit} /></a></div>
