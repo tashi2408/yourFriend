@@ -50,7 +50,7 @@ function Login() {
                 <Redirect to='/dashboard' />
               ) : (
                 <div>
-                  <GoogleLogin
+                  <GoogleLogin theme="dark"
                     clientId={process.env.REACT_APP_GOOGLE_CLIENT_ID}
                     buttonText="Log in with Google"
                     onSuccess={handleLogin}
