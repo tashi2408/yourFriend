@@ -10,7 +10,7 @@ import About from './pages/Aboutus/About';
 import Internships from './pages/Internship/Internship';
 import Campaigns from './pages/Campaign/Campaign';
 import Webinars from './pages/Webinar/Webinar';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Review from './dashboard/bookings/Review';
 import Profile from './dashboard/students/Profile';
@@ -27,6 +27,28 @@ import Navigation from './dashboard/students/components/Navigation';
 
 function App() {
   const [visible, setVisible] = useState(false);
+  const [isLogin, setIsLogin] = useState('No');
+
+  const checkLogIn = () => {
+    if (localStorage.getItem('loginData')) {
+      setIsLogin(true)
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener('storage', () => {
+      console.log("change to local storage!");
+      setIsLogin('Yes')
+
+    })
+    window.addEventListener('logout', () => {
+      console.log("change to local storage!2");
+      setIsLogin('Na')
+
+    })
+  }, [isLogin]); // <- add the count variable here
+
+
   return (
     <BrowserRouter basePath="/">
       <ScrollToTop />
@@ -61,7 +83,7 @@ function App() {
         <Route path={'/bookAppointment/mode'} component={BookAppointmentMode} />
         <Route component={NotFound} />
       </Switch>
-      
+
     </BrowserRouter>
   );
 }

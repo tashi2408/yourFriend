@@ -30,6 +30,7 @@ function Login() {
     const data = await res.json();
     setLoginData(data);
     localStorage.setItem('loginData', JSON.stringify(data));
+    window.dispatchEvent(new Event("storage"));
   };
   const handleLogout = () => {
     localStorage.removeItem('loginData');
