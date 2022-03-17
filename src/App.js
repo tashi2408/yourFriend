@@ -13,20 +13,28 @@ import Webinars from './pages/Webinar/Webinar';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Review from './dashboard/bookings/Review';
+import Profile from './dashboard/students/Profile';
 import Sessions from './dashboard/students/Sessions';
+import Password from './dashboard/students/Password';
 import Pricing from './dashboard/students/Pricing';
 import Login from './dashboard/Login';
 import Signup from './dashboard/Signup';
 import Experts from './dashboard/students/Experts';
-import Navigation from './dashboard/students/components/Navigation'
+import BookAppointment from './dashboard/bookAppointment/index';
+import BookAppointmentCategory from './dashboard/bookAppointment/Category';
+import BookAppointmentMode from './dashboard/bookAppointment/Mode';
+import Navigation from './dashboard/students/components/Navigation';
 
 function App() {
-
   const [visible, setVisible] = useState(false);
   return (
     <BrowserRouter basePath="/">
       <ScrollToTop />
-      {localStorage.getItem('loginData') ? <Navigation toggleMobileNav={() => setVisible(!visible)} /> : <Nav toggleMobileNav={() => setVisible(!visible)} />}
+      {localStorage.getItem('loginData') ? (
+        <Navigation toggleMobileNav={() => setVisible(!visible)} />
+      ) : (
+        <Nav toggleMobileNav={() => setVisible(!visible)} />
+      )}
       <OffCanvas isVisible={visible} />
       <Switch>
         <Route path={'/'} component={Home} exact />
@@ -38,14 +46,22 @@ function App() {
         <Route path={'/webinars'} component={Webinars} />
         <Route path={'/blog/:id'} component={Post} />
         <Route path={'/dashboard/bookings'} component={Review} />
+        <Route path={'/profile'} component={Profile} />
         <Route path={'/sessions'} component={Sessions} />
+        <Route path={'/password'} component={Password} />
         <Route path={'/pricing'} component={Pricing} />
         <Route path={'/login'} component={Login} />
         <Route path={'/signup'} component={Signup} />
         <Route path={'/dashboard/experts'} component={Experts} />
+        <Route path={'/bookAppointment'} component={BookAppointment} exact />
+        <Route
+          path={'/bookAppointment/category'}
+          component={BookAppointmentCategory}
+        />
+        <Route path={'/bookAppointment/mode'} component={BookAppointmentMode} />
         <Route component={NotFound} />
       </Switch>
-      <Footer />
+      
     </BrowserRouter>
   );
 }
