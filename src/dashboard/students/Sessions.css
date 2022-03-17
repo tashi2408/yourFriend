@@ -25,6 +25,7 @@
     font-size: 18px;
     color: var(--gradient);
     text-align: justify;
+    padding-bottom: 15px;
   }
   
   .icon {
