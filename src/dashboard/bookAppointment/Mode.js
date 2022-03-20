@@ -1,7 +1,8 @@
-import { daysToWeeks } from 'date-fns';
+import { addHours, daysToWeeks, startOfDay } from 'date-fns';
 import { useState } from 'react';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
+import { addDays } from 'date-fns';
 
 const Mode = () => {
   return (
@@ -69,9 +70,9 @@ const DateSection = ({ dateVisible }) => {
 };
 const DateSection2 = () => {
   const days = [];
-  for (let i = 0; i < 7; i++) days.push(i);
-  const time = [];
-  for (let i = 0; i < 12; i++) time.push(i);
+  for (let i = 0; i < 7; i++) days.push(addDays(new Date(), i));
+  const times = [];
+  for (let i = 0; i < 12; i++) times.push(addHours(new Date(), i));
   return (
     <>
       <div className="dateSection_2">
@@ -79,16 +80,18 @@ const DateSection2 = () => {
           {days.map((day) => {
             return (
               <>
-                <div className="dayNDate"></div>
+                <div className="dayNDate">
+                  <span>{day.getDate()}</span>
+                </div>
               </>
             );
           })}
         </div>
         <div className="timeSlots">
-          {time.map(() => {
+          {times.map((time) => {
             return (
               <>
-                <div className="time"></div>
+                <div className="time">{`${time.getHours()}:${time.getMinutes()}`}</div>
               </>
             );
           })}

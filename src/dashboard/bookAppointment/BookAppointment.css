@@ -1,3 +1,5 @@
+/* TODO responsiveness */
+
 .ba {
   background-color: var(--gradient);
   min-height: calc(100vh - 250px);
@@ -132,12 +134,17 @@
   height: 80px;
   min-width: 120px;
   border-radius: 12px;
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
+  color: var(--white);
   transition: 0.2s;
   cursor: pointer;
-  flex-wrap: wrap;
+  display: grid;
+  place-items: center;
 }
-
+.dateSection_2 .days .dayNDate span {
+  font-size: 18px;
+  font-weight: 600;
+}
 .dateSection_2 .dayNDate:hover {
   background: var(--purple);
 }
@@ -156,10 +163,15 @@
   min-width: 100px;
   height: 40px;
   border-radius: 25px;
-  background-color: var(--primary-color);
+  background-color: var(--white);
   transition: 0.2s;
   cursor: pointer;
+  display: grid;
+  place-items: center;
+  font-size: 18px;
+  font-weight: 400;
 }
 .dateSection_2 .timeSlots .time:hover {
-  background-color: #212121;
+  background-color: var(--dark);
+  color: #fafafa;
 }
