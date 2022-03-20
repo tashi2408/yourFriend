@@ -20,7 +20,7 @@ const Mode = () => {
 };
 
 const Plan = ({ price = 3000, time = 45 }) => {
-  const [dateVisible, setDateVisible] = useState(false);
+  const [dateVisible, setDateVisible] = useState(() => false);
   return (
     <div className="baBox baModeBox">
       <div className="baModeBox_main">
@@ -38,15 +38,11 @@ const Plan = ({ price = 3000, time = 45 }) => {
             is guaranteed.
           </p>
         </div>
-        <a
-          href="/bookAppointment/mode"
-          className="btn"
-          onClick={() => setDateVisible(!dateVisible)}
-        >
+        <span className="btn" onClick={() => setDateVisible(!dateVisible)}>
           SELECT
-        </a>
+        </span>
       </div>
-      <DateSection2 dateVisible={dateVisible} />
+      <DateSection2 visible={dateVisible} />
       {/* <DateSection dateVisible={dateVisible} /> */}
     </div>
   );
@@ -68,7 +64,8 @@ const DateSection = ({ dateVisible }) => {
     </div>
   );
 };
-const DateSection2 = () => {
+const DateSection2 = ({ visible = true }) => {
+  if (!visible) return null;
   const days = [];
   for (let i = 0; i < 7; i++) days.push(addDays(new Date(), i));
   const times = [];
