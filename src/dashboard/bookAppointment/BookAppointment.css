@@ -116,3 +116,50 @@
 .baBox p {
   color: gray;
 }
+
+.dateSection_2 {
+  width: 100%;
+}
+
+.dateSection_2 .days {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.dateSection_2 .days .dayNDate {
+  height: 80px;
+  min-width: 120px;
+  border-radius: 12px;
+  background-color: var(--secondary-color);
+  transition: 0.2s;
+  cursor: pointer;
+  flex-wrap: wrap;
+}
+
+.dateSection_2 .dayNDate:hover {
+  background: var(--purple);
+}
+
+.dateSection_2 .timeSlots {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 24px;
+}
+
+.dateSection_2 .timeSlots .time {
+  min-width: 100px;
+  height: 40px;
+  border-radius: 25px;
+  background-color: var(--primary-color);
+  transition: 0.2s;
+  cursor: pointer;
+}
+.dateSection_2 .timeSlots .time:hover {
+  background-color: #212121;
+}

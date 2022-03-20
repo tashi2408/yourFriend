@@ -1,3 +1,4 @@
+import { daysToWeeks } from 'date-fns';
 import { useState } from 'react';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
@@ -44,7 +45,8 @@ const Plan = ({ price = 3000, time = 45 }) => {
           SELECT
         </a>
       </div>
-      <DateSection dateVisible={dateVisible} />
+      <DateSection2 dateVisible={dateVisible} />
+      {/* <DateSection  dateVisible={dateVisible} /> */}
     </div>
   );
 };
@@ -63,6 +65,36 @@ const DateSection = ({ dateVisible }) => {
         showTimeInput
       />
     </div>
+  );
+};
+const DateSection2 = () => {
+  const days = [];
+  for (let i = 0; i < 7; i++) days.push(i);
+  const time = [];
+  for (let i = 0; i < 12; i++) time.push(i);
+  return (
+    <>
+      <div className="dateSection_2">
+        <div className="days">
+          {days.map((day) => {
+            return (
+              <>
+                <div className="dayNDate"></div>
+              </>
+            );
+          })}
+        </div>
+        <div className="timeSlots">
+          {time.map(() => {
+            return (
+              <>
+                <div className="time"></div>
+              </>
+            );
+          })}
+        </div>
+      </div>
+    </>
   );
 };
 
