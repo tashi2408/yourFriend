@@ -46,7 +46,7 @@ const Plan = ({ price = 3000, time = 45 }) => {
         </a>
       </div>
       <DateSection2 dateVisible={dateVisible} />
-      {/* <DateSection  dateVisible={dateVisible} /> */}
+      {/* <DateSection dateVisible={dateVisible} /> */}
     </div>
   );
 };
