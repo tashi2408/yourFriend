@@ -1,4 +1,7 @@
+import TextField from '@mui/material/TextField';
+import Checkbox from '@mui/material/Checkbox';
 import './review.css';
+import { useState } from 'react';
 
 const Review = () => {
   const myData = {
@@ -9,6 +12,7 @@ const Review = () => {
     type: 'voice call',
     charges: 'free',
   };
+  const [value, setValue] = useState(null);
   return (
     <div className="review-section wrapper">
       <h2>Review your booking</h2>
@@ -16,26 +20,67 @@ const Review = () => {
         <div class="app-details niceBox">
           <h3 className="niceTitle">Your Appointment Details</h3>
           <span className="listItem">
-            Expert: <span class="value">{myData.expert}</span>
+            <span className="key">Expert:</span>{' '}
+            <span class="value">{myData.expert}</span>
           </span>
           <span className="listItem">
-            Date: <span class="value">{myData.date}</span>
+            <span className="key">Date:</span>{' '}
+            <span class="value">{myData.date}</span>
           </span>
           <span className="listItem">
-            Time Period: <span class="value">{myData.timePeriod}</span>
+            <span className="key">Time Period:</span>{' '}
+            <span class="value">{myData.timePeriod}</span>
           </span>
           <span className="listItem">
-            Preferred Slot: <span class="value"> {myData.preferredSlot} </span>
+            <span className="key">Preferred Slot:</span>{' '}
+            <span class="value"> {myData.preferredSlot} </span>
           </span>
           <span className="listItem">
-            Type: <span class="value">{myData.type}</span>
+            <span className="key">Type:</span>{' '}
+            <span class="value">{myData.type}</span>
           </span>
           <span className="listItem">
-            Charges: <span class="value">{myData.charges}</span>
+            <span className="key">Charges:</span>{' '}
+            <span class="value">{myData.charges}</span>
           </span>
         </div>
         <div class="contact-info niceBox">
-          <h3 className="niceTitle">Contact Info</h3>
+          <h3 className="niceTitle">
+            Please provide us with your contact details
+          </h3>
+          <p className="belowNiceTitle">
+            So we may keep you updated about your appointment's status.
+          </p>
+          <TextField
+            fullWidth
+            id="standard-basic"
+            placeholder="Phone Number"
+            variant="standard"
+            onChange={(e) => {
+              setValue(e.target.value);
+            }}
+            helperText={value}
+          />
+          <TextField
+            fullWidth
+            id="standard-basic"
+            placeholder="Email"
+            variant="standard"
+            type={'email'}
+            value={'DefaultUserEmail@gmail.com'}
+            disabled
+          />
+          <div className="terms">
+            <p className="terms__accept">
+              Your session is completely confidential and private. The
+              information is only accessible to our qualified mental health
+              professionals in case of legal or quality supervision.
+            </p>
+            <Checkbox />
+          </div>
+          <a href="#" className="btn">
+            Continue to Payment
+          </a>
         </div>
       </div>
     </div>

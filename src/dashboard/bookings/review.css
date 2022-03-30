@@ -23,6 +23,15 @@
   border-radius: 12px;
   padding: 24px;
   min-height: 500px;
+  text-align: center;
+  box-shadow: 2px 2px 7.6px -21px rgba(0, 0, 0, 0.01),
+    4.5px 4.5px 17.3px -21px rgba(0, 0, 0, 0.014),
+    7.9px 7.9px 30.2px -21px rgba(0, 0, 0, 0.017),
+    12.5px 12.5px 48px -21px rgba(0, 0, 0, 0.02),
+    19.3px 19.3px 74px -21px rgba(0, 0, 0, 0.023),
+    30.1px 30.1px 115.5px -21px rgba(0, 0, 0, 0.026),
+    50px 50px 191.7px -21px rgba(0, 0, 0, 0.03),
+    100px 100px 383px -21px rgba(0, 0, 0, 0.04);
 }
 
 .review-section .app-details {
@@ -30,14 +39,20 @@
 }
 
 .review-section .app-details .listItem {
-  display: block;
-  margin-bottom: 24px;
+  display: flex;
+  gap: 12px;
   height: 32px;
-  font-size: 1.225rem;
+}
+.review-section .app-details .listItem > * {
+  flex-basis: 100%;
 }
 .review-section .app-details .listItem .value {
   color: #000;
   font-weight: 700;
+  text-align: left;
+}
+.review-section .app-details .listItem .key {
+  text-align: right;
 }
 .review-section .contact-info {
   background: #fff;
@@ -46,4 +61,21 @@
 
 .niceTitle {
   font-size: 1.725rem;
+}
+
+.contact-info .accept {
+  display: inline;
+  width: 100px;
+}
+
+.contact-info .terms {
+  display: flex;
+  margin: 24px 0;
+}
+.contact-info .terms .terms__accept {
+  flex-basis: 70%;
+  text-align: left;
+}
+.contact-info .terms > *:not(.terms__accept) {
+  flex-basis: 30%;
 }
