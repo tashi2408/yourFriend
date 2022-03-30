@@ -13,6 +13,7 @@ const Review = () => {
     charges: 'free',
   };
   const [value, setValue] = useState(null);
+  const [checked, setChecked] = useState(false);
   return (
     <div className="review-section wrapper">
       <h2>Review your booking</h2>
@@ -74,13 +75,19 @@ const Review = () => {
             <p className="terms__accept">
               Your session is completely confidential and private. The
               information is only accessible to our qualified mental health
-              professionals in case of legal or quality supervision.
+              professionals in case of legal or quality supervision. Do you
+              accept.
             </p>
-            <Checkbox />
+            <Checkbox
+              checked={checked}
+              onChange={(e) => {
+                setChecked(e.target.checked);
+              }}
+            />
           </div>
-          <a href="#" className="btn">
+          <button type="submit" className="btn" disabled={!checked}>
             Continue to Payment
-          </a>
+          </button>
         </div>
       </div>
     </div>
