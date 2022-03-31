@@ -103,6 +103,8 @@ nav ul {
   padding: 5px 10px;
   transition: 0.2s all;
   border-radius: 12px;
+  width: 100%;
+  text-align: center;
 }
 .Dropdown li:hover {
   background: var(--purple);

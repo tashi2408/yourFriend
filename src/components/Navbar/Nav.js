@@ -38,7 +38,7 @@ const Nav = ({ toggleMobileNav }) => {
               <Link to="/blog">Blog</Link>
             </li>
             <li className="linkItem">
-              <Link>Events</Link>
+              <span>Events</span>
               <ul className="dropdown">
                 <li>
                   <Link to="/internships">Internships</Link>
