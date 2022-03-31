@@ -1,6 +1,6 @@
 .footer {
   background: #262626;
-  color: #fff;
+  color: #fafafa;
   padding: 20px 0;
 }
 
@@ -55,6 +55,9 @@
 
 .footer-bottom {
   margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .footer-list-link {
