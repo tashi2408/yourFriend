@@ -1,24 +1,19 @@
 .overview {
-  padding: 20px;
+  /* padding: 20px; */
+  display: grid;
+  place-items: center;
 }
 
-.overview-content {
+.overview .primary-heading {
+  margin-bottom: 12px;
+}
+
+.overview .wrapper {
   text-align: center;
-  width: 65%;
-  margin: 0 auto;
 }
 
-@media only screen and (max-width: 900px) {
-  .overview {
-    padding: 15px;
-  }
-  .overview-content {
-    width: 85%;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .overview-content {
-    width: 90%;
+@media (max-width: 360px) {
+  .overview .primary-heading {
+    font-size: 24px;
   }
 }

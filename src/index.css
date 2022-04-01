@@ -104,6 +104,10 @@ body::-webkit-scrollbar-thumb {
   margin: 0 auto;
   padding: 20px;
 }
+
+section {
+  min-height: 400px;
+}
 /*********************************************************************************************************************/
 
 @media only screen and (max-width: 900px) {

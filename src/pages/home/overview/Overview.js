@@ -2,9 +2,9 @@ import './OverviewC.css';
 
 const Overview = () => {
   return (
-    <div className="overview">
-      <h1 className="primary-heading ">#wearelistening</h1>
-      <div className="overview-content">
+    <section className="overview">
+      <div className="wrapper">
+        <h1 className="primary-heading ">#wearelistening</h1>
         <p className="primary-para">
           Dealing with mental health issues is not easy and we understand that,
           thus we as an organisation provide mental health webinars, free mental
@@ -18,7 +18,7 @@ const Overview = () => {
           just a click away.
         </p>
       </div>
-    </div>
+    </section>
   );
 };
 
