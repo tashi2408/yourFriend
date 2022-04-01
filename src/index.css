@@ -167,6 +167,8 @@ body::-webkit-scrollbar-thumb {
   transition: 0.2s all;
   border-radius: 500px;
   color: #fafafa;
+  display: grid;
+  place-items: center;
 }
 
 .btn:hover {
@@ -175,10 +177,10 @@ body::-webkit-scrollbar-thumb {
 }
 
 .btn-group {
-  display: flex;
-  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
   width: 100%;
-  align-items: center;
+  gap: 8px;
 }
 
 .btn:active {

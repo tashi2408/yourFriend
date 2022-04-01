@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --black: #212121;
 }
 
@@ -85,5 +85,71 @@ header .wrapper {
   }
   .left .btn {
     width: 100%;
+  }
+} */
+:root {
+  --black: #212121;
+}
+
+header.header {
+  min-height: 560px;
+  background: var(--gradient);
+  padding-top: 80px;
+}
+
+.header .wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.header .wrapper .header__left {
+  width: 40%;
+  color: var(--black);
+}
+.header .wrapper .header__left .left__title {
+  font-size: 4rem;
+  margin-bottom: 0;
+}
+
+.header .wrapper .header__left .left__subTitle {
+  font-size: 2rem;
+  margin-bottom: 16px;
+}
+
+span.yif {
+  font-weight: 600;
+  display: block;
+}
+.header .wrapper .header__left .btn {
+  width: 100%;
+}
+.header .wrapper .header__right {
+  width: 60%;
+}
+.header .wrapper .header__right img {
+  width: 100%;
+}
+
+@media (max-width: 800px) {
+  .header .wrapper {
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+  }
+
+  .header .wrapper .header__left {
+    width: 100%;
+  }
+  .header .wrapper .header__right {
+    width: 100%;
+  }
+}
+
+@media (max-width: 425px) {
+  .header .wrapper .header__right {
+    display: none;
+  }
+  .header .wrapper .header__left {
+    margin-bottom: 80px;
   }
 }

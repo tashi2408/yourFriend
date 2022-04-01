@@ -12,33 +12,7 @@ import './home.css';
 const Home = () => {
   return (
     <>
-      <header>
-        <div className="wrapper">
-          <div class="left">
-            <h1>Your Friend</h1>
-            <p>
-              A Mental Health Initiative by <br />{' '}
-              <span className="yif">Youth India Foundation</span>
-            </p>
-            <div className="btn-group">
-              <a
-                href={joinURL}
-                target="_blank"
-                rel="noreferrer"
-                className="btn"
-              >
-                Join us
-              </a>
-              <Link to="/" className="btn">
-                Book a Session
-              </Link>
-            </div>
-          </div>
-          <div class="right">
-            <img src={Help} alt="brain" draggable={false} />
-          </div>
-        </div>
-      </header>
+      <Hero />
       <Overview />
       <Reachout />
       <Ourwork />
@@ -46,6 +20,33 @@ const Home = () => {
       <Blog />
       <Contact />
     </>
+  );
+};
+
+const Hero = () => {
+  return (
+    <header className="header">
+      <div className="wrapper">
+        <div class="header__left">
+          <h1 className="left__title">Your Friend</h1>
+          <p className="left__subTitle">
+            A Mental Health Initiative by
+            <span className="yif">Youth India Foundation</span>
+          </p>
+          <div className="btn-group">
+            <a href={joinURL} target="_blank" rel="noreferrer" className="btn">
+              Join us
+            </a>
+            <Link to="/" className="btn">
+              Book a Session
+            </Link>
+          </div>
+        </div>
+        <div class="header__right">
+          <img src={Help} alt="brain" draggable={false} />
+        </div>
+      </div>
+    </header>
   );
 };
 
