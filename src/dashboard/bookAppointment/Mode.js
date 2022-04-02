@@ -2,8 +2,6 @@ import { addHours, addDays, format } from 'date-fns';
 import { useState } from 'react';
 
 const Mode = () => {
-  const [openId, setOpenId] = useState(null);
-  const openHandler = (id) => setOpenId(id);
   const Plans = [
     {
       id: 1,
@@ -25,7 +23,7 @@ const Mode = () => {
         <p>Choose your mode of contact</p>
         <div className="baModeContainer">
           {Plans.map((plan) => {
-            return <Plan {...plan} openId={openId} handler={openHandler} />;
+            return <Plan {...plan} />;
           })}
         </div>
       </div>
@@ -33,7 +31,7 @@ const Mode = () => {
   );
 };
 
-const Plan = ({ price = 3000, time = 45, id, openId, handler }) => {
+const Plan = ({ price = 3000, time = 45 }) => {
   const [dateVisible, setDateVisible] = useState(() => false);
   return (
     <div className="baBox baModeBox">
@@ -56,13 +54,12 @@ const Plan = ({ price = 3000, time = 45, id, openId, handler }) => {
           className="btn"
           onClick={() => {
             setDateVisible(!dateVisible);
-            handler(id);
           }}
         >
           SELECT
         </span>
       </div>
-      <DateSection visible={dateVisible && openId === id} />
+      <DateSection visible={dateVisible} />
     </div>
   );
 };
@@ -72,7 +69,6 @@ const DateSection = ({ visible = true }) => {
   const changeSelection = (date) => {
     setSelectedDate(date);
   };
-  if (!visible) return null;
 
   const days = [];
   for (let i = 0; i < 7; i++) days.push(addDays(new Date(), i));
@@ -81,7 +77,7 @@ const DateSection = ({ visible = true }) => {
 
   return (
     <>
-      <div className="dateSection_2">
+      <div className={visible ? 'dateSection_2 show' : 'dateSection_2'}>
         <div className="days">
           {days.map((day, i) => {
             return (
