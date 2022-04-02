@@ -120,8 +120,8 @@ const OffCanvas = ({ isVisible }) => {
   ];
   return (
     <div className="off-nav colorBar">
-      <div class="wrapper">
-        <div class="list">
+      <div className="wrapper">
+        <div className="list">
           {LinksList.map((link) => (
             <div>
               <Link to={link.ref || undefined}>
