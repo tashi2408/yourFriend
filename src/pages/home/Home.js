@@ -27,7 +27,7 @@ const Hero = () => {
   return (
     <header className="header">
       <div className="wrapper">
-        <div class="header__left">
+        <div className="header__left">
           <h1 className="left__title">Your Friend</h1>
           <p className="left__subTitle">
             A Mental Health Initiative by
@@ -42,7 +42,7 @@ const Hero = () => {
             </Link>
           </div>
         </div>
-        <div class="header__right">
+        <div className="header__right">
           <img src={Help} alt="brain" draggable={false} />
         </div>
       </div>

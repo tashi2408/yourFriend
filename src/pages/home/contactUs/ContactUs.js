@@ -21,7 +21,7 @@ const Contact = () => {
                       type="text"
                       placeholder="Your Name"
                     />
-                    <label for="age">Name</label>
+                    <label htmlFor="age">Name</label>
                   </span>
                   <span>
                     <input
@@ -30,7 +30,7 @@ const Contact = () => {
                       type="email"
                       placeholder="Your Email"
                     />
-                    <label for="height">Email</label>
+                    <label htmlFor="height">Email</label>
                   </span>
                   <span>
                     <input
@@ -39,7 +39,7 @@ const Contact = () => {
                       type="number"
                       placeholder="Your Number"
                     />
-                    <label for="height">Mobile No.</label>
+                    <label htmlFor="height">Mobile No.</label>
                   </span>
                   <span>
                     <input
@@ -48,7 +48,7 @@ const Contact = () => {
                       type="text"
                       placeholder="Type a Message!"
                     />
-                    <label for="height">Message</label>
+                    <label htmlFor="height">Message</label>
                   </span>
                   <div
                     style={{

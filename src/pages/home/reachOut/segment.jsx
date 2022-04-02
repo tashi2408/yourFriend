@@ -3,7 +3,6 @@ import share from './Images/share.svg';
 import interact from './Images/interact.svg';
 import connect from './Images/connect.svg';
 import unleash from './Images/unleash.svg';
-import { FiArrowRightCircle } from 'react-icons/fi';
 
 const niceList = [
   {
@@ -27,19 +26,17 @@ const niceList = [
 
 function Segment() {
   return (
-    <div class="wrapper section">
+    <div className="wrapper section">
       <h1 className="primary-heading">Reach out to us</h1>
       <div className="reach-out-points">
         {niceList.map((reachPoint, index) => (
-          <>
-            <div className="reach-point">
-              <div className="reach-out-point">
-                <img src={reachPoint.img} alt="reach" />
-                <h2>{reachPoint.heading}</h2>
-              </div>
-              <span className="step">{`${index + 1}.`}</span>
+          <div className="reach-point" key={reachPoint.heading}>
+            <div className="reach-out-point">
+              <img src={reachPoint.img} alt="reach" />
+              <h2>{reachPoint.heading}</h2>
             </div>
-          </>
+            <span className="step">{`${index + 1}.`}</span>
+          </div>
         ))}
       </div>
     </div>

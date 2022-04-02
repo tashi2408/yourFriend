@@ -11,10 +11,10 @@ import Links from '../../socialLinks';
 const Footer = () => {
   return (
     <footer className="footer">
-      <div class="wrapper">
+      <div className="wrapper">
         <div className="footer-content wrapper">
-          <div class="footer-left">
-            <div class="about-yf">
+          <div className="footer-left">
+            <div className="about-yf">
               <h3>about your friend</h3>
               <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta
@@ -35,7 +35,7 @@ const Footer = () => {
             </a>
           </div>
         </div>
-        <div class="footer-bottom">
+        <div className="footer-bottom">
           <div className="social-medialinks">
             <ul className="footer-list">
               <li className="footer-list-item">
