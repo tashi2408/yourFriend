@@ -2,6 +2,8 @@ import { addHours, addDays, format } from 'date-fns';
 import { useState } from 'react';
 
 const Mode = () => {
+  const [selected, setSelected] = useState(null);
+  const toggle = (i) => setSelected(selected === i ? null : i);
   const Plans = [
     {
       id: 1,
@@ -15,6 +17,12 @@ const Mode = () => {
       price: 4000,
       time: 60,
     },
+    {
+      id: 3,
+      name: 'Gold',
+      price: 100000,
+      time: 1200,
+    },
   ];
   return (
     <div class="ba">
@@ -22,8 +30,16 @@ const Mode = () => {
         <h3>YourFriend will assign the best available Expert to you.</h3>
         <p>Choose your mode of contact</p>
         <div className="baModeContainer">
-          {Plans.map((plan) => {
-            return <Plan {...plan} />;
+          {Plans.map((plan, idx) => {
+            return (
+              <Plan
+                {...plan}
+                selected={selected}
+                toggle={() => toggle(idx)}
+                visible={idx === selected}
+                key={idx}
+              />
+            );
           })}
         </div>
       </div>
@@ -31,8 +47,8 @@ const Mode = () => {
   );
 };
 
-const Plan = ({ price = 3000, time = 45 }) => {
-  const [dateVisible, setDateVisible] = useState(() => false);
+const Plan = ({ price = 3000, time = 45, toggle, visible }) => {
+  // const [dateVisible, setDateVisible] = useState(() => false);
   return (
     <div className="baBox baModeBox">
       <div className="baModeBox_main">
@@ -53,13 +69,14 @@ const Plan = ({ price = 3000, time = 45 }) => {
         <span
           className="btn"
           onClick={() => {
-            setDateVisible(!dateVisible);
+            // setDateVisible(!dateVisible);
+            toggle();
           }}
         >
           SELECT
         </span>
       </div>
-      <DateSection visible={dateVisible} />
+      <DateSection visible={visible} />
     </div>
   );
 };
