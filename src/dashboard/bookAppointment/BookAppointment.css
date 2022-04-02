@@ -121,6 +121,13 @@
 
 .dateSection_2 {
   width: 100%;
+  max-height: 0;
+  transition: 0.3s all cubic-bezier(0,1,0,1);
+  overflow: hidden;
+}
+
+.show {
+  max-height: 999px;
 }
 
 .dateSection_2 .days {
