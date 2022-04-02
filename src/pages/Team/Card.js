@@ -27,21 +27,21 @@ export default function Card({
 
           <ul className="member-icons">
             <li>
-              <a>
+              <a href="/team#">
                 <i>
                   <FaFacebookF className="single-icon-mem" />
                 </i>
               </a>
             </li>
             <li>
-              <a>
+              <a href="/team#">
                 <i>
                   <FaInstagram />
                 </i>
               </a>
             </li>
             <li>
-              <a>
+              <a href="/team#">
                 <i>
                   <FaLinkedinIn />
                 </i>
