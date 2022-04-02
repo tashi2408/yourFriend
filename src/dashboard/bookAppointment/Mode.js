@@ -2,21 +2,38 @@ import { addHours, addDays, format } from 'date-fns';
 import { useState } from 'react';
 
 const Mode = () => {
+  const [openId, setOpenId] = useState(null);
+  const openHandler = (id) => setOpenId(id);
+  const Plans = [
+    {
+      id: 1,
+      name: 'Starter',
+      price: 3000,
+      time: 45,
+    },
+    {
+      id: 2,
+      name: 'Silver',
+      price: 4000,
+      time: 60,
+    },
+  ];
   return (
     <div class="ba">
       <div className="wrapper">
         <h3>YourFriend will assign the best available Expert to you.</h3>
         <p>Choose your mode of contact</p>
         <div className="baModeContainer">
-          <Plan />
-          <Plan price={4000} time={60} />
+          {Plans.map((plan) => {
+            return <Plan {...plan} openId={openId} handler={openHandler} />;
+          })}
         </div>
       </div>
     </div>
   );
 };
 
-const Plan = ({ price = 3000, time = 45 }) => {
+const Plan = ({ price = 3000, time = 45, id, openId, handler }) => {
   const [dateVisible, setDateVisible] = useState(() => false);
   return (
     <div className="baBox baModeBox">
@@ -35,18 +52,23 @@ const Plan = ({ price = 3000, time = 45 }) => {
             is guaranteed.
           </p>
         </div>
-        <span className="btn" onClick={() => setDateVisible(!dateVisible)}>
+        <span
+          className="btn"
+          onClick={() => {
+            setDateVisible(!dateVisible);
+            handler(id);
+          }}
+        >
           SELECT
         </span>
       </div>
-      <DateSection visible={dateVisible} />
+      <DateSection visible={dateVisible && openId === id} />
     </div>
   );
 };
 
 const DateSection = ({ visible = true }) => {
   const [selectedDate, setSelectedDate] = useState(null);
-
   const changeSelection = (date) => {
     setSelectedDate(date);
   };
@@ -72,11 +94,13 @@ const DateSection = ({ visible = true }) => {
           })}
         </div>
         <div className="timeSlots">
-          {times.map((time) => {
+          {times.map((time, i) => {
             return (
-              <>
-                <div className="time">{`${time.getHours()}:${time.getMinutes()}`}</div>
-              </>
+              <Time
+                changeSelection={changeSelection}
+                isAvailable={i % 2 === 0}
+                time={time}
+              />
             );
           })}
         </div>
@@ -102,6 +126,14 @@ const Day = ({ day, isAvailable = false, changeSelection }) => {
         </span>
       </div>
     </>
+  );
+};
+
+const Time = ({ time, changeSelection }) => {
+  return (
+    <div onClick={() => changeSelection(time)} className="time">
+      {format(time, 'hh:mm')}
+    </div>
   );
 };
 

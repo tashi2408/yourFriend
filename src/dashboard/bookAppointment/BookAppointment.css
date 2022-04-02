@@ -197,7 +197,13 @@
   font-size: 18px;
   font-weight: 400;
 }
-.dateSection_2 .timeSlots .time:hover {
+.dateSection_2 .timeSlots .time:hover, .dateSection_2 .timeSlots .time--active {
   background-color: var(--dark);
   color: #fafafa;
+}
+
+
+.dateSectoin .timeSlots .time--dull {
+  background-color: gray;
+  color: #fff;
 }
