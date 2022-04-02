@@ -122,11 +122,12 @@
 .dateSection_2 {
   width: 100%;
   max-height: 0;
-  transition: 0.3s all cubic-bezier(0,1,0,1);
+  transition: 0.6s all cubic-bezier(0,1,0,1);
   overflow: hidden;
 }
 
-.show {
+.dateSection_2.show {
+  height: auto;
   max-height: 999px;
 }
 
