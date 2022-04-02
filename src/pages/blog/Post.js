@@ -9,8 +9,9 @@ import Links from '../../socialLinks';
 import FloatingSidebar from '../../components/floatingBar';
 
 const Blog = () => {
-  const { id } = useParams();
-  const Found = Posts.find((post) => post.id == id);
+  let { id } = useParams();
+  id = parseInt(id);
+  const Found = Posts.find((post) => post.id === id);
   const NotFound = `
   # Sorry, We couldn't find that post
   Check the sidebar to see the available posts.
@@ -18,7 +19,7 @@ const Blog = () => {
   return (
     <>
       <div className="blog">
-        <div class="wrapper">
+        <div className="wrapper">
           <article>
             <img
               src={Found ? Found.image : '//placekitten.com/g/800/300'}
@@ -26,7 +27,7 @@ const Blog = () => {
               draggable={false}
             />
             {Found && (
-              <div class="social">
+              <div className="social">
                 <RiShareLine size={32} />
                 {Links.map((link) => (
                   <SocialIcon url={link.url} key={link.name} />
@@ -39,20 +40,20 @@ const Blog = () => {
             />
           </article>
           <aside>
-            <div class="read-more">
+            <div className="read-more">
               <h3>Read more</h3>
               <ul>
                 {Posts.map((post) => {
-                  if (id == post.id) return null;
+                  if (id === post.id) return null;
                   return (
-                    <Link to={`/blog/${post.id}`}>
+                    <Link to={`/blog/${post.id}`} key={post.id}>
                       <li>
                         <img
                           src={post.image}
                           alt="no caption"
                           draggable={false}
                         />
-                        <span class="title">{post.title}</span>
+                        <span className="title">{post.title}</span>
                       </li>
                     </Link>
                   );

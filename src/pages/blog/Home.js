@@ -13,13 +13,13 @@ const BlogHome = () => {
         alignItems: 'center',
       }}
     >
-      <div class="wrapper">
+      <div className="wrapper">
         <h1 className="primary-heading ">The Your Friend Blog</h1>
         <main>
           {Posts.map((post) => (
-            <div class="singleBlog" key={post.id}>
+            <div className="singleBlog" key={post.id}>
               <img src={post.image} alt={post.title}></img>
-              <div class="blogContent">
+              <div className="blogContent">
                 <h3>
                   {post.title}
                   <span>Article</span>
