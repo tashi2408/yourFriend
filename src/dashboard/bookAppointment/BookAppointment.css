@@ -140,11 +140,37 @@
   cursor: pointer;
   display: grid;
   place-items: center;
-}
-.dateSection_2 .days .dayNDate span {
   font-size: 18px;
   font-weight: 600;
 }
+
+
+.dateSection_2 .days .dayNDate--selected {
+  background: var(--purple);
+}
+
+.dateSection_2 .days .dayNDate--dull {
+  height: 80px;
+  min-width: 120px;
+  border-radius: 12px;
+  background-color: gray;
+  color: #fff;
+  transition: 0.2s;
+  display: grid;
+  place-items: center;
+  font-size: 18px;
+  font-weight: 600;
+  position: relative;
+}
+
+.dateSection_2 .days .dayNDate--dull .abs {
+  position: absolute;
+  color: var(--black);
+  bottom: 4px;
+  font-weight: bold;
+  font-size: 10px;
+}
+
 .dateSection_2 .dayNDate:hover {
   background: var(--purple);
 }

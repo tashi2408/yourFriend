@@ -1,8 +1,5 @@
-import { addHours, daysToWeeks, startOfDay } from 'date-fns';
+import { addHours, addDays, format } from 'date-fns';
 import { useState } from 'react';
-import DatePicker from 'react-datepicker';
-import 'react-datepicker/dist/react-datepicker.css';
-import { addDays } from 'date-fns';
 
 const Mode = () => {
   return (
@@ -42,45 +39,35 @@ const Plan = ({ price = 3000, time = 45 }) => {
           SELECT
         </span>
       </div>
-      <DateSection2 visible={dateVisible} />
-      {/* <DateSection dateVisible={dateVisible} /> */}
+      <DateSection visible={dateVisible} />
     </div>
   );
 };
-const DateSection = ({ dateVisible }) => {
+
+const DateSection = ({ visible = true }) => {
   const [selectedDate, setSelectedDate] = useState(null);
-  // if (!dateVisible) return null;
-  return (
-    <div className="dateSection">
-      <span className="smolText">
-        Choose/Type any Available Date & Time Below
-      </span>
-      <DatePicker
-        selected={selectedDate}
-        onChange={(date) => setSelectedDate(date)}
-        minDate={new Date()}
-        showTimeInput
-      />
-    </div>
-  );
-};
-const DateSection2 = ({ visible = true }) => {
+
+  const changeSelection = (date) => {
+    setSelectedDate(date);
+  };
   if (!visible) return null;
+
   const days = [];
   for (let i = 0; i < 7; i++) days.push(addDays(new Date(), i));
   const times = [];
   for (let i = 0; i < 12; i++) times.push(addHours(new Date(), i));
+
   return (
     <>
       <div className="dateSection_2">
         <div className="days">
-          {days.map((day) => {
+          {days.map((day, i) => {
             return (
-              <>
-                <div className="dayNDate">
-                  <span>{day.getDate()}</span>
-                </div>
-              </>
+              <Day
+                day={day}
+                changeSelection={changeSelection}
+                isAvailable={i % 2 === 0}
+              />
             );
           })}
         </div>
@@ -93,6 +80,26 @@ const DateSection2 = ({ visible = true }) => {
             );
           })}
         </div>
+        {selectedDate && format(selectedDate, 'dd eeee hh:mm')}
+      </div>
+    </>
+  );
+};
+
+const Day = ({ day, isAvailable = false, changeSelection }) => {
+  if (!isAvailable)
+    return (
+      <div className="dayNDate--dull">
+        <span className="abs">N/A</span>
+        <span>{day.getDate()}</span>
+      </div>
+    );
+  return (
+    <>
+      <div className="dayNDate" onClick={() => changeSelection(day)}>
+        <span>
+          {day.getDate()} {format(day, 'eeee').slice(0, 3)}
+        </span>
       </div>
     </>
   );
