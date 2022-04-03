@@ -1,10 +1,12 @@
 import React, { useState } from "react";
+import FormikForm from "./FormikForm";
 import './Profile.css';
-import logo from "./profile.png";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUserEdit } from '@fortawesome/free-solid-svg-icons';
-import { margin } from "@mui/system";
 function Profile() {
+    const [fields, updateFields] = useState({
+        dob: "",
+        occupation: "",
+        gender: ""
+      });
     return (
         <div className="Profile flex-center">
             <div className={"background flex-center"}>
@@ -15,18 +17,10 @@ function Profile() {
                 <p className="mail-id">{JSON.parse(localStorage.getItem('loginData')).email}</p>
             </div>
             <div className="detailscard" >
-                <div className="edit"><h2>Personal Details</h2><a style={{ float: "right" }} ><FontAwesomeIcon icon={faUserEdit} /></a></div>
-                <div className="dateofbirth"><label for="test">Date Of Birth :</label>
-                    <span><input name="dob" id="data" type="text" /></span>
-                </div>
-                <div className="occupation"><label for="test">..Occupation :</label>
-                    <span><input name="occupation" id="data" type="text" /></span>
-                </div>
-                <div className="gender"><label for="test">...........Gender :</label>
-                    <span><input name="gender" id="data" type="text" /></span>
+                <FormikForm fields={fields} updateFields={updateFields} />
                 </div>
             </div>
-        </div>
+
     );
 }
 
