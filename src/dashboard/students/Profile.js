@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import FormikForm from "./FormikForm";
 import './Profile.css';
+
 function Profile() {
     const [fields, updateFields] = useState({
-        dob: "",
-        occupation: "",
-        gender: ""
+        dob: "N/A",
+        occupation: "N/A",
+        gender: "N/A"
       });
     return (
         <div className="Profile flex-center">
@@ -20,7 +21,6 @@ function Profile() {
                 <FormikForm fields={fields} updateFields={updateFields} />
                 </div>
             </div>
-
     );
 }
 
