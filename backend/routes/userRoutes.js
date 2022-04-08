@@ -18,6 +18,6 @@ router.delete('/:id', deleteUser);
 
 router.post('/google-login', googleLogin);
 router.post('/login', loginUser);
-router.get('/me', protect, getMe);
+router.get('/me/:id', getMe);
 
 module.exports = router;

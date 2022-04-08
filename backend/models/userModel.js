@@ -9,7 +9,6 @@ const userSchema = mongoose.Schema(
     email: {
       type: String,
       required: [true, 'Please add an email'],
-      unique: true,
     },
     picture: {
       type: String,
@@ -32,6 +31,18 @@ const userSchema = mongoose.Schema(
     password: {
       type: String,
       required: [true, 'Please add a password'],
+    },
+    dob: {
+      type: String,
+      default: 'N/A'
+    },
+    gender: {
+      type: String,
+      default: 'N/A'
+    },
+    occupation: {
+      type: String,
+      default: 'N/A'
     },
   },
   {

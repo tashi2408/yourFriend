@@ -20,7 +20,16 @@ const googleLogin = asyncHandler(async (req, res) => {
   // Hash password
   const salt = await bcrypt.genSalt(10);
   const hashedPassword = await bcrypt.hash(jti, salt);
-
+  const userExists = await User.findOne({ email });
+  if (userExists) {
+    res.status(201).json({
+      _id: userExists.id,
+      name: userExists.name,
+      email: userExists.email,
+      token: generateToken(userExists._id),
+      picture: userExists.picture
+    });
+  }
   // Create user
   const user = await User.create({
     name,
@@ -112,7 +121,12 @@ const loginUser = asyncHandler(async (req, res) => {
 // @route   GET /api/users/me
 // @access  Private
 const getMe = asyncHandler(async (req, res) => {
-  res.status(200).json(req.user);
+  const user = await User.findById(req.params.id);
+  if (!user) {
+    res.status(400);
+    throw new Error('User not found');
+  }
+  res.status(200).json(user);
 });
 
 // @desc    Get All users
