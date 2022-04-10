@@ -61,10 +61,7 @@ const Navigation = ({ toggleMobileNav }) => {
               </Link>
             </li>
             <li className="LinkItem">
-              <Link to="/dashboard">
-                <FontAwesomeIcon icon={faUser} />{' '}
-                <span style={{ marginLeft: '.25rem' }}>User-name</span>
-              </Link>
+                <FontAwesomeIcon icon={faUser} />{" "} User-Name
               <ul class="Dropdown">
                 <li>
                   <Link to="/profile">
