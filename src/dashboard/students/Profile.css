@@ -1,73 +1,69 @@
-.Profile{
-    position:absolute;
-    top: 100px;
-    bottom: 100px;
-    width: 100%;
-    height: 100%;
-    padding-left: 200px;
-    overflow: auto;
-    overflow-x: hidden;
-}
-.background{
-    width: 180px;
-    height: 180px;
-    border-radius:10%;
-    background: #f1f1f1;
-    display: flex; 
-    align-items: center;
-    justify-content: center;
-}
-.img{
-    width:150px;
-    height:150px;
+.Profile {
+  padding-top: 80px;
+  background-color: var(--gradient);
+  min-height: calc(100vh - 250px);
 }
 
-.infocard{
-    margin-top: 1%;
-    width: 70%;
-    padding: 2%;
-    margin-left: 1px;
-    height: 14vh;
-    border-radius: 0.5em;
-    background:var(--purple);
-    box-shadow: 5px 5px 5px 5px #0000004f;
+.Profile .wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
 }
-.username{
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: white;
+.profile__img {
+  flex-basis: 30%;
+  display: grid;
+  place-items: center;
 }
-.mail-id{
-    font-size: 1rem;
-    font-weight: bold;
-    color: white;
+.profile__img img {
+  width: 80%;
+  border-radius: 100px;
 }
-p{
-    margin:0;
+.username {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
 }
-.detailscard{
-    margin-top: 3%;
-    width: 70%;
-    padding: 2%;
-    margin-left: 1px;
-    height: 30vh;
-    border-radius: 0.5em;
-    background-color: #f1f1f1;
-    box-shadow: 5px 5px 5px 5px #0000004f;
-    display: table;
+.mail-id {
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
 }
+
+.infocard {
+  background: var(--purple);
+  border-radius: 15px;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.infocard__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-basis: 50%;
+}
+.infocard__info span {
+  display: block;
+}
+
 label {
-    display: table-cell;
-    width: 1px;
-    white-space: nowrap
+  display: table-cell;
+  width: 1px;
+  white-space: nowrap;
 }
 span {
-    display: table-cell;
-    padding: 0 0 0 5px
+  display: table-cell;
+  padding: 0 0 0 5px;
 }
 input {
-    width: 100%
+  width: 100%;
 }
-.edit{
-    display: inline;
+.edit {
+  display: inline;
+}
+
+.detailscard {
+  overflow-x: hidden;
 }
